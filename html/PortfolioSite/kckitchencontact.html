@@ -3,6 +3,11 @@
 <head>
     <title>KC Kitchen contact page</title>
     <link rel="stylesheet" type="text/css" href="restuarantStyles.css">
+    <style>
+    #boldform {
+        font-weight: bold;
+    }
+    </style>
 </head>
 <body>
 <h1>KC Kitchen</h1>
@@ -11,11 +16,12 @@
 <a href="kckitchen.html">Home</a> <a href="kckitchenmenu.html">Menu</a> <a href="kckitchencontact.html">Contact</a>
 </div>
 <hr>
+
 <form action="fakeaddress.html" method="get" id="kitchencontact">
-Name:<input type="text" name="name"><br>
-Email:<input type="text" name="email"><br>
-Phone:<input type="text" name="phonenumber"><br>
-Inquiry: <select name="inquiryreason" form="kitchencontact">
+<span id="boldform">Name:</span><input type="text" name="name"><br>
+<span id="boldform">Email:</span><input type="text" name="email"><br>
+<span id="boldform">Phone:</span><input type="text" name="phonenumber"><br>
+<span id="boldform">Inquiry:</span> <select name="inquiryreason" form="kitchencontact">
     <option value="catering">Catering</option>
     <option value="privateparty">Private Party</option>
     <option value="feedback">Feedback</option>
