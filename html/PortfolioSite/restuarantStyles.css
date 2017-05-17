@@ -6,6 +6,19 @@ footer{
     margin-top:50px;
     text-align: center;
 }
+table, td{
+  border: 2px solid salmon;
+  border-collapse: collapse;
+  padding: 4px;
+  margin: auto;
+  margin-top: 20px;
+}
+tbody{
+  text-align: left;
+}
+thead{
+  font-weight: bold;
+}
 h1 {
     font-family: cursive;
     font-size: 30pt;
@@ -27,9 +40,10 @@ a:visited {
 a:hover {
   text-decoration: none;
   color: #00c;
-  font-family: cursive;
+  font-weight: bold;
 }
 
 a:active {
-  font-weight: bold;
+  font-weight: normal;
+  color: lime;
 }
