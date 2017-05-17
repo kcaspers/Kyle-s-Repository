@@ -32,3 +32,41 @@ form {
     width: 200px;
     margin: 0 auto;
 }
+table, td {
+    border: solid black 1px;
+    padding: 0px 10px 10px 10px;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+table {
+    width: 30%;
+    height: 200px;
+}
+tfoot{
+    text-align:center;
+    background-color:lightgrey;
+}
+thead{
+    font-weight: bold;
+    background-color:lightgrey;
+}
+tbody{
+    font-style:italic;
+}
+tbody tr:nth-child(even) {
+  background-color: LemonChiffon;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: LawnGreen;
+}
+a:link{
+text-decoration: none;
+}
+a:hover{
+background-color: thistle;
+text-decoration: underline;
+}
+a:visited{
+
+}
