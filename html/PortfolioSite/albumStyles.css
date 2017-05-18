@@ -5,7 +5,7 @@ ul {
     list-style-position:inside;
 }
 h1,h2 {
-font-family: "Baskerville";
+font-family: serif;
 text-align:center;
 margin: auto;
 }
@@ -43,22 +43,7 @@ table {
     height: 200px;
 }
 tfoot{
-    text-align:center;
-    background-color:lightgrey;
-}
-thead{
-    font-weight: bold;
-    background-color:lightgrey;
-}
-tbody{
-    font-style:italic;
-}
-tbody tr:nth-child(even) {
-  background-color: LemonChiffon;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: LawnGreen;
+    text-align: center;
 }
 a:link{
 text-decoration: none;

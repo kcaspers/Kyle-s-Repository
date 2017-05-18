@@ -7,8 +7,9 @@ footer{
     text-align: center;
 }
 table, td{
-  border: 2px solid salmon;
+  border: 5px solid salmon;
   border-collapse: collapse;
+  border-style: double;
   padding: 4px;
   margin: auto;
   margin-top: 20px;

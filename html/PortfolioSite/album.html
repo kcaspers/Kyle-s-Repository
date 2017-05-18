@@ -3,13 +3,19 @@
 <head>
     <title> Album Page</title>
     <link rel="stylesheet" type="text/css" href="albumStyles.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     
 </style>
 </head>
 <body>
-<div id="image"></div>
-<h1>Coyotes and Bees"</h1>
+ <div class="container">
+<img src="images/Coyotes And Bees.jpg" class="img-responsive img-circle">
+<h1>Coyotes and Bees</h1>
 <h2><a href="dracular.com">Dracular</a></h2>
 <div id="date">March 2017</div>
 <hr>
@@ -22,9 +28,9 @@
             <li>Neil Weir - Recording Engineer</li>
 </ul>
 
-<table align="center">
+<table align="center" class="table-striped table-condensed""
 <thead>
-<tr>
+<tr style="background-color:white">
     <td>Track #</td>
     <td>Track Title</td>
     <td>Track Length</td>
@@ -59,5 +65,6 @@
 <textarea name="briefDescription"></textarea><br/>
     <input type="submit"/> <input type="reset"/><br/>
 </form>
+</div>
 </body>
 </html>
