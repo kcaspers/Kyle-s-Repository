@@ -15,28 +15,59 @@
 p {
     text-align: center;
 }
-#warning{
-    float:right;
-    width: 100%;
-    height: 50%;
-}
+
 #myCarousel{
    margin: auto;
-    width: 500px;
+    width: 300px;
+    height: 150px;
+    display: block;
+    background-size: cover;
 }
-    </style>
+
+#description{
+outline: gray solid;
+margin: 20px;
+display: block;
+height: 200px;
+}
+#homebody{
+  background-color: lightblue;
+}
+
+
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scriptforrestuarant.js">
+</script>
 </head>
 
 <body>
-<noscript> <span id="warning" class="jumbotron alert alert-danger">Your browser does not support JavaScript</span> </noscript>
-<div class="container-fluid">
-<h2>KC Kitchen</h2>
-<hr>
-<a  href="kckitchen.html"><span class="glyphicon glyphicon-home"></a> <a href="kckitchenmenu.html">Menu</a> <a href="kckitchencontact.html">Contact</a>
+<div class="container">
+
+<h2 id="restuarantName" >KC Kitchen</h2>
+<h5 id="resturarant>New Location Open Now!</h1>
+
 <hr>
 
+<ul class="nav nav-pills">
+<li>
+<a href="kckitchen.html"><span class="glyphicon glyphicon-home"></a>
+</li>
+<li>
+<a href="kckitchenmenu.html">Menu</a>
+</li>
+<li>
+<a href="kckitchencontact.html">Contact</a>
+</li>
+</ul>
+
+<hr>
+
+<!-- The following jumbotron alert displays when javascript is disabled -->
+<noscript class="jumbotron"> Javascript must be enabled to view this site properly!</noscript>
+
+<div id="homebody">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -48,25 +79,22 @@ p {
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="images/stock_photo1.jpg" alt="Los Angeles">
+      <img src="images/11onlinereservationpark.jpg" alt="picture1">
       <div class="carousel-caption">
-        <h3>Los Angeles</h3>
         <p>We're opening a new location!</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/stock_photo2.jpg" alt="Chicago">
+      <img src="images/800px_COLOURBOX3276632.jpg" alt="picture2">
       <div class="carousel-caption">
-        <h3>Not Los Angeles</h3>
         <p>We're rolling out our seasonal menu, with special options for this season.</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="images/stock_photo3.jpg" alt="New York">
+      <img src="images/pexels-photo-511381.jpeg" alt="picture3">
       <div class="carousel-caption">
-        <h3>The Ocean</h3>
         <p>The Drink of the Month is SG Special Brew.</p>
       </div>
     </div>
@@ -82,21 +110,23 @@ p {
   </a>
 </div>
 
-<div id="main">
-<img style="display: block; margin: auto;" src="images/11onlinereservationpark.jpg" width="400px" class="img-circle">
-
+<div id="description">
 <p>
-    Please come to my resturaunt. I promise it won't be just you and I sitting in my apartment.<br> 
-    Full disclosure: it is located in my apartment -but it will be packed! It will be busy! At least I hope by the time you get here it will be.
+    Please come to my restaurant. I put so much time into the website and the food.<br>
+    Don't listen to the Yelp reviews, they are going to mislead you. My restuarant is very good.
 </p>
 </div>
 
- <hr>
+<div class="clearFooter"></div>
+</div>
+</div>
 </body>
-<footer>
+
+
+<footer class="restFooter">
     500 Robert St North St Paul, MN 55101<br>
     651-123-1234
 </footer>
- </div>
+
 
 <html>

@@ -15,27 +15,43 @@
     background-color: lightblue;
     text-align: center;
 }
-span {
+textspan {
     font-size: 10pt;
 }
     </style>
 </head>
-<div class="container-fluid">
+<div class="container">
 <body>
-<h2>KC Kitchen</h2>
+<h2 id="restuarantName">KC Kitchen</h2>
 <hr>
-<a href="kckitchen.html"><span class="glyphicon glyphicon-home"></a> <a href="kckitchenmenu.html">Menu</a> <a href="kckitchencontact.html">Contact</a>
+
+<ul class="nav nav-pills">
+<li>
+<a  href="kckitchen.html"><span class="glyphicon glyphicon-home"></a>
+</li>
+<li>
+<a href="kckitchenmenu.html">Menu</a> 
+</li>
+<li>
+<a href="kckitchencontact.html">Contact</a>
+</li>
+</ul>
+
+
 <hr>
+
+<!-- The following jumbotron alert displays when javascript is disabled -->
+<noscript class="jumbotron"> Javascript must be enabled to view this site properly!</noscript>
 
 <div id="menu">
 <h3>Macaroni Pizza</h3>
-<span>I put the macaroni and cheese on a pizza crust. Don't arrest me.</span>
+<textspan>I put the macaroni and cheese on a pizza crust. Don't arrest me.</textspan>
 
 <h3>Pizza Macaroni</h3>
-<span>I also made macaroni and cheese but with the addition of pepperoni and tomato sauce.</span>
+<textspan>I also made macaroni and cheese but with the addition of pepperoni and tomato sauce.</textspan>
 
 <h3>Coffee</h3>
-<span>Coffee is like water but it keeps you alive more efficiently.</span>
+<textspan>Coffee is like water.</textspan>
 
 <table id="drinks">
     <thead>
@@ -65,11 +81,12 @@ span {
 
 </div>
 
-<hr>
+<div class="clearFooter"></div>
+</div>
+
 </body>
-<footer>
+<footer class="restFooter">
    500 Robert St North St Paul, MN 55101<br>
     651-123-1234
 </footer>
-</div>
 </html>

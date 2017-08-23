@@ -1,3 +1,13 @@
+#restuarantName{
+  text-align: center;
+  font-family: courier;
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+html, body {
+  height:100%;
+}
 footer{
     background-color: lightgrey;
     width: 800px;
@@ -45,3 +55,25 @@ a:active {
   font-weight: normal;
   color: lime;
 }
+.item img{
+  object-fit:cover;
+  height:150px !important;
+  width:400px;
+}
+
+.container{
+  min-height: 100%;
+  margin-bottom: -150px;
+  position: relative;
+}
+
+.restFooter{
+  height: 150px;
+  position: relative;
+}
+
+.clearFooter{
+  height:150px;
+  clear: both;
+}
+
