@@ -1,0 +1,10 @@
+2017-09-15T12:49:05.364 : isItemPresent: old shoes was not present.
+2017-09-15T12:49:13.886 : areFundsSufficient: soda could not be purchased.
+2017-09-15T12:51:51.780 : isItemPresent: soda was not present.
+2017-09-15T12:52:45.493 : isItemPresent: soda was not present.
+2017-09-15T12:53:04.837 : areFundsSufficient: crackers could not be purchased.
+2017-09-15T12:58:41.959 : areFundsSufficient: crackers
+2017-09-15T13:16:37.584 : areFundsSufficient: crackersInsufficient funds
+2017-09-15T13:17:23.169 : isItemPresent: soda Item not present.
+2017-09-18T11:05:21.711 : areFundsSufficient: crackers Insufficient funds
+2017-09-18T11:05:54.399 : isItemPresent: soda Item not present.

@@ -1,2 +1,2 @@
 # Kyle-s-Repository
-This repository was made following the Software Guild's Git tutorial.
+Various things I have worked on. More to come.

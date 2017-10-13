@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/mvc
+          http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/aop  
+          http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+    
+    <context:property-placeholder location="classpath:app.properties"/>
+    
+    <bean id="UserIO" class="com.mycompany.flooringmastery.view.UserIOConsoleImpl"/>
+    
+    <bean id="view" class="com.mycompany.flooringmastery.view.FlooringView">
+        <constructor-arg ref="UserIO"/>
+    </bean>
+    
+    <bean id="training" class="com.mycompany.flooringmastery.dao.OrderDaoTrainingImpl" />
+    
+    <bean id="prod" class="com.mycompany.flooringmastery.dao.OrderDaoProdImpl" />
+    
+    <bean id="productdao" class="com.mycompany.flooringmastery.dao.ProductDao"/>
+    
+    <bean id="statedao" class="com.mycompany.flooringmastery.dao.StateDao"/>
+    
+    <bean id="service" class="com.mycompany.flooringmastery.service.FlooringServiceImpl">
+        <constructor-arg ref="${mode}"/>
+        <constructor-arg ref="productdao"/>    
+        <constructor-arg ref="statedao"/>
+    </bean>
+    
+    <bean id="controller" class="com.mycompany.flooringmastery.controller.Controller">
+        <constructor-arg ref="view"/>
+        <constructor-arg ref="service"/>
+    </bean>
+    
+    <bean id="flooringadvice" class="com.mycompany.flooringmastery.advice.FlooringAdvice"/>
+    
+    
+    <aop:config>
+        <aop:aspect ref="flooringadvice">
+            <aop:after-returning method="buildAudit"
+                                 pointcut="execution(* com.mycompany.flooringmastery.dao.OrderDaoProdImpl.addOrder(..))"
+            />
+            
+            <aop:after-returning method="buildAudit"
+                                 pointcut="execution(* com.mycompany.flooringmastery.dao.OrderDaoProdImpl.editOrder(..))"
+            />
+            
+            <aop:after-returning method="buildAudit"
+                                 pointcut="execution(* com.mycompany.flooringmastery.dao.OrderDaoProdImpl.removeOrder(..))"
+            />
+            
+            <aop:after-returning method="writeAudit"
+                                 pointcut="execution(* com.mycompany.flooringmastery.service.FlooringServiceImpl.saveOrder(..))"
+            />
+            
+        </aop:aspect>
+    </aop:config>
+    
+    
+</beans>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/mvc
+          http://www.springframework.org/schema/mvc/spring-mvc.xsd
+          http://www.springframework.org/schema/tx
+          http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/aop  
+          http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
+
+    <!-- Bean definitions go here -->
+    <bean id="UserIO" class="com.mycompany.vendingmachine.view.UserIOConsoleImpl"/>
+    
+    <bean id="view" class="com.mycompany.vendingmachine.view.VendingMachineView">
+        <constructor-arg ref="UserIO"/>
+    </bean>
+    
+    <bean id="dao" class="com.mycompany.vendingmachine.dao.VendingMachineDaoImpl"/>
+    
+    <bean id="exceptionlogger" class="com.mycompany.vendingmachine.dao.VendingMachineExceptionLogger"/>
+
+    <bean id="service" class="com.mycompany.vendingmachine.service.VendingMachineServiceImpl">
+        <constructor-arg ref="dao"/>
+    </bean>
+    
+    <bean id="loggingadvice" class="com.mycompany.vendingmachine.advice.LoggingAdvice">
+        <constructor-arg ref="exceptionlogger"/>
+    </bean>
+    
+    <bean id="controller" class="com.mycompany.vendingmachine.controller.VendingMachineController">
+        <constructor-arg ref="view"/>
+        <constructor-arg ref="service"/>
+    </bean>
+    
+    <aop:config>
+        <aop:aspect ref="loggingadvice">
+            <aop:after-throwing method="createLogEntry" throwing="ex"
+                        pointcut="execution(* com.mycompany.vendingmachine.service.VendingMachineServiceImpl.isItemPresent(..))"
+            />
+            
+            <aop:after-throwing method="createLogEntry" throwing="ex"
+                        pointcut="execution(* com.mycompany.vendingmachine.service.VendingMachineServiceImpl.areFundsSufficient(..))"
+            />
+        </aop:aspect>
+    </aop:config>
+   
+</beans>

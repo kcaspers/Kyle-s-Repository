@@ -1,0 +1,13 @@
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/dao/VendingMachineDao.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/dto/Change.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/controller/VendingMachineController.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/dao/VendingMachineInventoryException.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/dto/Item.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/App/App.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/service/VendingMachineService.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/view/UserIO.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/view/VendingMachineView.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/view/UserIOConsoleImpl.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/dao/VendingMachineDaoImpl.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/dao/InsufficientFundsException.java
+/Users/kylecaaspers/Desktop/kyle-caspers-individual-repository/VendingMachine/src/main/java/com/mycompany/vendingmachine/service/VendingMachineServiceImpl.java
