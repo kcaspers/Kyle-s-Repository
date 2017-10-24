@@ -5,4 +5,13 @@
  */
 jQuery(document).ready(function () {
     console.log("ohm.js is present.");
+    
+    
 });
+
+//function selectAmpOhm(){
+//    var calculatedImpedance = $('#calculatedImpedance');
+//    var ampOhm;
+//    console.log("ampOhm() is being called");
+//    console.log(calculatedImpedance);
+//}

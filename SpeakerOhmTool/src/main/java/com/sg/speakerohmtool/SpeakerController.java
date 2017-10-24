@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class SpeakerController {
 
+    boolean cabinetsPresent = false;
     List<cabinet> cabinets = new ArrayList();
     ImpedanceCalculator impedanceCalculator = new ImpedanceCalculator();
     
@@ -26,10 +27,18 @@ public class SpeakerController {
     @RequestMapping(value = "/loadPage", method = RequestMethod.GET)
     public String loadPage(Map<String, Object> model){
         
-        double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
+        if(cabinets.size() > 0){
+            cabinetsPresent = true;
+        } else{
+            cabinetsPresent = false;
+        }
+        
+        //double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
+        String calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         model.put("calculatedImpedance", calculatedImpedance);
         
         model.put("cabinets", cabinets);
+        model.put("cabinetsPresent", cabinetsPresent);
         return "index";
     }
     
@@ -68,6 +77,28 @@ public class SpeakerController {
         }
         
         cabinets.remove(Cabinet);
+        return "redirect: loadPage";
+    }
+    
+    @RequestMapping(value = "/selectAmpOhm", method = RequestMethod.POST)
+    public String selectAmpOhm(Map<String, Object> model, @RequestParam("ampOhm") String ampOhm,
+            HttpServletRequest request){
+        
+        switch (ampOhm){
+            case "4":
+                //model.put("checked4", "checked");
+                model.put("ampOhm", 4);
+                break;
+            case "8":
+                //model.put("checked8", "checked");
+                model.put("ampOhm", 8);
+                break;
+            case "16":
+                //model.put("checked16", "checked");
+                model.put("ampOhm", 16);
+                break;
+        }
+        
         return "redirect: loadPage";
     }
 
