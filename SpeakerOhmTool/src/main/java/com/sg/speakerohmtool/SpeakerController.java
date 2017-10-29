@@ -5,11 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
+@CrossOrigin
 @Controller
 public class SpeakerController {
 
@@ -80,26 +85,31 @@ public class SpeakerController {
         return "redirect: loadPage";
     }
     
-    @RequestMapping(value = "/selectAmpOhm", method = RequestMethod.POST)
-    public String selectAmpOhm(Map<String, Object> model, @RequestParam("ampOhm") String ampOhm,
-            HttpServletRequest request){
+    
+    @RequestMapping(value = "/selectAmpOhm/{ampOhm}", method = RequestMethod.POST)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public String selectAmpOhm(Map<String, Object> model, @PathVariable("ampOhm") String ampOhm){
         
-        switch (ampOhm){
-            case "4":
-                //model.put("checked4", "checked");
-                model.put("ampOhm", 4);
-                break;
-            case "8":
-                //model.put("checked8", "checked");
-                model.put("ampOhm", 8);
-                break;
-            case "16":
-                //model.put("checked16", "checked");
-                model.put("ampOhm", 16);
-                break;
-        }
-        
-        return "redirect: loadPage";
+//        switch (ampOhm){
+//            case "4":
+//                //model.put("checked4", "checked");
+//                model.put("ampOhm", 4);
+//                break;
+//            case "8":
+//                //model.put("checked8", "checked");
+//                model.put("ampOhm", 8);
+//                break;
+//            case "16":
+//                //model.put("checked16", "checked");
+//                model.put("ampOhm", 16);
+//                break;
+//        }
+//        
+//        return "redirect: loadPage";
+
+          return null; //for now, this kind of method can't redirect, maybe try altering a class-level variable
     }
+    
+    
 
 }

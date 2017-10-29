@@ -121,6 +121,7 @@
                                     <button name="speakerToDelete" value="${currentCabinet.cabNumber}">Delete</button>
                                 </form>
                             </div>
+                            <!-- I should display which speaker is getting what percentage of output-->
                             <c:out value="${currentCabinet.impedance}  ohm"/>
                             <!--
                             <div>
@@ -150,6 +151,23 @@
                 //var calculatedImpedance = $('#calculatedImpedance');
                 var ampOhm = $("input[name = 'ampOhm']:checked").val();
                 console.log(ampOhm);
+                $.ajax({
+                    type:'POST',
+                    url: 'http://localhost:8080/selectAmpOhm/' + ampOhm + '',
+                    data: JSON.stringify({
+                        ampOhm
+                    }),
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                success: function(){
+                    console.log("Success");
+                },
+                error: function(){
+                    console.log("Success");
+                }
+                });
             }
             </script>
 
