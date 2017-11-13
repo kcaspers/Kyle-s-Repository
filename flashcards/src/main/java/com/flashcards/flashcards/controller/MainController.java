@@ -27,6 +27,7 @@ public class MainController {
     @RequestMapping("/")
     public String sayHi(){
         System.out.println("You reached this endpoint");
+        
         return "main";
     }
     
