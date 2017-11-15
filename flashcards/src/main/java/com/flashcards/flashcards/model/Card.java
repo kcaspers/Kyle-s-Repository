@@ -5,6 +5,7 @@
  */
 package com.flashcards.flashcards.model;
 
+import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,6 +27,8 @@ public class Card {
     private int id;
     private String question;
     private String answer;
+    private List<String> choices;
+    private String userChoice;
 
     @Id
     @GeneratedValue
@@ -39,7 +42,7 @@ public class Card {
         this.id = id;
     }
 
-    @Column(name = "Question")
+    @Column(name = "question")
     @NotNull
     public String getQuestion() {
         return question;

@@ -5,10 +5,19 @@
  */
 package com.flashcards.flashcards.model;
 
+import java.util.List;
+import javax.persistence.Entity;
+
 /**
  *
  * @author kylecaaspers
  */
+@Entity
 public class TestSuite {
+    
+    public TestSuite(){};
+    
+    private String title;
+    private List<Card> cards;
     
 }

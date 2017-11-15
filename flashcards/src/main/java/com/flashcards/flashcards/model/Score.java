@@ -5,10 +5,18 @@
  */
 package com.flashcards.flashcards.model;
 
+import javax.persistence.Entity;
+
 /**
  *
  * @author kylecaaspers
  */
+@Entity
 public class Score {
+    
+    public Score(){};
+    
+    int correctAnswer;
+    int wrongAnswer;  
     
 }
