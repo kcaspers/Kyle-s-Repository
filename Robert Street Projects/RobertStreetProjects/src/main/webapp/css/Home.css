@@ -1,0 +1,149 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 26, 2017, 1:14:12 PM
+    Author     : ritheenhep
+*/
+.container-fluid{
+    position: fixed;
+    top: 0;
+    height: 19%;
+    width: 100%;
+    z-index: 100;
+
+}
+#home-about{
+    width: 22%;
+    margin-top: 27px;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-left: -50px;
+}
+#add-edit{
+    margin-top: -31px;
+    margin-right: 150px;
+    float: right;
+    width: 13%;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+
+/*#signin {
+    margin-right: -700px;
+    margin-top: -31px;
+    float: right;
+    color: #C0C0C0;
+    font-size: 20px;
+}*/
+
+.dropdown-menu{
+    margin-left: 100px;
+
+}
+
+#main-post-left{
+    margin-top: 160px; 
+    /*border: solid 1px;*/
+    height: 700px;
+    margin-left: 10px;
+    width: 55%;
+    overflow: auto;
+
+}
+
+#main-post-right{
+    margin-top: 160px;
+    /*border: solid 1px;*/
+    height: 400px;
+    width: 38%;
+    margin-left: 30px;
+
+}
+#margin{
+    margin-top: 190px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.postInfo{
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.postCategory{
+    font-size: 15px;
+    color: grey;
+}
+
+.btn-facebook{
+    background-color: #3B5998
+}
+footer{
+    text-align: center;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+    color: white
+}
+#search{
+    margin-top: -25px;
+}
+.dropdown-menu{
+    border: solid 1px black;
+    margin-left: -20px;
+}
+.footer {
+    background: #B3B2B0;
+    padding: 10px 0;
+}
+.footer a {
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    transition: all .5s ease;
+}
+.footer a:first-child {
+    border-left: 1px solid #70726F;
+}
+.footer a:hover {
+    color: white;
+}
+
+.pendingRow{
+    padding-top: 10px;
+}
+
+.post{
+    margin-top: 30px;
+    font-style: normal;
+}
+
+#mceInfo{
+    margin-top:20px;
+}
+
+.postTitle{
+}
+
+.tagArea{
+    width: 100%;
+    padding: 0px;
+}

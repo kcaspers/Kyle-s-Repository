@@ -6,12 +6,12 @@
 package com.flashcards.flashcards.model;
 
 import java.util.List;
-import javax.persistence.CollectionTable;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -31,7 +31,6 @@ public class User {
     
     @Id
     @GeneratedValue
-    @NotNull
     @Column(name = "id", unique = true)
     public int getId() {
         return id;
@@ -64,8 +63,9 @@ public class User {
     }
 
     
-    @ElementCollection
-    @CollectionTable(name = "tag")
+    //This is one half of the one-to-many relationship
+    //it is allowed to be null, users don't start out with tests
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "user")
     public List<Test> getUserTests() {
         return userTests;
     }

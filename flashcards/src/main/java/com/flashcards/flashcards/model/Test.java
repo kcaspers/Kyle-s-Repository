@@ -6,10 +6,15 @@
 package com.flashcards.flashcards.model;
 
 import java.time.LocalDate;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
+import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -30,7 +35,6 @@ public class Test {
     
     @Id
     @GeneratedValue
-    @NotNull
     @Column(name = "id", unique = true)
     public int getId() {
         return id;
@@ -40,7 +44,8 @@ public class Test {
         this.id = id;
     }
 
-    @Column(name = "user")
+    //this is one half of the one-to-many relationship
+    @ManyToOne(cascade = CascadeType.ALL)
     @NotNull
     public User getUser() {
         return user;
@@ -60,7 +65,10 @@ public class Test {
         this.date = date;
     }
 
-    
+    //a test references a testSuite, but testSuite doesn't need to know
+    @NotNull
+    @OneToOne(fetch = FetchType.LAZY)
+    @MapsId
     public TestSuite getTestSuite() {
         return testSuite;
     }
@@ -69,6 +77,10 @@ public class Test {
         this.testSuite = testSuite;
     }
 
+    //Test references a score, which is associated with this particular test
+    //score is the child
+    @OneToOne(fetch = FetchType.LAZY)
+    @MapsId
     public Score getScore() {
         return score;
     }

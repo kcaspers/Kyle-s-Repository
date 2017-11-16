@@ -7,6 +7,7 @@ package com.flashcards.flashcards.model;
 
 import java.util.List;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -32,7 +33,6 @@ public class Card {
 
     @Id
     @GeneratedValue
-    @NotNull
     @Column(name = "id", unique = true)
     public int getId() {
         return id;
@@ -60,6 +60,25 @@ public class Card {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    //should this be a one-to-many
+    @ElementCollection
+    public List<String> getChoices() {
+        return choices;
+    }
+    
+    public void setChoices(List<String> choices) {
+        this.choices = choices;
+    }
+
+    @Column(name = "userchoice")
+    public String getUserChoice() {
+        return userChoice;
+    }
+
+    public void setUserChoice(String userChoice) {
+        this.userChoice = userChoice;
     }
     
 }
