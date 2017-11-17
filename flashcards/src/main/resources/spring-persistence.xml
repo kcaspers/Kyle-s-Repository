@@ -16,6 +16,14 @@
           class="com.flashcards.flashcards.dao.CardDao">
     </bean>
     
+    <bean id="userDao"
+        class="com.flashcards.flashcards.dao.UserDao">
+    </bean>
+    
+    <bean id="testDao"
+        class="com.flashcards.flashcards.dao.TestDao">
+    </bean>
+    
     <bean id="mainController" class="com.flashcards.flashcards.controller.MainController">
         <property name="cardDao" ref="cardDao" />
     </bean>

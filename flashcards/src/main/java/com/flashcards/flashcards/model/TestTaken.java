@@ -12,6 +12,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
@@ -22,13 +23,13 @@ import javax.validation.constraints.NotNull;
  * @author kylecaaspers
  */
 @Entity
-public class Test {
+public class TestTaken {
     
-    public Test(){};
+    public TestTaken(){};
     
     private int id;
     private User user;
-    private LocalDate date;
+    private LocalDate testDate;
     private TestSuite testSuite;
     private Score score;
 
@@ -46,6 +47,7 @@ public class Test {
 
     //this is one half of the one-to-many relationship
     @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
     @NotNull
     public User getUser() {
         return user;
@@ -55,14 +57,14 @@ public class Test {
         this.user = user;
     }
 
-    @Column(name = "date")
+    @Column(name = "TestTakenDate")
     @NotNull
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getTestDate() {
+        return testDate;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setTestDate(LocalDate testDate) {
+        this.testDate = testDate;
     }
 
     //a test references a testSuite, but testSuite doesn't need to know

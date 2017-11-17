@@ -5,6 +5,7 @@
  */
 package com.flashcards.flashcards.flashcardsdao;
 
+import com.flashcards.flashcards.dao.CardDao;
 import com.flashcards.flashcards.model.Card;
 import java.util.List;
 import org.junit.After;
@@ -100,6 +101,27 @@ public class CardDaoTest {
         int expected = 3;
         assertEquals(expected, cards.size());
         
+    }
+    
+    @Test
+    public void testDelete(){
+        Card newCard1 = new Card();
+        newCard1.setQuestion("This is the question.");
+        newCard1.setAnswer("This is the answer.");
+        cardDao.save(newCard1);
+        
+        Card newCard2 = new Card();
+        newCard2.setQuestion("This is the question.");
+        newCard2.setAnswer("This is the answer.");
+        cardDao.save(newCard2);
+        
+        List<Card> cards = cardDao.findAll();
+        assertEquals(cards.size(), 2);
+        
+        cardDao.deleteById(newCard2.getId());
+        
+        cards = cardDao.findAll();
+        assertEquals(cards.size(), 1);
     }
     
 }

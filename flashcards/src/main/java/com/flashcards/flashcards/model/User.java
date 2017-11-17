@@ -9,6 +9,7 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -26,7 +27,7 @@ public class User {
     private int id;
     private String userName;
     private String password;
-    private List<Test> userTests;
+    private List<TestTaken> userTests;
 
     
     @Id
@@ -65,12 +66,12 @@ public class User {
     
     //This is one half of the one-to-many relationship
     //it is allowed to be null, users don't start out with tests
-    @OneToMany(cascade=CascadeType.ALL, mappedBy = "user")
-    public List<Test> getUserTests() {
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
+    public List<TestTaken> getUserTests() {
         return userTests;
     }
 
-    public void setUserTests(List<Test> userTests) {
+    public void setUserTests(List<TestTaken> userTests) {
         this.userTests = userTests;
     }
     

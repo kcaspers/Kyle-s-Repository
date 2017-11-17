@@ -5,7 +5,7 @@
  */
 package com.flashcards.flashcards.controller;
 
-import com.flashcards.flashcards.flashcardsdao.CardDao;
+import com.flashcards.flashcards.dao.CardDao;
 import com.flashcards.flashcards.model.Card;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
