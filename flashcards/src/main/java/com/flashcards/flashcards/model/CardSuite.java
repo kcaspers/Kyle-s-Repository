@@ -21,9 +21,9 @@ import javax.validation.constraints.NotNull;
  * @author kylecaaspers
  */
 @Entity
-public class TestSuite {
+public class CardSuite {
     
-    public TestSuite(){};
+    public CardSuite(){};
     
     private int id;
     private String title;
@@ -52,7 +52,7 @@ public class TestSuite {
 
     //cards has a many-to-many relationship with testSuite
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "TestSuite_Card", joinColumns = @JoinColumn(name = "TestSuite_id"), 
+    @JoinTable(name = "CardSuite_Card", joinColumns = @JoinColumn(name = "CardSuite_id"), 
             inverseJoinColumns = @JoinColumn(name = "Card_id"))
     public List<Card> getCards() {
         return cards;

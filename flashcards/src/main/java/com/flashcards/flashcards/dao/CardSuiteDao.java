@@ -5,7 +5,7 @@
  */
 package com.flashcards.flashcards.dao;
 
-import com.flashcards.flashcards.model.TestTaken;
+import com.flashcards.flashcards.model.CardSuite;
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.data.repository.CrudRepository;
@@ -17,13 +17,13 @@ import org.springframework.stereotype.Repository;
  */
 @Transactional
 @Repository
-public interface TestDao extends CrudRepository<TestTaken, Integer>{
+public interface CardSuiteDao extends CrudRepository<CardSuite, Integer>{
     
-    public TestTaken save(TestTaken testTaken);
+    public CardSuite save(CardSuite cardSuite);
     
-    public TestTaken findById(int id);
+    public CardSuite findById(int id);
     
-    public List<TestTaken> findAll();
+    public List<CardSuite> findAll();
     
     public void deleteById(int id);
     

@@ -12,6 +12,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
@@ -24,7 +25,7 @@ public class User {
     
     public User(){};
     
-    private int id;
+    private int userid;
     private String userName;
     private String password;
     private List<TestTaken> userTests;
@@ -32,13 +33,13 @@ public class User {
     
     @Id
     @GeneratedValue
-    @Column(name = "id", unique = true)
+    @Column(name = "userid", unique = true)
     public int getId() {
-        return id;
+        return userid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int userid) {
+        this.userid = userid;
     }
 
     
@@ -66,7 +67,8 @@ public class User {
     
     //This is one half of the one-to-many relationship
     //it is allowed to be null, users don't start out with tests
-    @OneToMany(cascade=CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(cascade=CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER)
+    //@JoinColumn(name = "user_id")
     public List<TestTaken> getUserTests() {
         return userTests;
     }

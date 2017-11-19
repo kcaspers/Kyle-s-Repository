@@ -5,8 +5,10 @@
  */
 package com.flashcards.flashcards.flashcardsdao;
 
-import com.flashcards.flashcards.dao.TestDao;
-import com.flashcards.flashcards.model.TestSuite;
+import com.flashcards.flashcards.dao.TestTakenDao;
+import com.flashcards.flashcards.dao.UserDao;
+import com.flashcards.flashcards.model.CardSuite;
+import com.flashcards.flashcards.model.Score;
 import com.flashcards.flashcards.model.TestTaken;
 import com.flashcards.flashcards.model.User;
 import java.time.LocalDate;
@@ -32,7 +34,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class TestDaoTest {
     
     @Autowired
-    TestDao testDao;
+    TestTakenDao testDao;
+    @Autowired
+    UserDao userDao;
     
     public TestDaoTest() {
     }
@@ -63,15 +67,21 @@ public class TestDaoTest {
         User newUser = new User();
         newUser.setUserName("test User");
         newUser.setPassword("test password");
+        userDao.save(newUser);
         
+        CardSuite cardSuite = new CardSuite();
+        cardSuite.setTitle("fake TestSuite");
         
-        TestSuite testSuite = new TestSuite();
-        testSuite.setTitle("fake TestSuite");
+        Score score = new Score();
+        score.setCorrectAnswer(3);
+        score.setWrongAnswer(5);
         
         TestTaken test = new TestTaken();
         test.setTestDate(date);
-        test.setTestSuite(testSuite);
+        test.setCardSuite(cardSuite);
         test.setUser(newUser);
+        test.setScore(score);
+        //we will get an error if a score field is not present
         
         testDao.save(test);
         //TestTaken fromDao = testDao.findById(test.getId());

@@ -25,7 +25,7 @@ public class Score {
     private int wrongAnswer;  
 
     @Id
-    @NotNull
+    @GeneratedValue
     @Column(name = "id")
     public int getId() {
         return id;

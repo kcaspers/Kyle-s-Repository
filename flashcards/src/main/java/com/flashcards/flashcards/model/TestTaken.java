@@ -30,7 +30,7 @@ public class TestTaken {
     private int id;
     private User user;
     private LocalDate testDate;
-    private TestSuite testSuite;
+    private CardSuite cardSuite;
     private Score score;
 
     
@@ -46,8 +46,9 @@ public class TestTaken {
     }
 
     //this is one half of the one-to-many relationship
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
+    //I might need a fetch-join or something
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "userid")
     @NotNull
     public User getUser() {
         return user;
@@ -71,12 +72,12 @@ public class TestTaken {
     @NotNull
     @OneToOne(fetch = FetchType.LAZY)
     @MapsId
-    public TestSuite getTestSuite() {
-        return testSuite;
+    public CardSuite getCardSuite() {
+        return cardSuite;
     }
 
-    public void setTestSuite(TestSuite testSuite) {
-        this.testSuite = testSuite;
+    public void setCardSuite(CardSuite cardSuite) {
+        this.cardSuite = cardSuite;
     }
 
     //Test references a score, which is associated with this particular test
