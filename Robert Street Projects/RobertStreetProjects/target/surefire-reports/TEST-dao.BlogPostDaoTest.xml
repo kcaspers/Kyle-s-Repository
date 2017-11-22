@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="dao.BlogPostDaoTest" time="1.723" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="dao.BlogPostDaoTest" time="1.571" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.144-b01"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/kylecaaspers/Desktop/Repos/kyle-rithee-alejandro/RobertStreetProjects"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/kylecaaspers/Desktop/Repos/Kyle-s-Repository/Robert Street Projects/RobertStreetProjects"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/kylecaaspers/Desktop/Repos/kyle-rithee-alejandro/RobertStreetProjects"/>
+    <property name="user.dir" value="/Users/kylecaaspers/Desktop/Repos/Kyle-s-Repository/Robert Street Projects/RobertStreetProjects"/>
     <property name="java.runtime.version" value="1.8.0_144-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -62,11 +62,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostByStatus" time="1.032"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testSearchPosts" time="0.115"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostByStatus" time="0.856"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testSearchPosts" time="0.156"/>
   <testcase classname="dao.BlogPostDaoTest" name="testUpdateBlogPost" time="0.121"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testGetAllBlogPosts" time="0.125"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostsByUser" time="0.123"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testDeleteBlogPost" time="0.118"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testAddGetBlogPost" time="0.089"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testGetAllBlogPosts" time="0.117"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostsByUser" time="0.116"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testDeleteBlogPost" time="0.111"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testAddGetBlogPost" time="0.094"/>
 </testsuite>

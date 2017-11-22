@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="dao.StaticPageDaoTest" time="0.445" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="dao.StaticPageDaoTest" time="0.447" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.144-b01"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/kylecaaspers/Desktop/Repos/kyle-rithee-alejandro/RobertStreetProjects"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/kylecaaspers/Desktop/Repos/Kyle-s-Repository/Robert Street Projects/RobertStreetProjects"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/kylecaaspers/Desktop/Repos/kyle-rithee-alejandro/RobertStreetProjects"/>
+    <property name="user.dir" value="/Users/kylecaaspers/Desktop/Repos/Kyle-s-Repository/Robert Street Projects/RobertStreetProjects"/>
     <property name="java.runtime.version" value="1.8.0_144-b01"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -62,10 +62,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.StaticPageDaoTest" name="testAddGetStaticPage" time="0.069"/>
-  <testcase classname="dao.StaticPageDaoTest" name="testGetStaticPageById" time="0.066"/>
-  <testcase classname="dao.StaticPageDaoTest" name="testGetStaticPageByUser" time="0.085"/>
-  <testcase classname="dao.StaticPageDaoTest" name="testGetAllStaticPage" time="0.069"/>
-  <testcase classname="dao.StaticPageDaoTest" name="tesDeleteStaticPage" time="0.091"/>
-  <testcase classname="dao.StaticPageDaoTest" name="testUpdateStaticPage" time="0.065"/>
+  <testcase classname="dao.StaticPageDaoTest" name="testAddGetStaticPage" time="0.075"/>
+  <testcase classname="dao.StaticPageDaoTest" name="testGetStaticPageById" time="0.064"/>
+  <testcase classname="dao.StaticPageDaoTest" name="testGetStaticPageByUser" time="0.079"/>
+  <testcase classname="dao.StaticPageDaoTest" name="testGetAllStaticPage" time="0.074"/>
+  <testcase classname="dao.StaticPageDaoTest" name="tesDeleteStaticPage" time="0.081"/>
+  <testcase classname="dao.StaticPageDaoTest" name="testUpdateStaticPage" time="0.074"/>
 </testsuite>
