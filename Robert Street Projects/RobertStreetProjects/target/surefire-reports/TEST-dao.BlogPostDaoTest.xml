@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="dao.BlogPostDaoTest" time="1.571" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="dao.BlogPostDaoTest" time="1.485" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
@@ -62,11 +62,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostByStatus" time="0.856"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testSearchPosts" time="0.156"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testUpdateBlogPost" time="0.121"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostByStatus" time="0.814"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testSearchPosts" time="0.114"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testUpdateBlogPost" time="0.107"/>
   <testcase classname="dao.BlogPostDaoTest" name="testGetAllBlogPosts" time="0.117"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostsByUser" time="0.116"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testDeleteBlogPost" time="0.111"/>
-  <testcase classname="dao.BlogPostDaoTest" name="testAddGetBlogPost" time="0.094"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testGetBlogPostsByUser" time="0.121"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testDeleteBlogPost" time="0.109"/>
+  <testcase classname="dao.BlogPostDaoTest" name="testAddGetBlogPost" time="0.103"/>
 </testsuite>

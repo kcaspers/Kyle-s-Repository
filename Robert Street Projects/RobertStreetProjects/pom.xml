@@ -144,7 +144,12 @@
             <artifactId>cucumber-spring</artifactId>
             <version>1.2.4</version>
             <scope>test</scope>
-        </dependency>    
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.7.1</version>
+        </dependency>     
     </dependencies>
 
     <build>

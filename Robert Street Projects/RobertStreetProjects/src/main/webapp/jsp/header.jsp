@@ -92,7 +92,7 @@
                         <a href="<c:url value="/j_spring_security_logout" />"> Logout</a>
                     </c:when>
                     <c:otherwise>
-                        <a href="${pageContext.request.contextPath}/login">Sign In</a>
+                        <a id="loginBtn" href="${pageContext.request.contextPath}/login">Sign In</a>
                     </c:otherwise>
                 </c:choose>
             </div>
