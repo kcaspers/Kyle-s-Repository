@@ -1,4 +1,5 @@
+require './class_one'
 class Main
-factorialCalc = ClassOne.new
+  factorialCalculator = ClassOne.new
 
 end

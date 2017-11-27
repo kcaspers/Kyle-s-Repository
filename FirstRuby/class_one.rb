@@ -11,3 +11,6 @@ class ClassOne
     puts factorial
   end
 end
+
+factorialCalculator = ClassOne.new
+factorialCalculator.factorialCalc
