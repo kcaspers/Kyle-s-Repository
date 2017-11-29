@@ -19,8 +19,10 @@ class Calculator
 
   while invalidInput
     userChoice = gets.chomp
-    if userChoice != 
-
+    if (userChoice != '1') && (userChoice != '2') && (userChoice != '3') && (userChoice != '4')
+      puts("Please enter 1, 2, 3, or 4")
+    else
+      invalidInput = false
     end
   end
 
