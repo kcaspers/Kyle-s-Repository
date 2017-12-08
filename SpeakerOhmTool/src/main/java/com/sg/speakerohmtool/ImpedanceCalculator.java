@@ -16,16 +16,15 @@ import java.util.List;
  */
 public class ImpedanceCalculator {
     //we will be calling the methods here in the controller class to send the data up to the view
-
-    
+    double calculatedImpedance;
+    DecimalFormat df = new DecimalFormat("##.###");
     
     //how do I handle more than two amps, a single amp
     public String calculateImpedance(List<Cabinet> cabinets){
-        DecimalFormat df = new DecimalFormat("##.###");
         df.setRoundingMode(RoundingMode.HALF_UP);
         
         double speakerLoads = 0;
-        double calculatedImpedance;
+        //double calculatedImpedance;
         
         
         for(Cabinet c : cabinets){
@@ -34,15 +33,22 @@ public class ImpedanceCalculator {
         }
         
         //calculatedImpedance = 1/(1/s1Imp + 1/s2Imp + 1/s3Imp);
-        calculatedImpedance = 1/(speakerLoads);
+        this.calculatedImpedance = 1/(speakerLoads);
         
-        return df.format(calculatedImpedance);
+        return df.format(this.calculatedImpedance);
         
     }
     
     //I should also make a method that calculates the resulting output for each speaker
-    public int calculateSpeakerPercentage(Cabinet cabinet){
-        
-        return 0;
+    public void calculateSpeakerPercentage(List<Cabinet> cabinets){
+        df.setRoundingMode(RoundingMode.HALF_UP);
+         //impedance = Double.parseDouble(calculateImpedance(cabinets));
+        double voltage = Math.sqrt(this.calculatedImpedance * 100);
+        for(Cabinet c : cabinets){
+           double output = (voltage * voltage)/c.getImpedance();
+           output = Math.round(output * 100);
+           output = output/100;
+           c.setOutputPercentage(output);
+        }
     }
 }

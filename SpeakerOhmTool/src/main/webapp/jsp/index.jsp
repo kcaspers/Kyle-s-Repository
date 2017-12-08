@@ -119,14 +119,14 @@
                         <div class="speakerCabinet col-md-5">
                             <div>
                                 <!-- put the cab number and a remove button -->
-                                <c:out value="cabinet: ${currentCabinet.cabNumber}"/>
+                                <c:out value="cabinet ${currentCabinet.cabNumber} 
+                                       delivers ${currentCabinet.outputPercentage}% of amp output"/>
                                 <form method="POST" action="deleteCabinet">
                                     <button name="speakerToDelete" value="${currentCabinet.cabNumber}">Delete</button>
                                 </form>
                             </div>
                             <!-- I should display which speaker is getting what percentage of output-->
                             <c:out value="${currentCabinet.impedance}  ohm"/>
-                            <!--<c:out value="${currentCabinet.outputPercentage}%"/>-->
                             <!--
                             <div>
                                 <input type="button" id="speakerInput">Input</input>

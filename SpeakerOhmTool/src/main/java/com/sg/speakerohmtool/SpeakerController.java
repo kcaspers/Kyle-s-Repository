@@ -41,6 +41,7 @@ public class SpeakerController {
         //double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         String calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         model.put("calculatedImpedance", calculatedImpedance);
+        impedanceCalculator.calculateSpeakerPercentage(cabinets);
         
         model.put("cabinets", cabinets);
         model.put("cabinetsPresent", cabinetsPresent);

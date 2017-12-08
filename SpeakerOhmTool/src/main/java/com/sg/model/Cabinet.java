@@ -12,7 +12,7 @@ package com.sg.model;
 public class Cabinet {
     private double impedance;
     private int cabNumber;
-    private int outputPercentage;
+    private double outputPercentage;
 
     public Cabinet(double impedance, int cabNumber){
         this.impedance = impedance;
@@ -39,11 +39,11 @@ public class Cabinet {
         this.cabNumber = cabNumber;
     }
 
-    public int getOutputPercentage() {
+    public double getOutputPercentage() {
         return outputPercentage;
     }
 
-    public void setOutputPercentage(int outputPercentage) {
+    public void setOutputPercentage(double outputPercentage) {
         this.outputPercentage = outputPercentage;
     }
     
