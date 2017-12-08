@@ -71,8 +71,11 @@
                     <!-- section for info -->
                     <h2>Info</h2>
                     <div id="calculatedImpedance">
-                        <p>Total speaker impedance is: 
+                        <p>Resulting impedance is: 
                             <c:out value="${calculatedImpedance}"/> &#937 </p>
+                    </div>
+                    <div id="idealAmpSetting">
+                        <!--Output different messages based on the impedance/setting -->
                     </div>
                 </div>
             </div>
@@ -123,6 +126,7 @@
                             </div>
                             <!-- I should display which speaker is getting what percentage of output-->
                             <c:out value="${currentCabinet.impedance}  ohm"/>
+                            <!--<c:out value="${currentCabinet.outputPercentage}%"/>-->
                             <!--
                             <div>
                                 <input type="button" id="speakerInput">Input</input>

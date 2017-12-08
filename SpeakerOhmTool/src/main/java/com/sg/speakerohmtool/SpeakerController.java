@@ -1,6 +1,6 @@
 package com.sg.speakerohmtool;
 
-import com.sg.model.cabinet;
+import com.sg.model.Cabinet;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class SpeakerController {
 
     boolean cabinetsPresent = false;
-    List<cabinet> cabinets = new ArrayList();
+    List<Cabinet> cabinets = new ArrayList();
     ImpedanceCalculator impedanceCalculator = new ImpedanceCalculator();
     
     //these can be connected to a load
@@ -55,16 +55,18 @@ public class SpeakerController {
         
         //int cabNumber = (cabinets.size()) + 1;
         int cabNumber = 1;
-        for(cabinet c : cabinets){
+        for(Cabinet c : cabinets){
             int highestNum = 0;
             if(c.getCabNumber() > highestNum){
                 highestNum = c.getCabNumber();
             }
             cabNumber = (highestNum + 1);
         }
-        cabinet newCab = new cabinet(cabOhms, cabNumber);
-        
+        Cabinet newCab = new Cabinet(cabOhms, cabNumber);
         cabinets.add(newCab);
+        
+        //I need a method that updates the cabinet percentages also
+        //use this method on both the 'add' and 'delete' cabinet endpoints
 
         model.put("cabinets", cabinets);
         return "redirect: loadPage";
@@ -74,14 +76,14 @@ public class SpeakerController {
     public String deleteCabinet(Map<String, Object> model, HttpServletRequest request){
         String stringCabNumber = request.getParameter("speakerToDelete");
         int cabNumber = Integer.parseInt(stringCabNumber);
-        cabinet Cabinet = new cabinet();
-        for(cabinet c : cabinets){
+        Cabinet cabinet = new Cabinet();
+        for(Cabinet c : cabinets){
             if(cabNumber == c.getCabNumber()){
-                Cabinet = c;
+                cabinet = c;
             }
         }
         
-        cabinets.remove(Cabinet);
+        cabinets.remove(cabinet);
         return "redirect: loadPage";
     }
     

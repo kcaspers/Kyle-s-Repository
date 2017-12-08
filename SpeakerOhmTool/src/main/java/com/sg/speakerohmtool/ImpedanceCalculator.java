@@ -5,7 +5,7 @@
  */
 package com.sg.speakerohmtool;
 
-import com.sg.model.cabinet;
+import com.sg.model.Cabinet;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.List;
@@ -20,7 +20,7 @@ public class ImpedanceCalculator {
     
     
     //how do I handle more than two amps, a single amp
-    public String calculateImpedance(List<cabinet> cabinets){
+    public String calculateImpedance(List<Cabinet> cabinets){
         DecimalFormat df = new DecimalFormat("##.###");
         df.setRoundingMode(RoundingMode.HALF_UP);
         
@@ -28,7 +28,7 @@ public class ImpedanceCalculator {
         double calculatedImpedance;
         
         
-        for(cabinet c : cabinets){
+        for(Cabinet c : cabinets){
             speakerLoads += 1/(c.getImpedance());
             //this.speakerLoads += 1;
         }
@@ -38,5 +38,11 @@ public class ImpedanceCalculator {
         
         return df.format(calculatedImpedance);
         
+    }
+    
+    //I should also make a method that calculates the resulting output for each speaker
+    public int calculateSpeakerPercentage(Cabinet cabinet){
+        
+        return 0;
     }
 }
