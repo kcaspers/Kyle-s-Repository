@@ -39,9 +39,12 @@ public class SpeakerController {
         }
         
         //double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
-        String calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
+        double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         model.put("calculatedImpedance", calculatedImpedance);
         impedanceCalculator.calculateSpeakerPercentage(cabinets);
+        
+        //calculate the best amp ohm setting for this configuration
+        model.put("desiredAmpSetting", impedanceCalculator.desiredAmpSetting());
         
         model.put("cabinets", cabinets);
         model.put("cabinetsPresent", cabinetsPresent);

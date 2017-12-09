@@ -61,9 +61,11 @@
                                 <input type="radio" name="ampOhm" value="16" 
                                        onclick="selectAmpOhm()"> 16ohm<br> 
                             </form>
-                            <!--                            <p>
-                                                            The amp is set to work with X<c:out value="${ampOhm}"/> ohms.
-                                                        </p>-->
+                        </div>
+                        <div>
+                            <p>
+                               The ideal amp ohm setting is: <c:out value="${desiredAmpSetting}"/> ohms.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -73,6 +75,14 @@
                     <div id="calculatedImpedance">
                         <p>Resulting impedance is: 
                             <c:out value="${calculatedImpedance}"/> &#937 </p>
+                            <!-- have a warning if they go below 2 ohm -->
+                            <c:choose>
+                                <c:when test="${calculatedImpedance <= 2}">
+                                    <p>
+                                        Your resistance is very low. This can damage your amplifier.
+                                    </p>
+                                </c:when>
+                            </c:choose>
                     </div>
                     <div id="idealAmpSetting">
                         <!--Output different messages based on the impedance/setting -->
