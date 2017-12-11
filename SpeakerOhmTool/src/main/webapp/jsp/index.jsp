@@ -21,6 +21,9 @@
             #calculatedImpedance{
                 visibility: hidden;
             }
+            #parallelInfo{
+                /*text-align: center;*/
+            }
             .speakerCabinet{
                 border: #000 solid 1px;
                 height: 200px;
@@ -29,7 +32,7 @@
                 text-align: center;
             }
         </style>
-        
+
     </head>
     <body>
         <div class="container">
@@ -64,7 +67,7 @@
                         </div>
                         <div>
                             <p>
-                               The ideal amp ohm setting is: <c:out value="${desiredAmpSetting}"/> ohms.
+                                The ideal amp ohm setting is: <c:out value="${desiredAmpSetting}"/> ohms.
                             </p>
                         </div>
                     </div>
@@ -75,14 +78,14 @@
                     <div id="calculatedImpedance">
                         <p>Resulting impedance is: 
                             <c:out value="${calculatedImpedance}"/> &#937 </p>
-                            <!-- have a warning if they go below 2 ohm -->
-                            <c:choose>
-                                <c:when test="${calculatedImpedance <= 2}">
-                                    <p>
-                                        Your resistance is very low. This can damage your amplifier.
-                                    </p>
-                                </c:when>
-                            </c:choose>
+                        <!-- have a warning if they go below 2 ohm -->
+                        <c:choose>
+                            <c:when test="${calculatedImpedance <= 2}">
+                                <p>
+                                    Your resistance is very low. This can damage your amplifier.
+                                </p>
+                            </c:when>
+                        </c:choose>
                     </div>
                     <div id="idealAmpSetting">
                         <!--Output different messages based on the impedance/setting -->
@@ -90,38 +93,48 @@
                 </div>
             </div>
 
-            <button type="button" id="cabinetButton"
-                    data-toggle="modal" data-target="#cabinetModal">
-                Add Speaker Cabinet
-            </button>
-            <div class="modal fade" id="cabinetModal">
-                <!--This modal will contain the add speaker cab form -->
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2>Add cabinet</h2>
-                        </div>
-                        <form method="POST" action="addCabinet">
-                            <div class="modal-body">
-                                <p>Select speaker impedance.</p>
-
-                                <input id="4ohmCabinet" type="radio" name="speakerSelection" value="4">
-                                <label for="4ohmCabinet">4 Ohm</label>
-
-                                <input id="8ohmCabinet" type="radio" name="speakerSelection" value="8">
-                                <label for="8ohmCabinet">8 Ohm</label>
-
-                                <input id="16ohmcabinet" type="radio" name="speakerSelection" value="16">
-                                <label for="16ohmCabinet">16 Ohm</label>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit">Add</button>
-                                <button type="close" data-dismiss="modal">Cancel</button>
-                            </div>
-                        </form>
-                    </div>   
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" id="cabinetButton"
+                            data-toggle="modal" data-target="#cabinetModal">
+                        Add Speaker Cabinet
+                    </button>
+                </div>   
+                <div class="col-md-6">
+                    <p id="parallelInfo">
+                        Note: all cabinets connected in parallel. Linking speakers from the ports on the reverse
+                        of a cabinet and connecting multiple speakers to the 'speaker out' of an amp are equal.
+                    </p>
                 </div>
-            </div>
+                <div class="modal fade" id="cabinetModal">
+                    <!--This modal will contain the add speaker cab form -->
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2>Add cabinet</h2>
+                            </div>
+                            <form method="POST" action="addCabinet">
+                                <div class="modal-body">
+                                    <p>Select speaker impedance.</p>
+
+                                    <input id="4ohmCabinet" type="radio" name="speakerSelection" value="4" checked>
+                                    <label for="4ohmCabinet">4 Ohm</label>
+
+                                    <input id="8ohmCabinet" type="radio" name="speakerSelection" value="8">
+                                    <label for="8ohmCabinet">8 Ohm</label>
+
+                                    <input id="16ohmcabinet" type="radio" name="speakerSelection" value="16">
+                                    <label for="16ohmCabinet">16 Ohm</label>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit">Add</button>
+                                    <button type="close" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>   
+                    </div>
+                </div>
+            </div>                
             <div class="row">
                 <div class="col-md-10">
                     <!-- section for speaker cabs, should grow as we add cabs -->
@@ -146,43 +159,42 @@
                         </div>
                     </c:forEach>
                 </div>
-
             </div>
-                    
+
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
             <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
             <!--<script src="${pageContext.request.contextPath}/js/ohm.js"></script>-->
             <script type="text/javascript">
-            var cabinetsPresent = ${cabinetsPresent}
-            console.log(cabinetsPresent);
-            if(cabinetsPresent === true){
-                console.log("WE GOT CABINETS");
-                $('#calculatedImpedance').css({'visibility': 'visible'}); 
-                /*$('#calculatedImpedance').css({'background-color': 'green'});*/
-            }
-            function selectAmpOhm() {
-                //var calculatedImpedance = $('#calculatedImpedance');
-                var ampOhm = $("input[name = 'ampOhm']:checked").val();
-                console.log(ampOhm);
-                $.ajax({
-                    type:'POST',
-                    url: 'http://localhost:8080/selectAmpOhm/' + ampOhm + '',
-                    data: JSON.stringify({
-                        ampOhm
-                    }),
-                headers: {
-                    "Accept": "application/json",
-                    "Content-Type": "application/json"
-                },
-                success: function(){
-                    console.log("Success");
-                },
-                error: function(){
-                    console.log("Success");
-                }
-                });
-            }
+                                           var cabinetsPresent = ${cabinetsPresent}
+                                           console.log(cabinetsPresent);
+                                           if (cabinetsPresent === true) {
+                                               console.log("WE GOT CABINETS");
+                                               $('#calculatedImpedance').css({'visibility': 'visible'});
+                                               /*$('#calculatedImpedance').css({'background-color': 'green'});*/
+                                           }
+                                           function selectAmpOhm() {
+                                               //var calculatedImpedance = $('#calculatedImpedance');
+                                               var ampOhm = $("input[name = 'ampOhm']:checked").val();
+                                               console.log(ampOhm);
+                                               $.ajax({
+                                                   type: 'POST',
+                                                   url: 'http://localhost:8080/selectAmpOhm/' + ampOhm + '',
+                                                   data: JSON.stringify({
+                                                       ampOhm
+                                                   }),
+                                                   headers: {
+                                                       "Accept": "application/json",
+                                                       "Content-Type": "application/json"
+                                                   },
+                                                   success: function () {
+                                                       console.log("Success");
+                                                   },
+                                                   error: function () {
+                                                       console.log("Success");
+                                                   }
+                                               });
+                                           }
             </script>
 
 
