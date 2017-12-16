@@ -19,6 +19,10 @@ public class Cabinet {
         this.cabNumber = cabNumber;
     }
     
+    public Cabinet(double impedance){
+        this.impedance = impedance;
+    }
+    
     public Cabinet(){
         
     }

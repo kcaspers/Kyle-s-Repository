@@ -38,6 +38,9 @@ public class SpeakerController {
             cabinetsPresent = false;
         }
         
+        //I should reset the numbers on the cabinets
+        assignCabNumber();
+        
         //double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         model.put("calculatedImpedance", calculatedImpedance);
@@ -54,23 +57,20 @@ public class SpeakerController {
     @RequestMapping(value = "/addCabinet", method = RequestMethod.POST)
     public String addCabinet(Map<String, Object> model, @RequestParam("speakerSelection") String speakerSelection,
         HttpServletRequest request) {
-
-        double cabOhms = Double.parseDouble(speakerSelection);
         
-        //int cabNumber = (cabinets.size()) + 1;
-        int cabNumber = 1;
-        for(Cabinet c : cabinets){
-            int highestNum = 0;
-            if(c.getCabNumber() > highestNum){
-                highestNum = c.getCabNumber();
-            }
-            cabNumber = (highestNum + 1);
-        }
-        Cabinet newCab = new Cabinet(cabOhms, cabNumber);
+//        int cabNumber = 1;
+//        for(Cabinet c : cabinets){
+//            int highestNum = 0;
+//            if(c.getCabNumber() > highestNum){
+//                highestNum = c.getCabNumber();
+//            }
+//            cabNumber = (highestNum + 1);
+//        }
+        double cabOhms = Double.parseDouble(speakerSelection);
+        Cabinet newCab = new Cabinet(cabOhms);
         cabinets.add(newCab);
         
-        //I need a method that updates the cabinet percentages also
-        //use this method on both the 'add' and 'delete' cabinet endpoints
+        
 
         model.put("cabinets", cabinets);
         return "redirect: loadPage";
@@ -114,6 +114,12 @@ public class SpeakerController {
 //        return "redirect: loadPage";
 
           return null; //for now, this kind of method can't redirect, maybe try altering a class-level variable
+    }
+    
+    private void assignCabNumber(){
+        for(int i = 0; i < cabinets.size(); i++){
+            cabinets.get(i).setCabNumber(i+1);
+        }
     }
     
     

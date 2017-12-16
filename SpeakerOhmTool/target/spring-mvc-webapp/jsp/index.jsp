@@ -21,6 +21,9 @@
             #calculatedImpedance{
                 visibility: hidden;
             }
+            .displayWhenSpeakers{
+                visibility: hidden;
+            }
             #parallelInfo{
                 /*text-align: center;*/
             }
@@ -65,7 +68,7 @@
                                        onclick="selectAmpOhm()"> 16ohm<br> 
                             </form>
                         </div>
-                        <div>
+                        <div class="displayWhenSpeakers">
                             <p>
                                 The ideal amp ohm setting is: <c:out value="${desiredAmpSetting}"/> ohms.
                             </p>
@@ -87,9 +90,7 @@
                             </c:when>
                         </c:choose>
                     </div>
-                    <div id="idealAmpSetting">
-                        <!--Output different messages based on the impedance/setting -->
-                    </div>
+                    
                 </div>
             </div>
 
@@ -100,12 +101,6 @@
                         Add Speaker Cabinet
                     </button>
                 </div>   
-                <div class="col-md-6">
-                    <p id="parallelInfo">
-                        Note: all cabinets connected in parallel. Linking speakers from the ports on the reverse
-                        of a cabinet and connecting multiple speakers to the 'speaker out' of an amp are equal.
-                    </p>
-                </div>
                 <div class="modal fade" id="cabinetModal">
                     <!--This modal will contain the add speaker cab form -->
                     <div class="modal-dialog">
@@ -160,6 +155,13 @@
                     </c:forEach>
                 </div>
             </div>
+            <div>
+                <hr>
+                <p id="parallelInfo" class="displayWhenSpeakers">
+                    Note: all cabinets connected in parallel. Linking speakers from the ports on the reverse
+                    of a cabinet and connecting multiple speakers to the 'speaker out' of an amp are equal.
+                </p>
+            </div>
 
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
@@ -171,7 +173,7 @@
                                            if (cabinetsPresent === true) {
                                                console.log("WE GOT CABINETS");
                                                $('#calculatedImpedance').css({'visibility': 'visible'});
-                                               /*$('#calculatedImpedance').css({'background-color': 'green'});*/
+                                               $('.displayWhenSpeakers').css({'visibility':'visible'});
                                            }
                                            function selectAmpOhm() {
                                                //var calculatedImpedance = $('#calculatedImpedance');
