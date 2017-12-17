@@ -68,4 +68,14 @@ public class ImpedanceCalculator {
         }
         return ampSetting;
     }
+
+    public double getCalculatedImpedance() {
+        return calculatedImpedance;
+    }
+
+    public void setCalculatedImpedance(double calculatedImpedance) {
+        this.calculatedImpedance = calculatedImpedance;
+    }
+    
+    
 }
