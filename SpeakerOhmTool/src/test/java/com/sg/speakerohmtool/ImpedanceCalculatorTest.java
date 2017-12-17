@@ -82,8 +82,9 @@ public class ImpedanceCalculatorTest {
         cabinets.add(cabA);
         cabinets.add(cabB);
         
-        //
+        double calculatedImpedance = impedanceCalculator.calculateImpedance(cabinets);
         impedanceCalculator.calculateSpeakerPercentage(cabinets);
+        
         double cabAExpected = 33.33;
         assertEquals(cabAExpected, cabA.getOutputPercentage(), 0.0);
         
@@ -97,6 +98,26 @@ public class ImpedanceCalculatorTest {
      */
     @Test
     public void testDesiredAmpSetting() {
+        List<Cabinet> cabinets = new ArrayList<>();
+        Cabinet cabA = new Cabinet(16.00, 1);
+        Cabinet cabB = new Cabinet(8.00, 2);
+        cabinets.add(cabA);
+        cabinets.add(cabB);
+        
+        impedanceCalculator.setCalculatedImpedance(impedanceCalculator.calculateImpedance(cabinets));
+        
+        int desiredSetting = impedanceCalculator.desiredAmpSetting();
+        int expected = 4;
+        
+        assertEquals(desiredSetting, expected);
+        
+        cabinets.remove(cabB);
+        expected = 16;
+        impedanceCalculator.setCalculatedImpedance(impedanceCalculator.calculateImpedance(cabinets));
+        desiredSetting = impedanceCalculator.desiredAmpSetting();
+        
+        assertEquals(desiredSetting, expected);
+        
     }
     
 }
