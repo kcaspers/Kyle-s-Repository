@@ -122,7 +122,7 @@
                                     <label for="16ohmCabinet">16 Ohm</label>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit">Add</button>
+                                    <button id="addCabinetSubmit" type="submit">Add</button>
                                     <button type="close" data-dismiss="modal">Cancel</button>
                                 </div>
                             </form>
