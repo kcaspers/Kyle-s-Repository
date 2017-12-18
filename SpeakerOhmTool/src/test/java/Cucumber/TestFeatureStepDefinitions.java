@@ -1,6 +1,7 @@
 package Cucumber;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -11,6 +12,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestFeatureStepDefinitions {
 
@@ -36,13 +39,23 @@ public class TestFeatureStepDefinitions {
 
     @When("^we click the add speaker button$")
     public void we_click_the_add_speaker_button() throws Throwable {
-        //driver.findElement(By.id("addCabinetSubmit")).click();
+        new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.id("addCabinetSubmit")));
+        driver.findElement(By.id("addCabinetSubmit")).click();
     }
 
     @Then("^the speaker is made to our specifications$")
     public void the_speaker_is_made_to_our_specifications() throws Throwable {
-        System.out.println("This is the 'Then' step.");
-        //Assert.assertTrue()
-
+        System.out.println(driver.getTitle());
+        Assert.assertTrue(driver.findElement(By.id("cab1impedance")).getText().equals("4.0 ohm"));
+        
+        while(driver.findElements(By.name("speakerToDelete")).size() != 0){
+            driver.findElement(By.name("speakerToDelete")).click();
+        }
+        driver.quit();
     }
+    
+//    @After
+//    public void deleteSpeakers(){
+//        
+//    }
 }

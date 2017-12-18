@@ -84,7 +84,7 @@
                         <!-- have a warning if they go below 2 ohm -->
                         <c:choose>
                             <c:when test="${calculatedImpedance <= 2}">
-                                <p>
+                                <p id="lowImpedanceWarning">
                                     Your resistance is very low. This can damage your amplifier.
                                 </p>
                             </c:when>
@@ -134,17 +134,21 @@
                 <div class="col-md-10">
                     <!-- section for speaker cabs, should grow as we add cabs -->
                     <c:forEach var = "currentCabinet" items="${cabinets}">
-                        <div class="speakerCabinet col-md-5">
+                        <div class="speakerCabinet col-md-5" id="speakerCabinet${currentCabinet.cabNumber}">
                             <div>
                                 <!-- put the cab number and a remove button -->
                                 <c:out value="cabinet ${currentCabinet.cabNumber} 
                                        delivers ${currentCabinet.outputPercentage}% of amp output"/>
                                 <form method="POST" action="deleteCabinet">
-                                    <button name="speakerToDelete" value="${currentCabinet.cabNumber}">Delete</button>
+                                    <button name="speakerToDelete" class="speakerToDelete"
+                                            value="${currentCabinet.cabNumber}">Delete</button>
                                 </form>
                             </div>
                             <!-- I should display which speaker is getting what percentage of output-->
-                            <c:out value="${currentCabinet.impedance}  ohm"/>
+                            <div id="cab${currentCabinet.cabNumber}impedance">
+                                <c:out value="${currentCabinet.impedance}  ohm"/>
+                            </div>
+                            
                             <!--
                             <div>
                                 <input type="button" id="speakerInput">Input</input>
