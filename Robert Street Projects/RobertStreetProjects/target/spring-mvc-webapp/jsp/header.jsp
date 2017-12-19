@@ -43,13 +43,15 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" id="staticPageList">
-                    <li><a id="aboutPage" href="${pageContext.request.contextPath}/about">About</a></li>
+                    <li id="<c:out value='${currentPage.staticPageId}'/>">
+                        <a href="${pageContext.request.contextPath}/about">About</a>
+                    </li>
                         <c:forEach var="currentPage" items="${staticPages}">
                         <!-- each option will be an li link -->
                         <li>
                             <a href="${pageContext.request.contextPath}/displayStaticPage/<c:out value='${currentPage.staticPageId}'/>">About</a>
                         </li>
-                    </c:forEach>
+                        </c:forEach>
                 </ul>    
             </div>
             <div class="col-sm-2">
