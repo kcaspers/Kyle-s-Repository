@@ -12,6 +12,6 @@
     <div class="container text-center">
         <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
     <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a id="linkedinLink" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
   </div>
 </footer>

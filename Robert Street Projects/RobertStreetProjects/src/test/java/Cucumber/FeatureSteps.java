@@ -21,32 +21,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class FeatureSteps {
     //I will need to use WebDriver to navigate the page.
-    private WebDriver driver;
-    
-    @Before
-    public void before(){
-        driver = new ChromeDriver();
-        //driver.navigate().to("http://localhost:8080/RobertStreetProjects/");
-        driver.get("http://localhost:8080/RobertStreetProjects/");
-        
-    }
-    
-    @After
-    public void after(){
-        driver.close();
-    }
-    
-    @When("^the client clicks Sign In tab$")
-    public void the_client_clicks_Sign_In_tab(){
-        System.out.println("word");
-        WebElement loginButton = driver.findElement(By.id("loginBtn"));
-        loginButton.click();
-    }
-
-    @Then("^the client is redirected to the sign in page$")
-    public void the_client_is_redirected_to_the_sign_in_page() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
+//    private WebDriver driver;
+//    
+//    @Before
+//    public void before(){
+//        driver = new ChromeDriver();
+//        //driver.navigate().to("http://localhost:8080/RobertStreetProjects/");
+//        driver.get("http://localhost:8080/RobertStreetProjects/");
+//        
+//    }
+//    
+//    @After
+//    public void after(){
+//        driver.close();
+//    }
+//    
+//    @When("^the client clicks Sign In tab$")
+//    public void the_client_clicks_Sign_In_tab(){
+//        System.out.println("word");
+//        WebElement loginButton = driver.findElement(By.id("loginBtn"));
+//        loginButton.click();
+//    }
+//
+//    @Then("^the client is redirected to the sign in page$")
+//    public void the_client_is_redirected_to_the_sign_in_page() throws Throwable {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new PendingException();
+//    }
     
 }
