@@ -43,7 +43,7 @@
                     <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" id="staticPageList">
-                    <li><a href="${pageContext.request.contextPath}/about">About</a></li>
+                    <li><a id="aboutPage" href="${pageContext.request.contextPath}/about">About</a></li>
                         <c:forEach var="currentPage" items="${staticPages}">
                         <!-- each option will be an li link -->
                         <li>
@@ -78,7 +78,7 @@
             </div>
             <div class="col-sm-2">
                 <sec:authorize access="hasRole('ROLE_ADMIN')">
-                    <a class="dropdown-toggle" type="button" data-toggle="dropdown">Admin
+                    <a id="adminNavButton" class="dropdown-toggle" type="button" data-toggle="dropdown">Admin
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a  href="${pageContext.request.contextPath}/displayPending">View Pending</a></li>

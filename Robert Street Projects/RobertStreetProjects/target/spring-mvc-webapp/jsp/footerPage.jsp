@@ -8,10 +8,10 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="${pageContext.request.contextPath}/css/Home.css" rel="stylesheet">
 <footer class="footer fixed-bottom">
-   <p>&copy;Rithee Nhep,Alejandro Guzman,Kyle Caspers</p>
+    <p>&copy;Rithee Nhep,Alejandro Guzman,Kyle Caspers</p>
     <div class="container text-center">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-    <a id="linkedinLink" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-  </div>
+        <a id="facebookLink" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a id="twitterLink" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a id="linkedinLink" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
 </footer>
