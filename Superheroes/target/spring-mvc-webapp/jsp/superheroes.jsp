@@ -11,50 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
-        <style>
-            #navDrop{
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-            li {
-                padding: 10px 20px;
-                border-bottom: 1px solid #ccc;
-            }
-
-            #superheroList {
-                height: 200px;
-                overflow: scroll;
-                margin: 0;
-                padding: 0;
-                border: 2px solid #ccc;
-            }
-            /*            #superheroID{
-                            display:none;
-                        }*/
-
-            .scrollList {
-                height: 200px;
-                width: 80%;;
-                overflow: scroll;
-                margin: 0px;
-                padding: 0;
-                border: 2px solid #ccc;
-                display: block;
-                margin-left: 50px;
-                margin-right: auto;
-            }
-
-            #errorMessage{
-                display:none;
-            }
-
-            .subHeader{
-                text-align: center;
-            }
-            #superheroDetails{
-                visibility:hidden;
-            }
-        </style>
+        <link href="${pageContext.request.contextPath}/css/superheroesStyles.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">

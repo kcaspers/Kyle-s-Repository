@@ -8,34 +8,7 @@
         <title>Index Page</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">   
-        <style>
-            #navDrop{
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-            #mainSidebar{
-                background-color: lightgoldenrodyellow;
-                padding: 20px;
-            }
-            #latestSightings{
-
-            }
-
-            #map {
-                height: 400px;
-                width: 100%;
-            }
-
-            html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            li {
-                padding: 10px 20px;
-                border-bottom: 1px solid #ccc;
-            }
-        </style>
+        <link href="${pageContext.request.contextPath}/css/homeStyles.css" rel ="stylesheet">
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiF-zgYgsxT14UB53W444tYr1yA2OLYUE&callback=initMap">
         </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>

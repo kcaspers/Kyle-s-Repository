@@ -11,58 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
-        <style>
-            #navDrop{
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-            #mainSidebar{
-                background-color: lightgoldenrodyellow;
-                padding: 20px;
-            }
-            #locationDetailsMain{
-                visibility: hidden;
-            }
-
-            .type{
-                float: left;
-            }
-
-            .value{
-                float: right;
-            }
-
-            #locationList {
-                /*position: absolute;
-                top: 20px;
-                bottom: 20px;
-                left: 20px;
-                right: 20px;*/
-                height: 200px;
-                overflow: scroll;
-                margin: 0;
-                padding: 0;
-
-                border: 2px solid #ccc;
-            }
-            #edit-Location-ID{
-                display:none;
-            }
-
-            li {
-                padding: 10px 20px;
-                border-bottom: 1px solid #ccc;
-            }
-            #selectList:hover{
-                background-color: lightgoldenrodyellow;
-            }
-            .subHeader{
-                text-align: center;
-            }
-            #errorMessage{
-                display:none;
-            }
-        </style>
+        <link href ="${pageContext.request.contextPath}/css/locationStyles.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">

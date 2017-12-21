@@ -100,7 +100,6 @@ public class LocationController {
     @ResponseStatus(HttpStatus.CREATED)
     @ResponseBody
     public void addLocation(@RequestBody Location location) {
-
         locationDao.addLocation(location);
 
     }

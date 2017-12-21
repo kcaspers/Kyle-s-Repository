@@ -169,8 +169,7 @@ function supplyEditData() {
             console.log("error loading that location");
         }
     });
-}
-;
+};
 
 function editLocation() {
     var locationID = $('#edit-Location-ID').val();
@@ -189,6 +188,7 @@ function editLocation() {
         longitude: locationLongitude
     };
 
+    //these conditionals prevent client from sending invalid lat/long data
     if (location.longitude === "" || location.latitude === ""){
         alert("Please provide valid latitude and longitude values.");
     }else if(Math.abs(location.longitude) > 180.99 || Math.abs(location.latitude) > 90.99){

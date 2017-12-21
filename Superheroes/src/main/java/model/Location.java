@@ -18,7 +18,6 @@ public class Location {
     private String locationName;
     private String locationDescription;
     private String address;
-    //private String coordinates;
     private BigDecimal latitude;
     private BigDecimal longitude;
 
