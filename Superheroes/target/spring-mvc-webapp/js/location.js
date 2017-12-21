@@ -9,6 +9,7 @@ jQuery(document).ready(function () {
     loadLocations();
 
 });
+
 $('#deleteLocationBtn').click(function () {
     deleteLocation();
 });
@@ -18,8 +19,9 @@ $('#addLocation').click(function () {
 });
 
 function loadLocations() {
-    //probably will need to clear out the list on load also
+    //I clear out the list on load also
     $('#locationList').empty();
+    
     $.ajax({
         type: 'GET',
         url: 'http://localhost:8080/Superheroes/locations',
@@ -44,7 +46,6 @@ function loadLocations() {
 }
 
 function viewLocationDetails(locationID) {
-    //console.log(locationID);
     $.ajax({
         type: 'GET',
         url: 'http://localhost:8080/Superheroes/location/' + locationID,
@@ -76,8 +77,7 @@ function viewLocationDetails(locationID) {
     });
 
     $('#locationDetailsMain').css('visibility', 'visible');
-}
-;
+};
 
 function deleteLocation() {
     var locationID = $('#locationID').text();
@@ -141,10 +141,7 @@ function addLocation() {
             }
         });
     }
-
-
-}
-;
+};
 
 function supplyEditData() {
     var locationID = $('#locationID').text();
@@ -159,19 +156,6 @@ function supplyEditData() {
             var address = location.address;
             var latitude = location.latitude;
             var longitude = location.longitude;
-
-//            $('#locationID').empty();
-//            $('#locationName').empty();
-//            $('#locationDescription').empty();
-//            $('#locationAddress').empty();
-//            $('#latLong').empty();
-//
-//            $('#locationID').append(locationID);
-//            $('#locationName').append(locationName);
-//            $('#locationDescription').append(locationDescription);
-//            $('#locationAddress').append(address);
-//            $('#latLong').append(latitude + String.fromCharCode(176) + ' '
-//                    + longitude + String.fromCharCode(176));
 
             $('#edit-Location-ID').val(locationID);
             $('#edit-location-name').val(locationName);
@@ -228,6 +212,4 @@ function editLocation() {
         loadLocations();
     }
 
-
-}
-;
+};
