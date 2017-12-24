@@ -24,6 +24,23 @@
             <div id="header">
             </div>
         </div>
+
+        <div class="modal-fade" id="welcomePopup">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <b>Welcome</b>
+                    <button class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Welcome to Robert Street Projects!
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div class="col-md-5" id="main-post-left">
             <c:forEach var="currentPost" items="${postList}">
                 <div class="post">
@@ -74,6 +91,7 @@
         <div id="footer">  
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="${pageContext.request.contextPath}/js/homeScript.js"></script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/search.js"></script>
