@@ -25,7 +25,9 @@
             </div>
         </div>
 
-        <div class="modal-fade" id="welcomePopup">
+        <button id="modalTrigger" type="hidden" data-toggle="modal" data-target="#welcomePopup"></button>
+        <div class="modal fade" id="welcomePopup">
+            <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <b>Welcome</b>
@@ -38,6 +40,7 @@
                         Welcome to Robert Street Projects!
                     </p>
                 </div>
+            </div>
             </div>
         </div>
 
