@@ -28,14 +28,11 @@
         <button id="modalTrigger" type="hidden" data-toggle="modal" data-target="#welcomePopup"></button>
         <div class="modal fade" id="welcomePopup">
             <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <b>Welcome</b>
+            <div class="modal-content" id="modalContent">
+                <div class="modal-body">
                     <button class="close" data-dismiss="modal">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body">
                     <p>
                         Welcome to Robert Street Projects!
                     </p>
