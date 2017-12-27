@@ -8,38 +8,12 @@
         <title>Index Page</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
-
-        <style>
-            #amp{
-                border: 1px solid black;
-                padding: 20px;
-            }
-            #cabinetModal{
-                padding: 30px;
-                margin: 30px;
-            }
-            #calculatedImpedance{
-                visibility: hidden;
-            }
-            .displayWhenSpeakers{
-                visibility: hidden;
-            }
-            #parallelInfo{
-                /*text-align: center;*/
-            }
-            .speakerCabinet{
-                border: #000 solid 1px;
-                height: 200px;
-                width: 40%;
-                margin: 10px;
-                text-align: center;
-            }
-        </style>
+        <link href="${pageContext.request.contextPath}/css/index.css" rel="stylesheet">
 
     </head>
     <body>
         <div class="container">
-            <h1>Speaker Impedance Tool</h1>
+            <h1>Speaker Impedance Calculator</h1>
             <hr/>
             <div class="row" style="height:250px">
 
