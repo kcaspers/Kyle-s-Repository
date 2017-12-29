@@ -21,8 +21,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Controller
 public class SpeakerController {
 
-//    @Autowired
-//    RigDao rigDao;
     
     boolean cabinetsPresent = false;
     List<Cabinet> cabinets = new ArrayList();
