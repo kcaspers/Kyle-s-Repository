@@ -6,15 +6,20 @@
 package com.sg.model;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author kylecaaspers
  */
+@Entity
 public class Rig {
 
+    int id;
     List<Cabinet> cabinets;
     int ampOhm;
     String title;
@@ -29,6 +34,8 @@ public class Rig {
         this.ampOhm = ampOhm;
     }
 
+    
+    //This might need to be a many-to-many for individual cabs
     public List<Cabinet> getCabinets() {
         return cabinets;
     }
@@ -37,6 +44,8 @@ public class Rig {
         this.cabinets = cabinets;
     }
 
+    
+    @Column(name = "ampOhm")
     public int getAmpOhm() {
         return ampOhm;
     }
@@ -45,6 +54,7 @@ public class Rig {
         this.ampOhm = ampOhm;
     }
 
+    @Column(name = "title")
     public String getTitle() {
         return title;
     }
@@ -53,6 +63,7 @@ public class Rig {
         this.title = title;
     }
 
+    @Column(name = "date")
     public LocalDate getDate() {
         return date;
     }
@@ -60,5 +71,18 @@ public class Rig {
     public void setDate(LocalDate date) {
         this.date = date;
     }
+
+    @Id
+    @GeneratedValue
+    @Column(name = "id", unique = true)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
     
 }
