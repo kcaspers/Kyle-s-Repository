@@ -15,3 +15,8 @@ jQuery(document).ready(function () {
 //    console.log("ampOhm() is being called");
 //    console.log(calculatedImpedance);
 //}
+
+function closeModal(){
+    //console.log("called closeModal");
+    $('#saveLoadModal').modal('hide');
+}

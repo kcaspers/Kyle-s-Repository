@@ -30,9 +30,23 @@
                             <h2>Save/Load Configuration</h2>
                         </div>
                         <!--display all cabinets and have and option to 'save new config' -->
+                        
+                        <button id="saveConfiguration" data-toggle="modal" 
+                                 data-target="#saveModal" onclick="closeModal()">
+                            Save Current
+                        </button>
                     </div>
                 </div>
                 
+            </div>
+            <div class="modal fade" id="saveModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Save Current Configuration</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
             <hr/>
             <div class="row" style="height:250px">
@@ -164,7 +178,7 @@
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
             <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-            <!--<script src="${pageContext.request.contextPath}/js/ohm.js"></script>-->
+            <script src="${pageContext.request.contextPath}/js/ohm.js"></script>
             <script type="text/javascript">
                                            var cabinetsPresent = ${cabinetsPresent}
                                            console.log(cabinetsPresent);
