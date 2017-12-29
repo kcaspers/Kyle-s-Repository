@@ -13,7 +13,27 @@
     </head>
     <body>
         <div class="container">
-            <h1>Speaker Impedance Calculator</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Speaker Impedance Calculator</h1>
+                </div>
+                <div id="saveLoad" class="col-md-3 col-md-offset-3">
+                        <button type="button" data-toggle="modal" data-target="#saveLoadModal">
+                            Save/Load Configuration
+                        </button>
+                </div>    
+            </div>
+            <div class="modal fade" id="saveLoadModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Save/Load Configuration</h2>
+                        </div>
+                        <!--display all cabinets and have and option to 'save new config' -->
+                    </div>
+                </div>
+                
+            </div>
             <hr/>
             <div class="row" style="height:250px">
 
@@ -64,7 +84,7 @@
                             </c:when>
                         </c:choose>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -122,7 +142,7 @@
                             <div id="cab${currentCabinet.cabNumber}impedance">
                                 <c:out value="${currentCabinet.impedance}  ohm"/>
                             </div>
-                            
+
                             <!--
                             <div>
                                 <input type="button" id="speakerInput">Input</input>
@@ -151,7 +171,7 @@
                                            if (cabinetsPresent === true) {
                                                console.log("WE GOT CABINETS");
                                                $('#calculatedImpedance').css({'visibility': 'visible'});
-                                               $('.displayWhenSpeakers').css({'visibility':'visible'});
+                                               $('.displayWhenSpeakers').css({'visibility': 'visible'});
                                            }
                                            function selectAmpOhm() {
                                                //var calculatedImpedance = $('#calculatedImpedance');
@@ -177,7 +197,7 @@
                                            }
             </script>
 
-
+        </div>
     </body>
 </html>
 
