@@ -1,10 +1,13 @@
 package com.sg.speakerohmtool;
 
 import com.sg.model.Cabinet;
+import com.sg.model.Rig;
+import dao.RigDao;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -18,6 +21,9 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Controller
 public class SpeakerController {
 
+//    @Autowired
+//    RigDao rigDao;
+    
     boolean cabinetsPresent = false;
     List<Cabinet> cabinets = new ArrayList();
     ImpedanceCalculator impedanceCalculator = new ImpedanceCalculator();
@@ -122,6 +128,19 @@ public class SpeakerController {
         }
     }
     
+    //create a saveRig endpoint
     
+    @RequestMapping(value = "/saveRig", method=RequestMethod.POST)
+    public String saveRig(HttpServletRequest request){
+        System.out.println("reached saveRig endPoint");
+        //get a handle on the cabinets property
+        
+        //Rig rig = new Rig();
+        //rig.setAmpOhm(); figure this out, maybe fix the JS function
+        //rig.setCabinets(cabinets);
+        //rigDao.save(rig);
+        
+        return "redirect: loadPage";
+    }
 
 }

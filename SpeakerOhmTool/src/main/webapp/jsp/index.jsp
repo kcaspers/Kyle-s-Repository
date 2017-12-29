@@ -44,6 +44,12 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h2>Save Current Configuration</h2>
+                            <form method="POST" action="saveRig">
+                                <!--<input type="hidden" name="cabinets" value="${cabinets}"-->
+                                <input type="hidden" name="saveAmpOhm">
+                                <input type="text" name="title">
+                                <button type="submit">Save</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -188,8 +194,9 @@
                                                $('.displayWhenSpeakers').css({'visibility': 'visible'});
                                            }
                                            function selectAmpOhm() {
-                                               //var calculatedImpedance = $('#calculatedImpedance');
                                                var ampOhm = $("input[name = 'ampOhm']:checked").val();
+                                               
+                                               
                                                console.log(ampOhm);
                                                $.ajax({
                                                    type: 'POST',
