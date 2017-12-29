@@ -3,9 +3,11 @@ package com.sg.speakerohmtool;
 import com.sg.model.Cabinet;
 import com.sg.model.Rig;
 import dao.RigDao;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,16 +23,20 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @Controller
 public class SpeakerController {
 
+    RigDao rigDao;
     
     boolean cabinetsPresent = false;
     List<Cabinet> cabinets = new ArrayList();
+    int ampOhm;
     ImpedanceCalculator impedanceCalculator = new ImpedanceCalculator();
     
     //these can be connected to a load
     double ampSpeakerOut1;
     double ampSpeakerOut2;
     
-    public SpeakerController() {
+    @Inject
+    public SpeakerController(RigDao rigDao) {
+        this.rigDao = rigDao;
     }
 
     @RequestMapping(value = "/loadPage", method = RequestMethod.GET)
@@ -100,24 +106,27 @@ public class SpeakerController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public String selectAmpOhm(Map<String, Object> model, @PathVariable("ampOhm") String ampOhm){
         
-//        switch (ampOhm){
-//            case "4":
-//                //model.put("checked4", "checked");
-//                model.put("ampOhm", 4);
-//                break;
-//            case "8":
-//                //model.put("checked8", "checked");
-//                model.put("ampOhm", 8);
-//                break;
-//            case "16":
-//                //model.put("checked16", "checked");
-//                model.put("ampOhm", 16);
-//                break;
-//        }
-//        
-//        return "redirect: loadPage";
+        switch (ampOhm){
+            case "4":
+                //model.put("checked4", "checked");
+                model.put("ampOhm", 4);
+                this.ampOhm = Integer.parseInt(ampOhm);
+                break;
+            case "8":
+                //model.put("checked8", "checked");
+                model.put("ampOhm", 8);
+                this.ampOhm = Integer.parseInt(ampOhm);
+                break;
+            case "16":
+                //model.put("checked16", "checked");
+                model.put("ampOhm", 16);
+                this.ampOhm = Integer.parseInt(ampOhm);
+                break;
+        }
+        
+        return "redirect: loadPage";
 
-          return null; //for now, this kind of method can't redirect, maybe try altering a class-level variable
+          //return null; //for now, this kind of method can't redirect, maybe try altering a class-level variable
     }
     
     private void assignCabNumber(){
@@ -133,10 +142,12 @@ public class SpeakerController {
         System.out.println("reached saveRig endPoint");
         //get a handle on the cabinets property
         
-        //Rig rig = new Rig();
-        //rig.setAmpOhm(); figure this out, maybe fix the JS function
-        //rig.setCabinets(cabinets);
-        //rigDao.save(rig);
+        Rig rig = new Rig();
+        rig.setAmpOhm(this.ampOhm); //figure this out, maybe fix the JS function
+        rig.setCabinets(cabinets);
+        rig.setDate(LocalDate.now());
+        rig.setTitle(request.getParameter("title"));
+        //rigDao.saveRig(rig);
         
         return "redirect: loadPage";
     }

@@ -15,11 +15,11 @@ import java.util.List;
  */
 public class Rig {
 
-    int id;
-    List<Cabinet> cabinets;
-    int ampOhm;
-    String title;
-    LocalDate date;
+    private int id;
+    private List<Cabinet> cabinets;
+    private int ampOhm;
+    private String title;
+    private LocalDate date;
 
     public Rig() {
 

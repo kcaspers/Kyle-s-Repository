@@ -18,9 +18,9 @@
                     <h1>Speaker Impedance Calculator</h1>
                 </div>
                 <div id="saveLoad" class="col-md-3 col-md-offset-3">
-                        <button type="button" data-toggle="modal" data-target="#saveLoadModal">
-                            Save/Load Configuration
-                        </button>
+                    <button type="button" data-toggle="modal" data-target="#saveLoadModal">
+                        Save/Load Configuration
+                    </button>
                 </div>    
             </div>
             <div class="modal fade" id="saveLoadModal">
@@ -30,14 +30,14 @@
                             <h2>Save/Load Configuration</h2>
                         </div>
                         <!--display all cabinets and have and option to 'save new config' -->
-                        
+
                         <button id="saveConfiguration" data-toggle="modal" 
-                                 data-target="#saveModal" onclick="closeModal()">
+                                data-target="#saveModal" onclick="closeModal()">
                             Save Current
                         </button>
                     </div>
                 </div>
-                
+
             </div>
             <div class="modal fade" id="saveModal">
                 <div class="modal-dialog">
@@ -46,9 +46,14 @@
                             <h2>Save Current Configuration</h2>
                             <form method="POST" action="saveRig">
                                 <!--<input type="hidden" name="cabinets" value="${cabinets}"-->
-                                <input type="hidden" name="saveAmpOhm">
-                                <input type="text" name="title">
-                                <button type="submit">Save</button>
+                                <!--<input type="hidden" name="saveAmpOhm">-->
+                                <div class="form-group">
+                                    <label for="saveTitle">Title:</label>
+                                    <input id="saveTitle" type="text" name="title">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit">Save</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -195,12 +200,12 @@
                                            }
                                            function selectAmpOhm() {
                                                var ampOhm = $("input[name = 'ampOhm']:checked").val();
-                                               
-                                               
+
+
                                                console.log(ampOhm);
                                                $.ajax({
                                                    type: 'POST',
-                                                   url: 'http://localhost:8080/selectAmpOhm/' + ampOhm + '',
+                                                   url: 'http://localhost:8080/SpeakerOhmTool/selectAmpOhm/' + ampOhm + '',
                                                    data: JSON.stringify({
                                                        ampOhm
                                                    }),
