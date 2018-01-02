@@ -148,10 +148,11 @@
                         </div>   
                     </div>
                 </div>
-            </div>                
+            </div>  
             <div class="row">
                 <div class="col-md-10">
                     <!-- section for speaker cabs, should grow as we add cabs -->
+                    <input id="cabPresent" type="hidden" value="${cabinetsPresent}"/>
                     <c:forEach var = "currentCabinet" items="${cabinets}">
                         <div class="speakerCabinet col-md-5" id="speakerCabinet${currentCabinet.cabNumber}">
                             <div>
@@ -191,36 +192,14 @@
             <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
             <script src="${pageContext.request.contextPath}/js/ohm.js"></script>
             <script type="text/javascript">
-                                           var cabinetsPresent = ${cabinetsPresent}
-                                           console.log(cabinetsPresent);
-                                           if (cabinetsPresent === true) {
-                                               console.log("WE GOT CABINETS");
-                                               $('#calculatedImpedance').css({'visibility': 'visible'});
-                                               $('.displayWhenSpeakers').css({'visibility': 'visible'});
-                                           }
-                                           function selectAmpOhm() {
-                                               var ampOhm = $("input[name = 'ampOhm']:checked").val();
-
-
-                                               console.log(ampOhm);
-                                               $.ajax({
-                                                   type: 'POST',
-                                                   url: 'http://localhost:8080/SpeakerOhmTool/selectAmpOhm/' + ampOhm + '',
-                                                   data: JSON.stringify({
-                                                       ampOhm
-                                                   }),
-                                                   headers: {
-                                                       "Accept": "application/json",
-                                                       "Content-Type": "application/json"
-                                                   },
-                                                   success: function () {
-                                                       console.log("Success");
-                                                   },
-                                                   error: function () {
-                                                       console.log("Success");
-                                                   }
-                                               });
-                                           }
+//                                           var cabinetsPresent = ${cabinetsPresent};
+//                                           
+//                                           console.log(cabinetsPresent);
+                                           
+                                           
+                                           
+                                           
+                                           
             </script>
 
         </div>
