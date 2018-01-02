@@ -59,6 +59,8 @@ public class SpeakerController {
         //calculate the best amp ohm setting for this configuration
         model.put("desiredAmpSetting", impedanceCalculator.desiredAmpSetting());
         
+        //get all saved cabinet configurations
+        
         model.put("cabinets", cabinets);
         model.put("cabinetsPresent", cabinetsPresent);
         return "index";

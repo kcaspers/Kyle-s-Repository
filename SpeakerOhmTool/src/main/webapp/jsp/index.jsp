@@ -29,12 +29,13 @@
                         <div class="modal-header">
                             <h2>Save/Load Configuration</h2>
                         </div>
-                        <!--display all cabinets and have and option to 'save new config' -->
-
-                        <button id="saveConfiguration" data-toggle="modal" 
-                                data-target="#saveModal" onclick="closeModal()">
-                            Save Current
-                        </button>
+                        <div class="modal-body">
+                            <!--cycle through existing cabinets here -->
+                            <button id="saveConfiguration" data-toggle="modal" 
+                                    data-target="#saveModal" onclick="closeModal()">
+                                Save Current
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -97,7 +98,7 @@
                 <div class="col-md-6"> 
                     <!-- section for info -->
                     <h2>Info</h2>
-                    <div id="calculatedImpedance">
+                    <div id="calculatedImpedance" class="displayWhenSpeakers">
                         <p>Resulting impedance is: 
                             <c:out value="${calculatedImpedance}"/> &#937 </p>
                         <!-- have a warning if they go below 2 ohm -->
@@ -191,16 +192,6 @@
             <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
             <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
             <script src="${pageContext.request.contextPath}/js/ohm.js"></script>
-            <script type="text/javascript">
-//                                           var cabinetsPresent = ${cabinetsPresent};
-//                                           
-//                                           console.log(cabinetsPresent);
-                                           
-                                           
-                                           
-                                           
-                                           
-            </script>
 
         </div>
     </body>

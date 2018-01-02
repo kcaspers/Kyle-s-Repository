@@ -5,7 +5,7 @@
  */
 jQuery(document).ready(function () {
     console.log("ohm.js is present.");
-    
+
 
 });
 
@@ -15,6 +15,14 @@ jQuery(document).ready(function () {
 //    console.log("ampOhm() is being called");
 //    console.log(calculatedImpedance);
 //}
+
+//this will display all of the conditional cabinet stuff
+var cabinetsPresent = $('#cabPresent').val();
+if (cabinetsPresent === "true") {
+    console.log("There are cabinets");
+    //$('#calculatedImpedance').css({'visibility': 'visible'});
+    $('.displayWhenSpeakers').css({'visibility': 'visible'});
+}
 
 function closeModal() {
     //console.log("called closeModal");
@@ -42,15 +50,4 @@ function selectAmpOhm() {
             console.log("Success");
         }
     });
-}
-
-
-function infoRefresh() {
-    var cabinetsPresent = $('#cabPresent').val();
-
-    if (cabinetsPresent === true) {
-        console.log("There are cabinets");
-        $('#calculatedImpedance').css({'visibility': 'visible'});
-        $('.displayWhenSpeakers').css({'visibility': 'visible'});
-    }
 }
