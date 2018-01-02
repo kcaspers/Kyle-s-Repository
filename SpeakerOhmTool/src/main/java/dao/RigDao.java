@@ -5,7 +5,9 @@
  */
 package dao;
 
+import com.sg.model.Cabinet;
 import com.sg.model.Rig;
+import java.util.List;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.transaction.annotation.Propagation;
@@ -17,10 +19,17 @@ import org.springframework.transaction.annotation.Propagation;
 public class RigDao {
 
     private static final String SQL_INSERT_RIG
-            = "insert into rig (ampOhm, title) values (?, ?)";
+            = "insert into rig (ampOhm, title, date) values (?, ?, ?)";
+    
+    private static final String SQL_SELECT_RIG_BY_TITLE 
+            = "select * from rig where title = (?)";
     
     private static final String SQL_SELECT_CAB_BY_RIG
             = "select cabinetID from cabinet where rigID = (?)";
+    
+    private static final String SQL_INSERT_CAB 
+            = "insert into cabinet (impedance, cabNumber, outputPercentage, rigID)"
+            + "values (?, ?, ?, ?)";
     
     private JdbcTemplate jdbcTemplate;
 
@@ -31,11 +40,26 @@ public class RigDao {
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     public void saveRig(Rig rig) {
         //this should insert rig and call a helper method to associate cabinets
+        jdbcTemplate.update(SQL_INSERT_RIG,
+                rig.getAmpOhm(),
+                rig.getTitle(),
+                rig.getDate());
+        
+        //the rig now should have an ID, lets get it and use it to update the cabinets
+        associateCabinets(rig);
     }
     
     //helper to get the associated cabinets
+    @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     private void associateCabinets(Rig rig){
-        
+        List<Cabinet> cabinets = rig.getCabinets();
+        for(Cabinet c : cabinets){
+            jdbcTemplate.update(SQL_INSERT_CAB,
+                    c.getImpedance(),
+                    c.getCabNumber(),
+                    c.getOutputPercentage(),
+                    rig.getId());
+        }
         
     }
     

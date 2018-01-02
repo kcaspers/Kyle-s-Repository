@@ -15,6 +15,7 @@ public class Cabinet {
     private double impedance;
     private int cabNumber;
     private double outputPercentage;
+    //these will have a rig property in the database also
 
     public Cabinet(double impedance, int cabNumber){
         this.impedance = impedance;
