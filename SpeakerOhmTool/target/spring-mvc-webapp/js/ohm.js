@@ -5,8 +5,6 @@
  */
 jQuery(document).ready(function () {
     console.log("ohm.js is present.");
-
-
 });
 
 //function selectAmpOhm(){

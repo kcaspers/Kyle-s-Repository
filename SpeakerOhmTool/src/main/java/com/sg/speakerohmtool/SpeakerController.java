@@ -149,7 +149,7 @@ public class SpeakerController {
         rig.setCabinets(cabinets);
         rig.setDate(LocalDate.now());
         rig.setTitle(request.getParameter("title"));
-        //rigDao.saveRig(rig);
+        rigDao.saveRig(rig);
         
         return "redirect: loadPage";
     }
