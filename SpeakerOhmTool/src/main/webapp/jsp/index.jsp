@@ -81,11 +81,14 @@
                         <div id="ohmSetting">
                             <form>
                                 <input type="radio" name="ampOhm" value="4" 
-                                       onclick="selectAmpOhm()"> 4ohm<br>
+                                       onclick="selectAmpOhm()"
+                                       <c:if test="${ampOhm == 4}">checked</c:if>> 4ohm<br>
                                 <input type="radio" name="ampOhm" value="8" 
-                                       onclick="selectAmpOhm()"> 8ohm<br> 
+                                       onclick="selectAmpOhm()"
+                                       <c:if test="${ampOhm == 8}">checked</c:if>> 8ohm<br> 
                                 <input type="radio" name="ampOhm" value="16" 
-                                       onclick="selectAmpOhm()"> 16ohm<br> 
+                                       onclick="selectAmpOhm()"
+                                       <c:if test="${ampOhm == 16}">checked</c:if>> 16ohm<br> 
                             </form>
                         </div>
                         <div class="displayWhenSpeakers">

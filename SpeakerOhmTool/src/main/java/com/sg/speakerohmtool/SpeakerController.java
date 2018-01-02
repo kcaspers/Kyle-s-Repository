@@ -59,6 +59,8 @@ public class SpeakerController {
         //calculate the best amp ohm setting for this configuration
         model.put("desiredAmpSetting", impedanceCalculator.desiredAmpSetting());
         
+        model.put("ampOhm", this.ampOhm);
+        
         //get all saved cabinet configurations
         
         model.put("cabinets", cabinets);
@@ -105,7 +107,6 @@ public class SpeakerController {
     
     
     @RequestMapping(value = "/selectAmpOhm/{ampOhm}", method = RequestMethod.POST)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
     public String selectAmpOhm(Map<String, Object> model, @PathVariable("ampOhm") String ampOhm){
         
         switch (ampOhm){
@@ -127,8 +128,6 @@ public class SpeakerController {
         }
         
         return "redirect: loadPage";
-
-          //return null; //for now, this kind of method can't redirect, maybe try altering a class-level variable
     }
     
     private void assignCabNumber(){
