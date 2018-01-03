@@ -63,7 +63,7 @@ public class RigDao {
                 new RigMapper());
         
         for(Rig r: allRigs){
-            r.setCabinets(jdbcTemplate.query(SQL_SELECT_CABINETS_BY_RIG, new CabinetMapper()));
+            r.setCabinets(jdbcTemplate.query(SQL_SELECT_CABINETS_BY_RIG, new CabinetMapper(), r.getId() ));
         }
         
         return allRigs;

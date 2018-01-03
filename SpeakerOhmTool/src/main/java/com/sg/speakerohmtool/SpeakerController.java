@@ -131,13 +131,16 @@ public class SpeakerController {
         return "redirect: loadPage";
     }
     
+    @RequestMapping(value = "/rig", method = RequestMethod.GET)
+    public List<Rig> getSavedRigs(){
+        return rigDao.getAllRigs();
+    }
+    
     private void assignCabNumber(){
         for(int i = 0; i < cabinets.size(); i++){
             cabinets.get(i).setCabNumber(i+1);
         }
     }
-    
-    //create a saveRig endpoint
     
     @RequestMapping(value = "/saveRig", method=RequestMethod.POST)
     public String saveRig(HttpServletRequest request){

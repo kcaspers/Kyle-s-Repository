@@ -5,6 +5,7 @@
  */
 $(document).ready(function () {
     console.log("ohm.js is present.");
+    getSavedRigs();
 });
 
 //function selectAmpOhm(){
@@ -49,3 +50,28 @@ function selectAmpOhm() {
         }
     });
 }
+;
+
+function getSavedRigs() {
+    console.log("savedRigs() called");
+    $.ajax({
+        type: 'GET',
+        url: 'http://localhost:8080/SpeakerOhmTool/rig',
+        success: function (rigList) {
+            $.each(rigList, function (index, rig) {
+                var id = rig.id;
+                var cabinets = rig.cabinets;
+                var ampOhm = rig.ampOhm;
+                var date = rig.date;
+                var title = rig.title;
+
+                var testSlot = "<li>" + title + "</li>";
+                $('#title').append(testSlot);
+            });
+        },
+        error: function () {
+
+        }
+    });
+}
+;

@@ -42,7 +42,7 @@
         <property name="jdbcTemplate" ref="jdbcTemplate" />
     </bean>
     
-    <bean id="CabinetDao" class="dao.RgDao">
+    <bean id="CabinetDao" class="dao.CabinetDao">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
   

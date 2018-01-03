@@ -31,6 +31,7 @@
                         </div>
                         <div class="modal-body">
                             <!--cycle through existing cabinets here -->
+                            <ul id="savedRigs"></ul>
                             <button id="saveConfiguration" data-toggle="modal" 
                                     data-target="#saveModal" onclick="closeModal()">
                                 Save Current
