@@ -41,5 +41,9 @@
     <bean id="RigDao" class="dao.RigDao">
         <property name="jdbcTemplate" ref="jdbcTemplate" />
     </bean>
+    
+    <bean id="CabinetDao" class="dao.RgDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
   
 </beans>
