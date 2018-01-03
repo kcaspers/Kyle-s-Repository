@@ -46,16 +46,15 @@ public class RigDao {
         jdbcTemplate.update(SQL_INSERT_RIG,
                 rig.getAmpOhm(),
                 rig.getTitle(),
-                rig.getDate());
+                java.sql.Date.valueOf(rig.getDate()));
         
-        //the rig now should have an ID, lets get it and use it to update the cabinets
-        Rig newRig = getRigByTitle(rig.getTitle());
-        associateCabinets(newRig);
+        associateCabinets(rig);
     }
     
     //helper to get the associated cabinets
     @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
     private void associateCabinets(Rig rig){
+        rig.setId(jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class));
         List<Cabinet> cabinets = rig.getCabinets();
         for(Cabinet c : cabinets){
             jdbcTemplate.update(SQL_INSERT_CAB,
@@ -81,6 +80,7 @@ public class RigDao {
             rig.setId(rs.getInt("rigID"));
             rig.setTitle(rs.getString("title"));
             rig.setDate(rs.getDate("date").toLocalDate());
+            //get cabinets
             rig.setAmpOhm(rs.getInt("ampOhm"));
             return rig;
         }

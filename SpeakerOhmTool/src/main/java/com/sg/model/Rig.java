@@ -5,6 +5,7 @@
  */
 package com.sg.model;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,6 +21,7 @@ public class Rig {
     private int ampOhm;
     private String title;
     private LocalDate date;
+    //private java.sql.Date date;
 
     public Rig() {
 
