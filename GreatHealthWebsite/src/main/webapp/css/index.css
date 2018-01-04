@@ -24,7 +24,8 @@ body{
 }
 
 .locationTitle{
-    font-family: monospace;
+    margin: auto;
+    width: 50%;
 }
 
 #storeLogo{
@@ -36,4 +37,5 @@ body{
 #footerInfo{
     margin:auto;
     width: 50%;
+    text-align: center;
 }

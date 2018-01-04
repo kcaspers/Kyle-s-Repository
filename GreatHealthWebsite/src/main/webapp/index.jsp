@@ -24,10 +24,12 @@
                     <img src="images/honeybee.png" alt=""/>
                 </div>-->
         <div class="container-fluid">
-            <div class="row">  
-                <div id="nav">
-                    Navigation
+            <div class="row">
+                <div class="col-md-3" id="nav">
+                    Menu
                 </div>
+            </div>
+            <div class="row">  
                 <div id="header">
                     <div id="storeLogo">
                         <img src="images/honeybeeMain.png" alt=""/>
@@ -37,15 +39,19 @@
             <div class="row">  
                 <!--<div id="locations">-->
                 <div id="locationOne" class="col-md-4">
-                    <span class="locationTitle">
+                    <h3 class="locationTitle">
                         <a href="${pageContext.request.contextPath}/jsp/midway.jsp">Location One</a>
-                    </span>
+                    </h3>
                 </div>
                 <div id="locationTwo" class="col-md-4">
-                    <span class="locationTitle">Location Two</span>
+                    <h3 class="locationTitle">
+                        Location Two
+                    </h3>
                 </div>
                 <div id="locationThree" class="col-md-4">
-                    <span class="locationTitle">Location Three</span>
+                    <h3 class="locationTitle">
+                        Location Three
+                    </h3>
                 </div>
                 <!--</div>-->
             </div>
