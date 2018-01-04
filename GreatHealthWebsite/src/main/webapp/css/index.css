@@ -1,0 +1,29 @@
+html{
+    
+}
+
+body{
+    
+}
+
+.container-fluid{
+  
+}
+
+.row{
+    height: 100%;
+}
+
+#header{
+    background-color: greenyellow;
+    height: 30%;
+}
+
+#locations{
+    background-color: salmon;
+    height: 70%;
+}
+
+.locationTitle{
+    font-family: monospace;
+}
