@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Index Page</title>
+        <title>Great Health Nutrition</title>
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
@@ -25,25 +25,34 @@
                 </div>-->
         <div class="container-fluid">
             <div class="row">  
+                <div id="nav">
+                    Navigation
+                </div>
                 <div id="header">
-                    test test test
+                    <div id="storeLogo">
+                        <img src="images/honeybeeMain.png" alt=""/>
+                    </div>
                 </div>
             </div>  
             <div class="row">  
                 <!--<div id="locations">-->
-                    <div id="locationOne" class="col-md-4">
-                        <span class="locationTitle">Location One</span>
-                    </div>
-                    <div id="locationTwo" class="col-md-4">
-                        <span class="locationTitle">Location Two</span>
-                    </div>
-                    <div id="locationThree" class="col-md-4">
-                        <span class="locationTitle">Location Three</span>
-                    </div>
+                <div id="locationOne" class="col-md-4">
+                    <span class="locationTitle">
+                        <a href="${pageContext.request.contextPath}/jsp/midway.jsp">Location One</a>
+                    </span>
+                </div>
+                <div id="locationTwo" class="col-md-4">
+                    <span class="locationTitle">Location Two</span>
+                </div>
+                <div id="locationThree" class="col-md-4">
+                    <span class="locationTitle">Location Three</span>
+                </div>
                 <!--</div>-->
             </div>
             <div class="row">
-                boilerplate code
+                <div id="footerInfo">
+                    boilerplate code
+                </div>
             </div>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->

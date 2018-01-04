@@ -15,8 +15,7 @@ body{
 }
 
 #header{
-    background-color: greenyellow;
-    height: 30%;
+    height: 10%;
 }
 
 #locations{
@@ -26,4 +25,15 @@ body{
 
 .locationTitle{
     font-family: monospace;
+}
+
+#storeLogo{
+    margin: auto;
+    width: 50%;
+    /*padding: 10px;*/
+}
+
+#footerInfo{
+    margin:auto;
+    width: 50%;
 }
