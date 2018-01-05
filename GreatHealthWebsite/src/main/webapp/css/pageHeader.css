@@ -1,0 +1,50 @@
+/*body{
+    margin:0px;padding:0px;
+}*/
+
+#menulink{
+    width:220px;
+    background:#8cbc65;
+    color:#fff;
+    height:40px;
+    line-height:40px;
+    text-indent:10px;
+    cursor:pointer;
+    margin-left: -15px;
+}
+
+#left-menu{
+    width:220px;
+    height:100%;
+    position:fixed;
+    background:#333;
+    /*margin-left:-220px;*/
+    margin-left:-30%;
+}
+
+#left-menu ul{
+    margin:0px;
+    padding:10px 0px;
+    width:100%;
+    list-style:none;
+}
+
+#left-menu ul li{}
+
+#left-menu ul li a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    padding:12px 10px;
+    text-transform:uppercase;
+    border-bottom:solid 1px #000;
+}
+
+#left-menu ul li a:hover{
+    background:#000;
+}
+
+#logo{
+    margin: auto;
+    width: 60%;
+}

@@ -25,8 +25,18 @@
                 </div>-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3" id="nav">
-                    Menu
+                <div class="col-md-3" id="menu">
+                    <div id="menulink">Menu</div>
+                    <div id="left-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Midway</a></li>
+                            <li><a href="#">West Saint Paul</a></li>
+                            <li><a href="#">Columbia Heights</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row">  

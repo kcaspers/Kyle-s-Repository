@@ -17,26 +17,46 @@
         <div class="container-fluid">
             <!--Insert header... this may not work great-->
             <%@include file="pageHeader.jsp" %>
-            <div class="row">
+            <div class="row canBlur">
                 <!--This should include both the big picture and description
                 as well as the location info with the embedded google map-->
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <div class="row">
                         <h3>Midway - Saint Paul</h3>
-                            <img id="midwayImage" class="img-responsive"
-                                 src="../images/UK-medicines-regulator-slams-door-on-herbal-food-supplements.jpg" alt=""/>
-                        <p>Text text text text text text text text text</p>
+                        <img id="midwayImage" class="img-responsive"
+                             src="../images/UK-medicines-regulator-slams-door-on-herbal-food-supplements.jpg" alt=""/>
+                        <p id="locationInfoA">Text text text text text text text text text</p>
                         <div class="col-md-6">
-                            Photo
+                            <!--<img class="productPhoto" src="../images/150425-F-XM588-001.jpg" alt=""/>-->
                         </div>
                         <div class="col-md-6">
-                            Photo
+                            <!--<img class="productPhoto" src="../images/170322-F-OT558-0001.jpg" alt=""/>-->
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                    Map and location info goes here.
+                <div class="col-md-4">
+                    <h3>Find us</h3>
+                    <div id="mapDiv">
+
+                    </div>
+                    <div id="locationInfoB">
+                        <div class="col-md-6">
+                            <b>Address</b>
+                            <p>
+                                Midway Marketplace <br>
+                                1360 University Ave W <br>
+                                St Paul, MN <br>
+                                55104
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Phone</b>
+                            <p>
+                                (651)645-2315
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -6,6 +6,12 @@ h3{
     text-align: center;
 }
 
+.productPhoto{
+    margin: auto;
+    width: 60%;
+    height: 60%;
+}
+
 #photoWithText{
     text-align: center;
     padding: 50px;
@@ -18,3 +24,12 @@ h3{
     height: 60%;
 }
 
+#locationInfoA{
+    text-align: center;
+}
+
+#mapDiv{
+    background-color: grey;
+    width: 100%;
+    height: 200px;
+}
