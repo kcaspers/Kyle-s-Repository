@@ -13,11 +13,14 @@
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/midway.css" rel="stylesheet" type="text/css"/>
     </head>
+    
     <body>
+        
         <div class="container-fluid">
             <!--Insert header... this may not work great-->
             <%@include file="pageHeader.jsp" %>
             <div class="row canBlur">
+                
                 <!--This should include both the big picture and description
                 as well as the location info with the embedded google map-->
                 <div class="col-md-8">

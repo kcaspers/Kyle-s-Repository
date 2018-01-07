@@ -1,13 +1,18 @@
 html{
-    
+
 }
 
 body{
-    
+
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
 }
 
 .container-fluid{
-  
+
 }
 
 .row{
@@ -23,14 +28,61 @@ body{
     height: 70%;
 }
 
-.locationTitle{
-    margin: auto;
-    width: 50%;
+/*fancy buttons*/
+button,
+button::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 5px;
 }
+
+.locationTitle{
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    background: none;
+    /*border: 3px solid black;*/
+    border-radius: 5px;
+    color: black;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 1em;
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+.locationTitle::before,
+.locationTitle::after {
+    background: #8cbc65;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.locationTitle::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.locationTitle:hover:after {
+    width: 100%;
+}
+
+.locationTitle:hover {
+    color: white;
+}
+/*fancy buttons*/
 
 #storeLogo{
     margin: auto;
-    width: 50%;
+    width: 30%;
+    height: 30%;
     /*padding: 10px;*/
 }
 

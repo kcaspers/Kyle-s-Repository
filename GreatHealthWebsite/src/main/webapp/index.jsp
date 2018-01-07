@@ -24,48 +24,56 @@
                     <img src="images/honeybee.png" alt=""/>
                 </div>-->
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3" id="menu">
-                    <div id="menulink">Menu</div>
-                    <div id="left-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Midway</a></li>
-                            <li><a href="#">West Saint Paul</a></li>
-                            <li><a href="#">Columbia Heights</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">  
+            <%@include file="jsp/pageHeader.jsp" %>
+            <!--            <div class="row">
+                            <div class="col-md-3" id="menu">
+                                <div id="menulink">Menu</div>
+                                <div id="left-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Midway</a></li>
+                                        <li><a href="#">West Saint Paul</a></li>
+                                        <li><a href="#">Columbia Heights</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>-->
+            <div class="row canBlur">  
                 <div id="header">
-                    <div id="storeLogo">
-                        <img src="images/honeybeeMain.png" alt=""/>
+                    <div >
+                        <!--<img src="images/honeybeeMain.png" alt=""/>-->
+                        <img id="storeLogo" class="img-responsive" src="images/ghlogo.png" alt=""/>
                     </div>
                 </div>
             </div>  
-            <div class="row">  
+            <div class="row canBlur">  
                 <!--<div id="locations">-->
-                <div id="locationOne" class="col-md-4">
-                    <h3 class="locationTitle">
-                        <a href="${pageContext.request.contextPath}/jsp/midway.jsp">Location One</a>
-                    </h3>
-                </div>
-                <div id="locationTwo" class="col-md-4">
-                    <h3 class="locationTitle">
-                        Location Two
-                    </h3>
-                </div>
-                <div id="locationThree" class="col-md-4">
-                    <h3 class="locationTitle">
-                        Location Three
-                    </h3>
-                </div>
+                <a href="${pageContext.request.contextPath}/jsp/midway.jsp">
+                    <div id="locationOne" class="col-md-4">
+                        <button class="locationTitle">
+                            Location One
+                        </button>
+                    </div>
+                </a>
+                <a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">
+                    <div id="locationTwo" class="col-md-4">
+                        <button class="locationTitle">
+                            Location Two
+                        </button>
+                    </div>
+                </a>
+                <a href="${pageContext.request.contextPath}/jsp/columbia.jsp">
+                    <div id="locationThree" class="col-md-4">
+                        <button class="locationTitle">
+                            Location Three
+                        </button>
+                    </div>
+                </a>
                 <!--</div>-->
             </div>
-            <div class="row">
+            <div class="row canBlur">
                 <div id="footerInfo">
                     boilerplate code
                 </div>

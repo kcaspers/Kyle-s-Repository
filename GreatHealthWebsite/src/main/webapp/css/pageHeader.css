@@ -48,3 +48,11 @@
     margin: auto;
     width: 60%;
 }
+
+#headerRow{
+    background-color: goldenrod;
+}
+
+#headerRule{
+    margin-bottom: 0px;
+}
