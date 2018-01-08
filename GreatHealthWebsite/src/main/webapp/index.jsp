@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>  
-            <div class="row canBlur">  
+            <div class="row canBlur" id="locationRow">  
                 <!--<div id="locations">-->
                 <a href="${pageContext.request.contextPath}/jsp/midway.jsp">
                     <div id="locationOne" class="col-md-4">
@@ -73,11 +73,7 @@
                 </a>
                 <!--</div>-->
             </div>
-            <div class="row canBlur">
-                <div id="footerInfo">
-                    boilerplate code
-                </div>
-            </div>
+            <%@include file="jsp/pageFooter.jsp"%>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>

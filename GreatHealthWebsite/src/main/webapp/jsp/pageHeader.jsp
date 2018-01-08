@@ -10,6 +10,7 @@
 <div id="headerRow" class="row">
     <div class="col-md-3">
         <div id="menulink">
+            <!--it would be nice just to use a symbol here, especially on the home page-->
             <span id="menuText">Menu</span>
         </div>
         <div id="left-menu">

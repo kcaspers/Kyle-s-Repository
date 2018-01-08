@@ -3,7 +3,7 @@ html{
 }
 
 body{
-   
+
 }
 
 a{
@@ -89,8 +89,11 @@ button::after {
     /*padding: 10px;*/
 }
 
+/*
 #footerInfo{
     margin:auto;
     width: 50%;
     text-align: center;
 }
+*/
+
