@@ -1,16 +1,23 @@
-/*body{
-    margin:0px;padding:0px;
-}*/
+
 
 #menulink{
     width:220px;
-    background:#8cbc65;
-    color:#fff;
+    /*background:#8cbc65;*/
+    color:black;
     height:40px;
     line-height:40px;
     text-indent:10px;
     cursor:pointer;
     margin-left: -15px;
+}
+
+#menuText{
+    font-size: 1em;
+    transition:color 0.1s ease;
+}
+
+#menuText:hover{
+    color:#8cbc65;
 }
 
 #left-menu{
@@ -50,7 +57,8 @@
 }
 
 #headerRow{
-    background-color: goldenrod;
+    /*background-color: #8cbc65;
+    padding-bottom: 20px;*/
 }
 
 #headerRule{

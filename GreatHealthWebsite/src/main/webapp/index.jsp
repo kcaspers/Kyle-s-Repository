@@ -53,21 +53,21 @@
                 <a href="${pageContext.request.contextPath}/jsp/midway.jsp">
                     <div id="locationOne" class="col-md-4">
                         <button class="locationTitle">
-                            Location One
+                            <span class="locationText">St Paul - Midway</span>
                         </button>
                     </div>
                 </a>
                 <a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">
                     <div id="locationTwo" class="col-md-4">
                         <button class="locationTitle">
-                            Location Two
+                            <span class="locationText">West St Paul</span>
                         </button>
                     </div>
                 </a>
                 <a href="${pageContext.request.contextPath}/jsp/columbia.jsp">
                     <div id="locationThree" class="col-md-4">
                         <button class="locationTitle">
-                            Location Three
+                            <span class="locationText">Columbia Heights</span>
                         </button>
                     </div>
                 </a>

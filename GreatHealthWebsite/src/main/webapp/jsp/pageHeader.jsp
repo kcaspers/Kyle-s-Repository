@@ -8,9 +8,11 @@
 <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
 <link href="${pageContext.request.contextPath}/css/pageHeader.css" rel="stylesheet" type="text/css"/>
 
-<div class="row">
+<div id="headerRow" class="row">
     <div class="col-md-3">
-        <div id="menulink">Menu</div>
+        <div id="menulink">
+            <span id="menuText">Menu</span>
+        </div>
         <div id="left-menu">
             <ul>
                 <li><a href="#">Home</a></li>

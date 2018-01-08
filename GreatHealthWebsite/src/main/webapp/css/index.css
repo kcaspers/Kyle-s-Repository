@@ -3,7 +3,7 @@ html{
 }
 
 body{
-
+   
 }
 
 a{
@@ -42,7 +42,7 @@ button::after {
 .locationTitle{
     display: block;
     margin: 1em auto;
-    width: 50%;
+    /*width: 60%;*/
     background: none;
     /*border: 3px solid black;*/
     border-radius: 5px;
@@ -52,7 +52,10 @@ button::after {
     padding: 1em;
     position: relative;
     text-transform: uppercase;
+}
 
+.locationText{
+    white-space: nowrap;
 }
 
 .locationTitle::before,
