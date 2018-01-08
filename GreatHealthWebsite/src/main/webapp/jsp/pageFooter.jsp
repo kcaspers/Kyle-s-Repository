@@ -10,7 +10,7 @@
 <link href="${pageContext.request.contextPath}/css/pageFooter.css" rel="stylesheet" type="text/css"/>
 <div class="row canBlur">
     <div id="footerInfo">
-        <hr>
+        <hr id="footerHeader">
         <div class="col-md-12">
            &copy 2018 Great Health Nutrition
         </div>

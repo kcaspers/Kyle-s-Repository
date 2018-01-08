@@ -12,7 +12,7 @@ $(document).ready(function () {
         {
             $('#left-menu').css('z-index', 1);
             $('#left-menu').animate({"marginLeft": "-15px"}, 500, function () {
-                $('#menulink').html("Close");
+                //$('#menulink').html("Close");
             });
             $('.canBlur').fadeTo(500, 0.5);
 
@@ -20,7 +20,7 @@ $(document).ready(function () {
         } else
         {
             $('#left-menu').animate({"marginLeft": "-30%"}, 500, function () {
-                $('#menulink').html("Menu");
+                //$('#menulink').html("Menu");
             });
             $('.canBlur').fadeTo(500, 1);
             count++;

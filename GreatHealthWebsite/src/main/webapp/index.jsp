@@ -43,8 +43,9 @@
             <div class="row canBlur">  
                 <div id="header">
                     <div >
-                        <!--<img src="images/honeybeeMain.png" alt=""/>-->
-                        <img id="storeLogo" class="img-responsive" src="images/ghlogo.png" alt=""/>
+                        <!--<img id="storeLogo" class="img-responsive" src="images/ghlogo.png" alt=""/>-->
+                        <img id="storeLogo" class="img-responsive"
+                             src="images/PURABE8BTXE28KTR4W3QTSHU5VD36VKF.jpg" alt=""/>
                     </div>
                 </div>
             </div>  

@@ -35,9 +35,22 @@
                             retailer, specializing in holistic health, sports nutrition and detox products.
                         </p>
                     </div>
-                    
                 </div>
-
+                <div class="row">
+                    <!--product line-->
+                    <div class="col-md-12">
+                        <h3>Products</h3>
+                        <p class="centeredContent">
+                            We proudly carry a diverse range of supplements and are the primary retailer of NOW brand products 
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Customer testimonials-->
+                    <div class="col-md-12">
+                        <h3>Customer Testimonials</h3>
+                    </div>
+                </div>
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>

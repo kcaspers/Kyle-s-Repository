@@ -91,9 +91,15 @@
                     <div class="col-md-6">
                         <p>We have three convenient Twin Cities locations, including:</p>
                         <ul>
-                            <li>West Saint Paul</li>
-                            <li>Columbia Heights</li>
-                            <li>Saint Paul - Midway</li>
+                            <li>
+                                <a href="./westsaintpaul.jsp">West Saint Paul</a>
+                            </li>
+                            <li>
+                                <a href="./columbia.jsp">Columbia Heights</a>
+                            </li>
+                            <li>
+                                <a href="./midway.jsp">Saint Paul - Midway</a>
+                            </li>
                         </ul>
                     </div>
 

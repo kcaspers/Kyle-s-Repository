@@ -12,8 +12,9 @@
 }
 
 #menuText{
-    font-size: 1em;
+    font-size: 2em;
     transition:color 0.1s ease;
+    padding-top: 15px;
 }
 
 #menuText:hover{
@@ -26,6 +27,7 @@
     position:fixed;
     background:#333;
     /*margin-left:-220px;*/
+    margin-top: 20px;
     margin-left:-30%;
 }
 
@@ -58,8 +60,8 @@
 
 #headerRow{
     /*background-color: #8cbc65;
-    padding-bottom: 20px;*/
-    height: 80px;
+    padding-bottom: 20px;
+    height: 40px;*/
 }
 
 #headerRule{
