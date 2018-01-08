@@ -16,7 +16,7 @@
         <div id="left-menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="${pageContext.request.contextPath}/jsp/about.jsp">About</a></li>
                 <li><a href="#">Midway</a></li>
                 <li><a href="#">West Saint Paul</a></li>
                 <li><a href="#">Columbia Heights</a></li>

@@ -12,6 +12,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="container-fluid">
+            <%@include file="pageHeader.jsp" %>
+            <div class="row canBlur">
+                
+            </div>
+            <%@include file="pageFooter.jsp"%>
+        </div>
     </body>
 </html>

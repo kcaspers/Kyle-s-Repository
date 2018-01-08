@@ -13,8 +13,14 @@ h3{
 }
 
 #locationBanner{
-    height: 30px;
+    text-align: center;
+    height: 75px;
+    width: 50%;
+    margin: auto;
     background-color: #8cbc65;
+    color: white;
+    border-radius: 10px;
+    /*background: linear-gradient(to right, rgba(255,0,0,0), #8cbc65);*/
 }
 
 #photoWithText{

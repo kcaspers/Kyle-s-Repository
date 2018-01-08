@@ -11,11 +11,8 @@
 <div class="row canBlur">
     <div id="footerInfo">
         <hr>
-        <div class="col-md-3">
+        <div class="col-md-12">
            &copy 2018 Great Health Nutrition
-        </div>
-        <div class="col-md-3 col-md-offset-6">
-            more text
         </div>
     </div>
 </div>
