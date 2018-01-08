@@ -73,6 +73,24 @@
                 </a>
                 <!--</div>-->
             </div>
+            <!--        
+            <div class="row canBlur" id="lowerRow">
+                <a href="${pageContext.request.contextPath}/jsp/contact.jsp">
+                    <div id="locationOne" class="col-md-4">
+                        <button class="locationTitle">
+                            <span class="locationText">Contact</span>
+                        </button>
+                    </div>
+                </a>
+                <a href="${pageContext.request.contextPath}/jsp/about.jsp">
+                    <div id="locationOne" class="col-md-4">
+                        <button class="locationTitle">
+                            <span class="locationText">About</span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+            -->
             <%@include file="jsp/pageFooter.jsp"%>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->

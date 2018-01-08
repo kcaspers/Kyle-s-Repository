@@ -28,6 +28,11 @@ a{
     height: 70%;
 }
 
+#lowerRow{
+    display: flex;
+    justify-content: space-between;
+}
+
 /*fancy buttons*/
 button,
 button::after {

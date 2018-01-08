@@ -15,12 +15,12 @@
         </div>
         <div id="left-menu">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
                 <li><a href="${pageContext.request.contextPath}/jsp/about.jsp">About</a></li>
-                <li><a href="#">Midway</a></li>
-                <li><a href="#">West Saint Paul</a></li>
-                <li><a href="#">Columbia Heights</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="${pageContext.request.contextPath}/jsp/midway.jsp">Midway</a></li>
+                <li><a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">West Saint Paul</a></li>
+                <li><a href="${pageContext.request.contextPath}/jsp/columbia.jsp">Columbia Heights</a></li>
+                <li><a href="${pageContext.request.contextPath}/jsp/contact.jsp">Contact</a></li>
             </ul>
         </div>
     </div>
