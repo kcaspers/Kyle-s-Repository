@@ -23,6 +23,11 @@
                 
                 <!--This should include both the big picture and description
                 as well as the location info with the embedded google map-->
+                <div class="row canBlur">
+                    <div class="col-md-12" id="locationBanner">
+                        Saint Paul - Midway
+                    </div>
+                </div>
                 <div class="col-md-8">
                     <div class="row">
                         <h3>Midway - Saint Paul</h3>

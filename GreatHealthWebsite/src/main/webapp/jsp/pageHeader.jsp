@@ -7,7 +7,6 @@
 <!DOCTYPE html>
 <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
 <link href="${pageContext.request.contextPath}/css/pageHeader.css" rel="stylesheet" type="text/css"/>
-
 <div id="headerRow" class="row">
     <div class="col-md-3">
         <div id="menulink">

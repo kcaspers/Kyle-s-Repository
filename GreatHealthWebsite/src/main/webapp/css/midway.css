@@ -12,6 +12,11 @@ h3{
     height: 60%;
 }
 
+#locationBanner{
+    height: 30px;
+    background-color: #8cbc65;
+}
+
 #photoWithText{
     text-align: center;
     padding: 50px;
