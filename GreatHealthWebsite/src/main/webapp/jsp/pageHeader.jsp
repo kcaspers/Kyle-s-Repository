@@ -8,11 +8,14 @@
 <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
 <link href="${pageContext.request.contextPath}/css/pageHeader.css" rel="stylesheet" type="text/css"/>
 <div id="headerRow" class="row">
-    <div class="col-md-3">
+    <div class="col-md-12">
         <div id="menulink">
             <!--it would be nice just to use a symbol here, especially on the home page-->
-            <!--<span id="menuText">Menu</span>-->
             <span id="menuText" class="glyphicon glyphicon-menu-hamburger"></span>
+
+            <span id="pageTitle">
+                
+            </span>
         </div>
         <div id="left-menu">
             <ul>
@@ -34,7 +37,7 @@
         </a>
     </div>
 </div>
-<hr id="headerRule">
+<!--<hr id="headerRule">-->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/pageHeader.js" type="text/javascript"></script>

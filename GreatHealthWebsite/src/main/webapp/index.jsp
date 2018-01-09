@@ -97,7 +97,7 @@
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-
+        <script src="js/index.js" type="text/javascript"></script>
     </body>
 </html>
 

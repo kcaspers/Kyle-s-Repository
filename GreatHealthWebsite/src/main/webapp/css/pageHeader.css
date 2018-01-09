@@ -1,10 +1,11 @@
 
 
 #menulink{
-    width:220px;
-    /*background:#8cbc65;*/
+    width: 100%;
+    /*width:220px;
+    background:#8cbc65;*/
     color:black;
-    height:40px;
+    height:60px;
     line-height:40px;
     text-indent:10px;
     cursor:pointer;
@@ -26,8 +27,8 @@
     height:100%;
     position:fixed;
     background:#333;
-    /*margin-left:-220px;*/
-    margin-top: 20px;
+    /*margin-left:-220px;
+    margin-top: 20px;*/
     margin-left:-30%;
 }
 
@@ -62,8 +63,16 @@
     /*background-color: #8cbc65;
     padding-bottom: 20px;
     height: 40px;*/
+    background: #8cbc65; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top right, #dcfca6, #609b49); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top right, #dcfca6, #609b49); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #headerRule{
     margin-bottom: 0px;
+}
+
+#pageTitle{
+    color: white;
+    float: right;
 }

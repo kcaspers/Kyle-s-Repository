@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 $(document).ready(function () {
+    $('#pageTitle').append('<h3>' + parent.document.title + '</h3>')
     //var notMenu = $('div').not('.sideMenu');
     //var notMenu = $('body').not('#dontBlur');
     let count = 1;
