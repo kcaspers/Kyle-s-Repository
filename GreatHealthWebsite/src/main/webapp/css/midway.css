@@ -37,6 +37,13 @@ h3{
 
 #locationInfoA{
     text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#locationInfoA p{
+    text-align: justify;
 }
 
 #mapDiv{

@@ -10,7 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="../css/about.css" rel="stylesheet" type="text/css"/>
-        <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
+
         <title>About</title>
     </head>
     <body>
@@ -43,6 +44,29 @@
                         <p class="centeredContent">
                             We proudly carry a diverse range of supplements and are the primary retailer of NOW brand products 
                         </p>
+                        <!--Make some kind of table here with all the different product logos-->
+                        <div class="row">
+                            <div class="col-md-4 productSlot">
+                                <img class="productPhoto" src="../images/SourceN_logo_arch_WEB.jpg" alt=""/>
+                            </div>
+                            <div class="col-md-4 productSlot">
+                                <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/>
+                            </div>
+                            <div class="col-md-4 productSlot">
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 productSlot">
+                                col
+                            </div>
+                            <div class="col-md-4 productSlot">
+                                col
+                            </div>
+                            <div class="col-md-4 productSlot">
+                                col
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -54,7 +78,8 @@
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>
-        <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
     </body>
 </html>
