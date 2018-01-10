@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <!-- put a keyed image here-->
-                        image
+                        <img class="img-responsive" id="aboutImage" src="../images/2013_04_25_14_35_34.jpg" alt=""/>
                     </div>
                     <div class="col-md-6">
                         <!--<img id="greatHealthImage" class="img-responsive" src="../images/1484600631-asset.jpg" alt=""/>-->
@@ -51,31 +51,52 @@
                 <div class="row" id="products">
                     <!--product line-->
                     <div class="col-md-12">
-                        <h3>Products</h3>
+                        <h1>Products</h1>
                         <p class="centeredContent">
-                            We proudly carry a diverse range of supplements and are the primary retailer of NOW brand products 
+                            We proudly carry a diverse range of supplements stock only the most reputable brands. 
                         </p>
                         <!--Make some kind of table here with all the different product logos-->
                         <div class="row">
-                            <div class="col-md-4 productSlot">
-                                <img class="productPhoto" src="../images/SourceN_logo_arch_WEB.jpg" alt=""/>
-                            </div>
-                            <div class="col-md-4 productSlot">
-                                <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/>
-                            </div>
-                            <div class="col-md-4 productSlot">
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 productSlot">
-                                col
-                            </div>
-                            <div class="col-md-4 productSlot">
-                                col
-                            </div>
-                            <div class="col-md-4 productSlot">
-                                col
+                            <div class="col-md-12">
+<!--                                <div class="carousel slide" id="productCarousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active centeredContent">
+                                            <div class="col-xs-4 centeredContent">
+                                                <img class="productPhoto" id="sourceNaturals" src="../images/SourceN_logo_arch_WEB.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="item centeredContent">
+                                            <div class="col-xs-4 centeredContent">
+                                                <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/>
+                                            </div>
+                                        </div>
+                                        <div class="item centeredContent">
+                                            <div class="col-xs-4 centeredContent">
+                                                <img class="productPhoto" src="../images/naturesplus.jpg" alt=""/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="left carousel-control" href="#productCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                    <a class="right carousel-control" href="#productCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                                </div>-->
+                                
+                                
+                                
+                                <div class="col-sm-4 productDiv">
+                                    <div class="tile purple">
+                                        <img class="productPhoto" id="sourceNaturals" src="../images/SourceN_logo_arch_WEB.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 productDiv">
+                                    <div class="tile red">
+                                        <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 productDiv">
+                                    <div class="tile orange">
+                                        <img class="productPhoto" src="../images/naturesplus.jpg" alt=""/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,8 +110,9 @@
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>
-
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+        <script src="../js/jquery.slides.js" type="text/javascript"></script>
+        <script src="../js/about.js" type="text/javascript"></script>
     </body>
 </html>
