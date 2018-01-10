@@ -18,6 +18,13 @@
         <div class="container-fluid">
             <%@include file="pageHeader.jsp" %>
             <div class="row canBlur">
+                <div class="row">
+                    <div id="photoWithText">
+                        <!--<img id="bigPhoto" class="img-responsive" src="../images/5-Questions-to-Ask-Yourself-When-Building-a-Health-Plan.jpg" alt=""/>-->
+                        <img id="bigPhoto" class="img-responsive" src="../images/aboutPhotoCropped.jpg" alt=""/>
+                        <div id="overlayText">Experience your best self</div>
+                    </div>
+                </div>
                 <div class="row" id="aboutbanner">
                     <div class="col-md-12">
                         <!--about Great Health banner-->
@@ -25,9 +32,13 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <img id="greatHealthImage" class="img-responsive" src="../images/1484600631-asset.jpg" alt=""/>
-                        <p class="centeredContent">
+                    <div class="col-md-6">
+                        <!-- put a keyed image here-->
+                        image
+                    </div>
+                    <div class="col-md-6">
+                        <!--<img id="greatHealthImage" class="img-responsive" src="../images/1484600631-asset.jpg" alt=""/>-->
+                        <p class="leftAlignContent">
                             Since 1987, Great Health Nutrition has been the Twin Cities premiere independent supplement
                             retailer, specializing in holistic health, sports nutrition and detox products.<br>
                             Since 1987, Great Health Nutrition has been the Twin Cities premiere independent supplement
@@ -37,7 +48,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="products">
                     <!--product line-->
                     <div class="col-md-12">
                         <h3>Products</h3>
@@ -53,7 +64,7 @@
                                 <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/>
                             </div>
                             <div class="col-md-4 productSlot">
-                                
+
                             </div>
                         </div>
                         <div class="row">

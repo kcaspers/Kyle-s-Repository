@@ -10,6 +10,10 @@ h3{
     text-align: center;
 }
 
+.leftAlignContent{
+    text-align: left;
+}
+
 .productPhoto{
     width: 30%;
 }
@@ -19,9 +23,50 @@ h3{
 }
 
 #aboutbanner{
+    margin-top: 10%;
+}
 
+#products{
+    margin-top: 10%;
 }
 
 #greatHealthImage{
     margin: auto;
 }
+
+#imgContainer{
+    text-align: center;
+}
+
+#bigPhoto{
+    margin: auto;
+    align: center;
+    width:100%;
+}
+
+#photoWithText{
+    position: relative;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 2%; opacity: 1; }
+    //33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+#overlayText{
+    color: white;
+    font-size: 6em;
+    position: absolute;
+    top: 82%;
+    left: 2%;
+
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+    animation-name: anim-1;
+
+}
+
+
