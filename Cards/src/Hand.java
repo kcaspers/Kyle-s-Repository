@@ -18,6 +18,10 @@ public class Hand {
 		this.handCards = cards;
 	}
 	
-	
+	public void readHand(){
+		for(Card c : handCards){
+			System.out.println(c.getCardName());
+		}
+	}
 
 }

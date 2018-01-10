@@ -8,7 +8,6 @@ public class Deck {
 	private List<Card> cards = new ArrayList<>();
 	//List<Card> dealtCards = new ArrayList<>();
 	Card[] dealtCards = new Card[52];
-	//List<Integer> dealtCards = new ArrayList<>();
 	
 	public Deck() {
 		
@@ -31,10 +30,8 @@ public class Deck {
 		Random rand = new Random();
 		Hand dealtHand = new Hand();
 		
-		
-		
 		while(dealtHand.getCards().size() < 5){
-			int cardIndex = rand.nextInt(52)+1;
+			int cardIndex = rand.nextInt(52);
 			if(dealtCards[cardIndex] == null){
 				dealtHand.getCards().add(cards.get(cardIndex));
 				//dealtCards.add(cards.get(cardIndex));

@@ -11,7 +11,8 @@ public class App {
 		Hand hand2 = newDeck.dealHand();
 		Hand hand3 = newDeck.dealHand();
 		Hand hand4 = newDeck.dealHand();
-		System.out.println(hand1);
+		
+		hand1.readHand();
 	}
 
 	
