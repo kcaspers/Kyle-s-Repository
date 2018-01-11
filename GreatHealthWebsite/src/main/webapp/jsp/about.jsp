@@ -12,7 +12,7 @@
         <link href="../css/about.css" rel="stylesheet" type="text/css"/>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
 
-        <title>About</title>
+        <title>About Great Health Nutrition</title>
     </head>
     <body>
         <div class="container-fluid">

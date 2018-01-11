@@ -2,16 +2,32 @@
     width: 100%;
     height: 100%;
 };*/
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
 ul{
     text-align: left;
 }
 
 h3{
     text-align: center;
+    font-weight: bold !important;
 }
 
 h4{
     text-align: left;
+    font-weight: bold !important;
+}
+
+h4 > hr {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 0px;
+    border: none;
+    height: 2px;
+    background-color: #333;
+    width: 245px;
 }
 
 .productPhoto{
@@ -69,14 +85,16 @@ h4{
     width: 60%;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 #mapDiv{
     background-color: grey;
-    width: 100%;
+    width: 90%;
     height: 200px;
     margin: auto;
+    margin-left: 0;
+
 }
 
 #backgroundImage { 

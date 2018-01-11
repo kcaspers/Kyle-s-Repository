@@ -13,7 +13,7 @@
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/midway.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <body>
 
         <div class="container-fluid">
@@ -61,15 +61,17 @@
                                                         </h3>-->
                             <h4>
                                 About Great Health - Midway
+                                <hr>
                             </h4>
+                            
                             <p>Conveniently located across from the Green Line Hamline Avenue Station, our 
                                 Saint Paul location is the oldest of our three stores, and is fully-stocked with the full
                                 line of NOW products, as well as many other brands.</p>
                             <p>In addition to our regular product line, the Midway store also specializes in:</p>
                             <ul>
-                                <li>detox products</li>
-                                <li>powdered vitamins</li>
-                                <li>men's health supplements</li>
+                                <li><b>detox products</b></li>
+                                <li><b>powdered vitamins</b></li>
+                                <li><b>men's health supplements</b></li>
                             </ul>
 
                         </div>
@@ -83,7 +85,6 @@
                         </div>
                         <div class="col-md-6">
                             <!--<img class="productPhoto" src="../images/150425-F-XM588-001.jpg" alt=""/>-->
-                            <p>More info more info more info</p>
                         </div>
                         <div class="col-md-6">
                             <!--<img class="productPhoto" src="../images/170322-F-OT558-0001.jpg" alt=""/>-->
