@@ -2,14 +2,27 @@
     width: 100%;
     height: 100%;
 };*/
+ul{
+    text-align: left;
+}
+
 h3{
     text-align: center;
+}
+
+h4{
+    text-align: left;
 }
 
 .productPhoto{
     margin: auto;
     width: 60%;
     height: 60%;
+}
+
+.pixelMargin{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #locationBanner{
@@ -31,19 +44,32 @@ h3{
 
 #midwayImage{
     margin: auto;
-    width: 60%;
     height: 60%;
+}
+
+#midwayCarousel{
+    margin: auto;
+    width: 70%;
 }
 
 #locationInfoA{
     text-align: center;
     width: 60%;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #locationInfoA p{
     text-align: justify;
+}
+
+#learnMore{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #mapDiv{

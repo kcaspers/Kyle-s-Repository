@@ -12,6 +12,7 @@
         <title>Contact</title>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/contact.css" rel="stylesheet" type="text/css"/>
+        
     </head>
     <body>
         <div class="container-fluid">
@@ -107,8 +108,10 @@
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>
-
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
+        </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="../js/contact.js" type="text/javascript"></script>
     </body>
 </html>
