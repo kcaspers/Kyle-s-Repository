@@ -1,0 +1,181 @@
+body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+a{
+    width: inherit;
+}
+
+.centeredContent{
+    text-align: center;
+}
+
+.leftAlignContent{
+    text-align: left;
+}
+
+.productPhoto{
+    width: inherit;
+
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);  
+}
+
+.productPhoto:hover{
+    /*box-shadow: 0px 0px 150px #000000;*/
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+#sourceNaturals{
+    width: 60%;
+    margin: auto;
+}
+/*
+.productSlot{
+    display: inline;
+    width: 20%;
+    text-align: center;
+   
+}
+
+.productRow{
+    height:100%;
+}
+*/
+
+.productDiv{
+    height: inherit;
+}
+
+.tile {  
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;	
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    /*box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+    background: #dcfca6;*/
+    border: none;
+}
+.tile:hover{
+    /*border: 1px solid #dcfca6;
+    background: #8cbc65;*/
+}
+.title {
+    margin-top: 0px;
+}
+
+#aboutbanner{
+    margin-top: 10%;
+}
+
+#products{
+    margin-top: 10%;
+
+}
+
+#greatHealthImage{
+    margin: auto;
+}
+
+#imgContainer{
+    text-align: center;
+}
+
+#bigPhoto{
+    margin: auto;
+    align: center;
+    width:100%;
+}
+
+#aboutImage{
+    float: right;
+}
+
+#photoWithText{
+    position: relative;
+}
+
+@keyframes anim-1 {
+    0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { left: 2%; opacity: 1; }
+    //33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+#overlayText{
+    color: white;
+    font-size: 6em;
+    position: absolute;
+    top: 82%;
+    left: 2%;
+
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+    animation-name: anim-1;
+
+}
+
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.2);   
+}
+
+.quote-box{
+    overflow: hidden;
+    
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: #4ADFCC;
+    margin-top: 25px;
+    color:white;
+    width: 325px;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+    margin: auto;
+}
+
+.quotation-mark{
+    margin-top: -10px;
+    font-weight: bold;
+    font-size:100px;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+.quote-text{
+    font-size: 19px;
+    margin-top: -65px;
+}

@@ -12,7 +12,7 @@
         <title>Contact</title>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/contact.css" rel="stylesheet" type="text/css"/>
-        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
     <body>
         <div class="container-fluid">

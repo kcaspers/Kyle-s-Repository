@@ -21,6 +21,7 @@
             <ul>
                 <li><a href="${pageContext.request.contextPath}/index.jsp">Home</a></li>
                 <li><a href="${pageContext.request.contextPath}/jsp/about.jsp">About</a></li>
+                <li><a href="${pageContext.request.contextPath}/jsp/ourmission.jsp">Our Mission</a></li>
                 <li><a href="${pageContext.request.contextPath}/jsp/midway.jsp">Midway</a></li>
                 <li><a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">West Saint Paul</a></li>
                 <li><a href="${pageContext.request.contextPath}/jsp/columbia.jsp">Columbia Heights</a></li>
