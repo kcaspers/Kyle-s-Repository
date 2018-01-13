@@ -18,8 +18,8 @@
                     <h1>Speaker Impedance Calculator</h1>
                 </div>
                 <div id="saveLoad" class="col-md-3 col-md-offset-3">
-                    <button type="button" data-toggle="modal" data-target="#saveLoadModal">
-                        Save/Load Configuration
+                    <button type="button"> <!--data-toggle="modal" data-target="#saveLoadModal"-->
+                        <s>Save/Load Configuration</s>
                     </button>
                 </div>    
             </div>
