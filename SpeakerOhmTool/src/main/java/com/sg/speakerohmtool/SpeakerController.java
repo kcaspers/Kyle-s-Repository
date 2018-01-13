@@ -62,7 +62,8 @@ public class SpeakerController {
         model.put("ampOhm", this.ampOhm);
         
         //get all saved cabinet configurations
-        model.put("savedRigs", rigDao.getAllRigs());
+        //DISABLED ALL DATABASE ACTIVITY SO I CAN RUN ON HEROKU
+        //model.put("savedRigs", rigDao.getAllRigs());
         
         model.put("cabinets", cabinets);
         model.put("cabinetsPresent", cabinetsPresent);
