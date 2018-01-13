@@ -1,1 +1,1 @@
-web: java -war target/spring-mvc-webapp.war
+web: java -jar target/spring-mvc-webapp.war
