@@ -101,6 +101,10 @@ a{
 
 }
 
+#productsHeader{
+    margin-bottom: 20px;
+}
+
 #greatHealthImage{
     margin: auto;
 }
@@ -117,6 +121,16 @@ a{
 
 #aboutImage{
     float: right;
+}
+
+#aboutImageBlur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0px 3px 20px 10px white;
+    border-radius: 20px;
+    /* top: 0;
+   left: 0;*/
 }
 
 #photoWithText{
@@ -154,7 +168,7 @@ blockquote{
 
 .quote-box{
     overflow: hidden;
-    
+
     margin-top: -50px;
     padding-top: -100px;
     border-radius: 17px;

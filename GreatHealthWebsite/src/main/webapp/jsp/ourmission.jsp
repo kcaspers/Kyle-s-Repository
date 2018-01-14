@@ -44,7 +44,25 @@
             <div class="row" style="margin-bottom: 30px">
                     <div class="col-md-12" id="testimonials">
                         <h1>Customer Testimonials</h1>
-                        <div class="col-md-4 col-sm-12">
+                        <!-- this could be a carousel -->
+                        <div class="col-md-12 col-sm-12" id="quoteContainer">
+                            <blockquote class="quote-box">
+                                <p class="quotation-mark">
+                                    “
+                                </p>
+                                <p class="quote-text">
+                                    Don't believe anything that you read on the internet, it may be fake. 
+                                </p>
+                                <hr>
+                                <div class="blog-post-actions">
+                                    <p class="blog-post-bottom pull-left">
+                                        Abraham Lincoln
+                                    </p>
+
+                                </div>
+                            </blockquote> 
+                        </div>
+<!--                        <div class="col-md-4 col-sm-12">
                             <blockquote class="quote-box">
                                 <p class="quotation-mark">
                                     “
@@ -77,24 +95,7 @@
 
                                 </div>
                             </blockquote> 
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <blockquote class="quote-box">
-                                <p class="quotation-mark">
-                                    “
-                                </p>
-                                <p class="quote-text">
-                                    Don't believe anything that you read on the internet, it may be fake. 
-                                </p>
-                                <hr>
-                                <div class="blog-post-actions">
-                                    <p class="blog-post-bottom pull-left">
-                                        Abraham Lincoln
-                                    </p>
-
-                                </div>
-                            </blockquote> 
-                        </div>
+                        </div>-->
                     </div>
             </div>
 

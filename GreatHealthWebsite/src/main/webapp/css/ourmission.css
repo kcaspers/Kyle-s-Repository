@@ -179,15 +179,20 @@ blockquote{
 
 .quote-box{
     overflow: hidden;
-    margin-top: -50px;
-    padding-top: -100px;
+/*    margin-top: -50px;
+    padding-top: -100px;*/
     border-radius: 20px;
-    background-color: #4ADFCC;
-    margin-top: 25px;
+    background-color: #8cbc65;
+/*    margin-top: 25px;*/
     color:white;
     width: 325px;
     box-shadow: 2px 2px 2px 2px #E0E0E0;
     margin: auto;
+}
+
+#quoteContainer{
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .quotation-mark{
