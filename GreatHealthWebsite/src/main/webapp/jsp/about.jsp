@@ -22,7 +22,7 @@
                     <div id="photoWithText">
                         <!--<img id="bigPhoto" class="img-responsive" src="../images/5-Questions-to-Ask-Yourself-When-Building-a-Health-Plan.jpg" alt=""/>-->
                         <img id="bigPhoto" class="img-responsive" src="../images/aboutPhotoCropped.jpg" alt=""/>
-                        <div id="overlayText">Experience your best self</div>
+                        <div id="overlayText"><b>Experience your best self</b></div>
                     </div>
                 </div>
                 <div class="row" id="aboutbanner">

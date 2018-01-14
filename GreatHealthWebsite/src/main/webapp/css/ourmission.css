@@ -92,8 +92,29 @@ a{
     margin-top: 0px;
 }
 
-#aboutbanner{
+#ourMission{
     margin-top: 10%;
+    /*    background-image: url("../images/Abstract-Green-Nature-Background.jpg");
+        border-radius: 30px;*/
+}
+
+#missionBackground{
+    /*position: relative;*/
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}
+
+#missionText{
+/*    position: absolute;
+    top: 30%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    left: 50%;*/
+
+
 }
 
 #products{
@@ -121,6 +142,10 @@ a{
 
 #photoWithText{
     position: relative;
+}
+
+#testimonials{
+    margin-top: 10%;
 }
 
 @keyframes anim-1 {
@@ -154,10 +179,9 @@ blockquote{
 
 .quote-box{
     overflow: hidden;
-    
     margin-top: -50px;
     padding-top: -100px;
-    border-radius: 17px;
+    border-radius: 20px;
     background-color: #4ADFCC;
     margin-top: 25px;
     color:white;
