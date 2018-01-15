@@ -17,11 +17,11 @@
     <body>
         <div class="container-fluid">
             <%@include file="pageHeader.jsp" %>
-            <div class="row canBlur">
+            <div class="canBlur">
                 <div class="row">
                     <div id="photoWithText">
                         <!--<img id="bigPhoto" class="img-responsive" src="../images/5-Questions-to-Ask-Yourself-When-Building-a-Health-Plan.jpg" alt=""/>-->
-                        <img id="bigPhoto" class="img-responsive" src="../images/aboutPhotoCropped.jpg" alt=""/>
+                        <img id="bigPhoto"  src="../images/aboutPhotoCropped.jpg" alt=""/>
                         <div id="overlayText"><b>Experience your best self</b></div>
                     </div>
                 </div>
@@ -55,7 +55,9 @@
                     <div class="col-md-12" id="productsHeader">
                         <h1>Products</h1>
                         <p class="centeredContent">
-                            We proudly carry a diverse range of supplements stock only the most reputable brands. 
+                            We proudly carry a diverse range of supplements stock only the most reputable brands.<br>
+                            We proudly carry a diverse range of supplements stock only the most reputable brands.<br>
+                            We proudly carry a diverse range of supplements stock only the most reputable brands.<br>
                         </p>
                     </div>
                     <!--Make some kind of table here with all the different product logos-->
@@ -168,6 +170,18 @@
                 </div>
             </div>
                 -->
+                <div id="greyBlock">
+                    <!--want a grey block-->
+                    <div class="greyBlockText">
+                        <h1>
+                            put something here
+                        </h1>
+                        <p>
+                            more text more text
+                        </p>
+                    </div>
+
+                </div>
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>

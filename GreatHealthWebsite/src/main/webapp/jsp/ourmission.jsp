@@ -17,7 +17,7 @@
     <body>
         <div class="container-fluid">
             <%@include file="pageHeader.jsp" %>
-            <div class="row canBlur">
+            <div class="canBlur">
                 <div class="row">
                     <div id="photoWithText">
                         <img id="bigPhoto" class="img-responsive"
