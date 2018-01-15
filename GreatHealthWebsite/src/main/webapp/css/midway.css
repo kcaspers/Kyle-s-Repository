@@ -20,7 +20,7 @@ h4{
     font-weight: bold !important;
 }
 
-h4 > hr {
+#aboutRule{
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 0px;
@@ -28,6 +28,23 @@ h4 > hr {
     height: 2px;
     background-color: #333;
     width: 245px;
+}
+
+#addressRule{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 0px;
+    border: none;
+    height: 2px;
+    background-color: #333;
+    width: 120px;
+}
+
+h3 > hr{
+    border: none;
+    height: 2px;
+    background-color: #333;
+    width: 120px;
 }
 
 .productPhoto{
@@ -80,6 +97,11 @@ h4 > hr {
     text-align: justify;
 }
 
+#locationInfoB{
+    margin-top: 30px;
+    text-align: justify;
+}
+
 #learnMore{
     text-align: center;
     width: 60%;
@@ -93,8 +115,7 @@ h4 > hr {
     width: 90%;
     height: 200px;
     margin: auto;
-    margin-left: 0;
-
+    /*    margin-left: 0;*/
 }
 
 #backgroundImage { 
@@ -110,4 +131,14 @@ h4 > hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 800px){
+
+    #locationInfoB{
+/*        width: 60%;
+        margin: auto;*/
+    }
+    
+    
 }

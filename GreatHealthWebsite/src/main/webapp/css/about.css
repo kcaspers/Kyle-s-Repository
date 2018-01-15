@@ -200,7 +200,7 @@ blockquote{
     background-color: lightgrey;
     height:300px;
     width: 100%;
-    margin-bottom: 10%;
+/*    margin-bottom: 10%;*/
     position: relative;
     
 }
@@ -209,7 +209,7 @@ blockquote{
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 30%;
 }
 
 @media only screen and (max-width: 1150px){
