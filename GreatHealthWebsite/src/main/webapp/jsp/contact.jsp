@@ -85,12 +85,12 @@
             <hr>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-12">
                         <div id="mapDiv">
 
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-xs-12">
                         <p>We have three convenient Twin Cities locations, including:</p>
                         <ul>
                             <li>

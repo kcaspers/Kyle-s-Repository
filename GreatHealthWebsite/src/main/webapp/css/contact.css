@@ -18,3 +18,19 @@ h1{
     width: 60%;
     margin: auto;
 }
+
+@media only screen and (max-width: 993px){
+    #mapDiv{
+        width: 100%;
+        /*height: 300px;*/
+       
+    }
+}
+
+@media only screen and (max-width: 425){
+    #mapDiv{
+        width: 100%;
+        height: 200p%;
+        
+    }
+}
