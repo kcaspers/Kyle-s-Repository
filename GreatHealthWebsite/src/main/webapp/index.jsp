@@ -7,6 +7,7 @@
     <head>
         <title>Great Health Nutrition</title>
         <!-- Bootstrap core CSS -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">

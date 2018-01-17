@@ -12,7 +12,7 @@ $(document).ready(function () {
         if (count % 2 != 0)
         {
             $('#left-menu').css('z-index', 1);
-            $('#left-menu').animate({"marginLeft": "-15px"}, 500, function () {
+            $('#left-menu').animate({"marginLeft": "-15px"}, 800, function () {
                 //$('#menulink').html("Close");
             });
             $('.canBlur').fadeTo(500, 0.5);
@@ -20,7 +20,7 @@ $(document).ready(function () {
             count++;
         } else
         {
-            $('#left-menu').animate({"marginLeft": "-30%"}, 500, function () {
+            $('#left-menu').animate({"marginLeft": "-100%"}, 800, function () {
                 //$('#menulink').html("Menu");
             });
             $('.canBlur').fadeTo(500, 1);

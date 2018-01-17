@@ -6,6 +6,7 @@
 <html>
     <head>
         <title>Hello Controller Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap core CSS -->
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     </head>
