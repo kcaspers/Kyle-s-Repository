@@ -102,3 +102,8 @@ button::after {
 }
 */
 
+@media only screen and (max-width: 768px){
+    #storeLogo{
+        width: 80%;
+    }
+}

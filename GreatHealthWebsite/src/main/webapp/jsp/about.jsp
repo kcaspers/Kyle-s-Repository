@@ -32,7 +32,7 @@
                         <h1>About Great Health Nutrition</h1>
                     </div>
 
-                    <div class="col-md-6 col-sm-6">
+                    <div id="imageCol" class="col-md-6 col-sm-6">
                         <!-- put a keyed image here-->
                         <div id="aboutImageDiv">
                             <img class="img-responsive" id="aboutImage" src="../images/2013_04_25_14_35_34.jpg" alt=""/>
