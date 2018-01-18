@@ -105,7 +105,7 @@
                         </div>
 
                     </div>
-
+                    
                     <div class="col-md-4">
                         <div id="locationInfoB">
                             <h4>
@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-sm-12 ol-xs-12">
                         <div id="learnMore">
                             <a href="./about.jsp">
                                 <h4>

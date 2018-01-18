@@ -6,6 +6,9 @@ body{
     font-family: 'Open Sans', sans-serif !important;
 }
 
+a{
+    text-align: center;
+}
 ul{
     text-align: left;
 }
@@ -15,7 +18,8 @@ h2{
     font-weight: bold !important;
     width: 80%;
     margin: auto;
-    
+
+
 }
 
 h3{
@@ -35,7 +39,7 @@ h4{
     border: none;
     height: 2px;
     background-color: #333;
-/*    width: 245px;*/
+    /*    width: 245px;*/
     width: inherit;
 }
 
@@ -46,7 +50,7 @@ h4{
     border: none;
     height: 2px;
     background-color: #333;
-/*    width: 120px;*/
+    /*    width: 120px;*/
     width: inherit;
 }
 
@@ -121,6 +125,7 @@ h3 > hr{
     margin: auto;
     /*    margin-top: 30px;*/
     margin-bottom: 60px;
+    visibility: hidden;
 }
 
 #mapDiv{
@@ -129,6 +134,16 @@ h3 > hr{
     height: 200px;
     margin: auto;
     /*    margin-left: 0;*/
+}
+
+.come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+    visibility: visible !important;
+}
+
+@keyframes come-in {
+    to { transform: translateY(0); }
 }
 
 #backgroundImage { 
@@ -148,9 +163,13 @@ h3 > hr{
 
 @media only screen and (max-width: 600px){
 
-        #midwayCarousel{
-            width: 90%;
-        }
+    #midwayCarousel{
+        width: 90%;
+    }
+
+    h2{
+        font-size: 20px !important;
+    }
 
 
 }
