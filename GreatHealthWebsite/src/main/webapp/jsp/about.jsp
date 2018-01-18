@@ -58,7 +58,7 @@
                         <p class="centeredContent">
                             We proudly carry a diverse range of supplements and stock only the most reputable brands.
                             In addition to vitamins, minerals and high-performance sports supplements we also stock natural 
-                            body care products including Dr. Bronner's Castile soap, NOW brand body oils, and assorted natural skin treatments.
+                            body care products including Dr.Bronner's Castile Soap, NOW brand body oils, and assorted natural skin treatments.
                             
                         </p>
                         <p class="centeredContent">

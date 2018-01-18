@@ -35,10 +35,10 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="row">
-                            <h3 class="pixelMargin">
-                                Visit our original Saint Paul Location <hr>
-                                <div id="test">test text</div>
-                            </h3>
+                            <h2 class="pixelMargin">
+                                <b>Visit our original Saint Paul Location</b> 
+                                <!--<hr>-->
+                            </h2>
                             <div id="midwayCarousel" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#midwayCarousel" data-slide-to="0"></li>
@@ -70,9 +70,10 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <h3 class="pixelMargin">
-                                Visit us <hr>
-                            </h3>
+                            <h2 class="pixelMargin">
+                                Find us
+                                <!--<hr>-->
+                            </h2>
 
                             <div id="mapDiv">
                             </div>

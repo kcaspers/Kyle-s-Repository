@@ -10,6 +10,14 @@ ul{
     text-align: left;
 }
 
+h2{
+    text-align: center;
+    font-weight: bold !important;
+    width: 80%;
+    margin: auto;
+    
+}
+
 h3{
     text-align: center;
     font-weight: bold !important;
@@ -27,7 +35,8 @@ h4{
     border: none;
     height: 2px;
     background-color: #333;
-    width: 245px;
+/*    width: 245px;*/
+    width: inherit;
 }
 
 #addressRule{
@@ -37,7 +46,8 @@ h4{
     border: none;
     height: 2px;
     background-color: #333;
-    width: 120px;
+/*    width: 120px;*/
+    width: inherit;
 }
 
 h3 > hr{
@@ -55,7 +65,7 @@ h3 > hr{
 
 .pixelMargin{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 #locationBanner{
@@ -138,11 +148,9 @@ h3 > hr{
 
 @media only screen and (max-width: 600px){
 
-    /*    #midwayCarousel{
+        #midwayCarousel{
             width: 90%;
-        }*/
-    #test{
-        font-size: 50px;
-    }
+        }
+
 
 }
