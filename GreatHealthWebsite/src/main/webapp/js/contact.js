@@ -5,17 +5,17 @@
  */
 function initMap(){
     map = new google.maps.Map(document.getElementById('mapDiv'),{
-        center: {lat: 44.95, lng: -93.21},
+        center: {lat: 44.955001, lng: -93.158172},
         zoom: 9
     });
     
     var midway = new google.maps.Marker({
-        position: new google.maps.LatLng(44.95, -93.15),
+        position: new google.maps.LatLng(44.955001, -93.158172),
         map: map
     });
     
     var westsaintpaul = new google.maps.Marker({
-        position: new google.maps.LatLng(44.89, -93.07),
+        position: new google.maps.LatLng(44.895164, -93.07865),
         map: map
     });
     

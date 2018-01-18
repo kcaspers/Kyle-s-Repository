@@ -13,7 +13,7 @@
         <link href="../css/about.css" rel="stylesheet" type="text/css"/>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <title>About Great Health Nutrition</title>
+        <title>About Great Health</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -22,7 +22,7 @@
                 <div class="row">
                     <div id="photoWithText">
                         <!--<img id="bigPhoto" class="img-responsive" src="../images/5-Questions-to-Ask-Yourself-When-Building-a-Health-Plan.jpg" alt=""/>-->
-                        <img id="bigPhoto"  src="../images/aboutPhotoCropped.jpg" alt=""/>
+                        <img id="bigPhoto"  src="../images/aboutPhotoCropped2000.jpg" alt=""/>
                         <div id="overlayText"><b>Experience your best self</b></div>
                     </div>
                 </div>
@@ -34,9 +34,9 @@
 
                     <div class="col-md-6 col-sm-6">
                         <!-- put a keyed image here-->
-                        <div>
+                        <div id="aboutImageDiv">
                             <img class="img-responsive" id="aboutImage" src="../images/2013_04_25_14_35_34.jpg" alt=""/>
-                            <div id="aboutImageBlur"></div>
+<!--                            <div id="aboutImageBlur"></div>-->
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
@@ -56,10 +56,18 @@
                     <div class="col-md-12" id="productsHeader">
                         <h1>Products</h1>
                         <p class="centeredContent">
-                            We proudly carry a diverse range of supplements stock only the most reputable brands.<br>
-                            We proudly carry a diverse range of supplements stock only the most reputable brands.<br>
-                            We proudly carry a diverse range of supplements stock only the most reputable brands.<br>
+                            We proudly carry a diverse range of supplements and stock only the most reputable brands.
+                            In addition to vitamins, minerals and high-performance sports supplements we also stock natural 
+                            body care products including Dr. Bronner's Castile soap, NOW brand body oils, and assorted natural skin treatments.
+                            
                         </p>
+                        <p class="centeredContent">
+                            <br>
+                            New line new line
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <h1>Featured Brands:</h1>
                     </div>
                     <!--Make some kind of table here with all the different product logos-->
                     <div class="col-md-12">
@@ -171,21 +179,22 @@
                 </div>
             </div>
                 -->
-                <div id="greyBlock">
-                    <!--want a grey block-->
-                    <div class="greyBlockText">
-                        <h1>
-                            put something here
-                        </h1>
-                        <p>
-                            more text more text
-                        </p>
+                <div class="row">
+                    <div id="greyBlock">
+                        <!--want a grey block-->
+                        <div class="greyBlockText">
+                            <h1>
+                                put something here
+                            </h1>
+                            <p>
+                                more text more text
+                            </p>
+                        </div>
                     </div>
-
                 </div>
             </div>
-            <%@include file="pageFooter.jsp"%>
         </div>
+        <%@include file="pageFooter.jsp"%>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="../js/jquery.slides.js" type="text/javascript"></script>

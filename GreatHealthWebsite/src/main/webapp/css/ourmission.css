@@ -1,6 +1,14 @@
-body{
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-family: 'Open Sans', sans-serif !important;
 }
+
+
 
 h1{
     text-align: center;
@@ -130,7 +138,7 @@ a{
     text-align: center;
 }
 
-#bigPhoto{
+#bigPhoto img source{
     margin: auto;
     align: center;
     width:100%;

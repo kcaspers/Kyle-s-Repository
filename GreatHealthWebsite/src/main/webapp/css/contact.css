@@ -30,7 +30,7 @@ h1{
 @media only screen and (max-width: 425){
     #mapDiv{
         width: 100%;
-        height: 200p%;
-        
+        height: 200px;
+;        
     }
 }

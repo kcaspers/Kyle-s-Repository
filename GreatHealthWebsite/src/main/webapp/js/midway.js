@@ -9,7 +9,7 @@ function initMap(){
         zoom: 11
     });
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(44.95, -93.15),
+        position: new google.maps.LatLng(44.955001, -93.158172),
         map: map
     });
     

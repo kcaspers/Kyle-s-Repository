@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Locations - Midway</title>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/midway.css" rel="stylesheet" type="text/css"/>
@@ -101,14 +101,7 @@
                             </ul>
 
                         </div>
-                        <div id="learnMore">
-                            <a href="./about.jsp">
-                                <h4>
-                                    Learn more about Great Health Nutrition
-                                    <span class="fa fa-chevron-right"></span>
-                                </h4>
-                            </a>
-                        </div>
+
                     </div>
 
                     <div class="col-md-4">
@@ -131,7 +124,18 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="learnMore">
+                            <a href="./about.jsp">
+                                <h4>
+                                    Learn more about Great Health Nutrition
+                                    <span class="fa fa-chevron-right"></span>
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>
