@@ -138,8 +138,11 @@ h3 > hr{
 
 @media only screen and (max-width: 600px){
 
-    #midwayCarousel{
-        width: 90%;
+    /*    #midwayCarousel{
+            width: 90%;
+        }*/
+    #test{
+        font-size: 50px;
     }
-    
+
 }

@@ -37,6 +37,7 @@
                         <div class="row">
                             <h3 class="pixelMargin">
                                 Visit our original Saint Paul Location <hr>
+                                <div id="test">test text</div>
                             </h3>
                             <div id="midwayCarousel" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
