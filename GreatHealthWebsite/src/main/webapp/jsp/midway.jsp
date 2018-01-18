@@ -33,7 +33,7 @@
                 </div>
                 -->
                 <div class="row">
-                    <div class="col-md-8">
+                    <div id="picDiv" class="col-md-8">
                         <div class="row">
                             <h2 class="pixelMargin">
                                 <b>Visit our original Saint Paul Location</b> 
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div id="mapCol" class="col-md-4">
                         <div class="row">
                             <h2 class="pixelMargin">
                                 Find us
@@ -126,14 +126,15 @@
                         </div>
                     </div>
                 </div>
+                <span id="mapRepos"></span>
                 <div class="row">
                     <div class="col-sm-12 ol-xs-12">
                         <div id="learnMore">
                             <a href="./about.jsp">
-                                <h4>
+                                <h3>
                                     Learn more about Great Health Nutrition
                                     <span class="fa fa-chevron-right"></span>
-                                </h4>
+                                </h3>
                             </a>
                         </div>
                     </div>

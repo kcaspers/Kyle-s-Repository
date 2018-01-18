@@ -52,9 +52,32 @@ $(window).scroll(function (event) {
         if (el.visible(true)) {
             setTimeout(function () {
                 el.addClass("come-in");
-            }, 1000);
+            }, 1500);
         }
     });
 
 });
+
+$(window).ready(function checkWidth(){
+    console.log('checkWidth called');
+    var windowSize = $(window).width();
+    if(windowSize < 990){
+        $('#mapCol').detach().insertAfter('#mapRepos');
+    }
+    if(windowSize > 990){
+        $('#mapCol').detach().insertAfter('#picDiv');
+    }
+});
+
+$(window).resize(function checkWidth(){
+    console.log('checkWidth called');
+    var windowSize = $(window).width();
+    if(windowSize < 990){
+        $('#mapCol').detach().insertAfter('#mapRepos');
+    }
+    if(windowSize > 990){
+        $('#mapCol').detach().insertAfter('#picDiv');
+    }
+});
+
 
