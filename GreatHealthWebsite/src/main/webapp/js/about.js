@@ -18,10 +18,10 @@ $(window).ready(function hidePicture(){
     
     var windowSize = $(window).width();
     if(windowSize < 768){
-        $('#imageCol').css('display: none');
+        $('#imageCol').css('display', 'none');
     }
     if(windowSize > 768){
-        $('#imageCol').css('display: block');
+        $('#imageCol').css('display', 'block');
     }
 });
 

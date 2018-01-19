@@ -24,6 +24,7 @@ a{
 
 .centeredContent{
     text-align: center;
+        line-height: 25px;
 }
 
 .leftAlignContent{
@@ -154,6 +155,7 @@ a{
 
 #testimonials{
     margin-top: 10%;
+    background-color: whitesmoke;
 }
 
 @keyframes anim-1 {
@@ -201,6 +203,8 @@ blockquote{
 #quoteContainer{
     margin-top: 30px;
     margin-bottom: 50px;
+    
+    
 }
 
 .quotation-mark{

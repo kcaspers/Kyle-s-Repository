@@ -26,7 +26,7 @@
                         <div id="overlayText"><b>Experience your best self</b></div>
                     </div>
                 </div>
-                <div class="row" id="aboutbanner">
+                <div class="row marginTop10" id="aboutbanner">
                     <div class="col-md-12">
                         <!--about Great Health banner-->
                         <h1>About Great Health Nutrition</h1>
@@ -36,37 +36,53 @@
                         <!-- put a keyed image here-->
                         <div id="aboutImageDiv">
                             <img class="img-responsive" id="aboutImage" src="../images/2013_04_25_14_35_34.jpg" alt=""/>
-<!--                            <div id="aboutImageBlur"></div>-->
+                            <!--                            <div id="aboutImageBlur"></div>-->
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <!--<img id="greatHealthImage" class="img-responsive" src="../images/1484600631-asset.jpg" alt=""/>-->
                         <p class="leftAlignContent">
-                            Since 1987, Great Health Nutrition has been the Twin Cities premiere independent supplement
-                            retailer, specializing in holistic health, sports nutrition and detox products.<br>
-                            Since 1987, Great Health Nutrition has been the Twin Cities premiere independent supplement
-                            retailer, specializing in holistic health, sports nutrition and detox products.<br>
-                            Since 1987, Great Health Nutrition has been the Twin Cities premiere independent supplement
-                            retailer, specializing in holistic health, sports nutrition and detox products.
+                            Since 1987, <b>Great Health Nutrition has been the Twin Cities premiere independent supplement
+                                retailer</b>, specializing in holistic health, sports nutrition and natural detox products.
+                            Repeat customers value us for our knowledge of health and wellness, our commitment to 
+                            our community, and integrity as a small business.
                         </p>
+                        <p class="leftAlignContent">
+                            After opening our first location in Saint Paul over 30 years ago, <b>Great Health Nutrition now encompasses
+                                three different locations</b>, including Saint Paul - Midway, Columbia Heights, and West Saint Paul.
+                            We look forward to serving you in all of your natural health needs.
+                        </p>
+
                     </div>
                 </div>
                 <div class="row" id="products">
                     <!--product line-->
                     <div class="col-md-12" id="productsHeader">
                         <h1>Products</h1>
-                        <p class="centeredContent">
+                        <p class="justifyContent">
                             We proudly carry a diverse range of supplements and stock only the most reputable brands.
                             In addition to vitamins, minerals and high-performance sports supplements we also stock natural 
-                            body care products including Dr.Bronner's Castile Soap, NOW brand body oils, and assorted natural skin treatments.
-                            
+                            body care products including Dr. Bronner's Castile Soap, NOW brand body oils, and assorted natural skin treatments.
                         </p>
-                        <p class="centeredContent">
+                        <p class="justifyContent">
                             <br>
-                            New line new line
+                            Each of our stores are specially tailored to the needs of the clientele, many of whom are valued long-time customers.
+                            Every location carries standard targeted nutrition products, a range of multi-vitamins, and both pre-and post-workout
+                            athletic supplements to help you on your health and wellness journey.
+                        </p>
+                        <p class="justifyContent">
+                            <br>
+                            Don't see what you are looking for?<br>
+                            We are regularly adding new items to our stores and welcome suggestions for products that you love.
+                            Feel free to <a href='${pageContext.request.contextPath}/jsp/contact.jsp'>contact us</a> and find the Great Health location near you.
                         </p>
                     </div>
-                    <div class="col-md-12">
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 marginTop5">
                         <h1>Featured Brands:</h1>
                     </div>
                     <!--Make some kind of table here with all the different product logos-->
@@ -115,8 +131,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <!--
                 <div class="row" style="margin-bottom: 30px">
@@ -179,16 +193,61 @@
                 </div>
             </div>
                 -->
-                <div class="row">
-                    <div id="greyBlock">
+                <div class="row marginTop5">
+                    <div class="col-md-12" id="greyBlock">
                         <!--want a grey block-->
                         <div class="greyBlockText">
-                            <h1>
-                                put something here
-                            </h1>
+                            <h3>
+                                Want to learn more about natural health?
+                            </h3>
                             <p>
-                                more text more text
+                                Check out these popular resources:
                             </p>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 resourceLink">
+                                    <h4>
+                                        Miscellaneous
+                                    </h4>
+                                    <a href="http://www.mdheal.org/">mdheal.org</a>
+                                    <a href="http://naturallysavvy.com/">naturallysavvy.com</a>
+                                    <a href="https://www.motherearthnews.com/">motherearthnews.com</a>
+                                    <a href="http://revolutionaryact.com/">revolutionaryact.com</a>
+                                    <a href="https://www.happy-mothering.com/">happy-mothering.com</a>
+                                    <a href="https://lifespa.com/">lifespa.com</a>
+                                </div>
+                                <div class="col-md-3 col-xs-12 resourceLink">
+                                    <h4>
+                                        Food and Diet
+                                    </h4>
+                                    <a href="http://www.summertomato.com/">summertomato.com</a>
+                                    <a href="https://ketogains.com/">ketogains.com</a>
+                                    <a href="http://gutsybynature.com/">gutsybynature.com</a>
+                                    <a href="https://www.100daysofrealfood.com/">100daysofrealfood.com</a>
+                                    
+                                </div>
+                                <div class="col-md-3 col-xs-12 resourceLink">
+                                    <h4>
+                                        Herbs
+                                    </h4>
+                                    <a href="http://dogwoodbotanical.com/">dogwoodbotanical.com</a>
+                                    <a href="https://www.drweil.com/blog/">drweil.com</a>
+                                    <a href="http://fivetothriveplan.com/">fivetothriveplan.com</a>
+                                    <a href="http://queenofgreen.org/">queenofgreen.org</a>
+                                    <a href="http://www.herbgeek.com/">www.herbgeek.com/</a>
+                                    <a href="http://queenofgreen.org/">queenofgreen.org</a>
+                                </div>
+                                <div class="col-md-3 col-xs-12 resourceLink">
+                                    <h4>
+                                        Fitness
+                                    </h4>
+                                    <a href="https://www.girlsgonestrong.com/">girlsgonestrong.com</a>
+                                    <a href="https://bayesianbodybuilding.com/">bayesianbodybuilding.com</a>
+                                    <a href="http://www.ontheregimen.com/">www.ontheregimen.com</a>
+                                    <a href="https://bayesianbodybuilding.com/">bayesianbodybuilding.com</a>
+                                    <a href="https://bayesianbodybuilding.com/">bayesianbodybuilding.com</a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

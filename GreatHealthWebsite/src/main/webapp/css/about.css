@@ -19,6 +19,7 @@ h3{
 
 p{
     font-size: 16px;
+    line-height: 25px;
 }
 
 a{
@@ -33,6 +34,12 @@ a{
 
 .leftAlignContent{
     text-align: left;
+}
+
+.justifyContent{
+/*    text-align: justify;*/
+    margin: auto;
+    max-width: 800px;
 }
 
 .productPhoto{
@@ -105,12 +112,19 @@ a{
     margin-top: 0px;
 }
 
-#aboutbanner{
+.marginTop5{
+    margin-top: 5%;
+}
+
+
+.marginTop10{
     margin-top: 10%;
 }
 
 #products{
     margin-top: 5%;
+    padding-bottom: 5%;
+    background-color: whitesmoke;
 
 }
 
@@ -139,6 +153,9 @@ a{
 #aboutImage{
     float: right;
     margin-bottom: 30px;
+}
+#imageCol{
+    display: none;
 }
 
 #aboutImageBlur{
@@ -214,19 +231,31 @@ blockquote{
 }
 
 #greyBlock{
-    background-color: lightgrey;
-    height:300px;
-    width: 100%;
-/*    margin-bottom: 10%;*/
+    background-color: whitesmoke;
+/*    height:400px;*/
+
+    height: auto;
+
     position: relative;
-    
+/*    margin-bottom: 10%;*/
 }
 
 .greyBlockText{
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 10%;
+    
+}
+
+.resourceLink{
+    text-align: center;
+}
+
+.resourceLink > a{
+    text-align: justify;
+    margin: auto;
+    display: block;
 }
 
 @media only screen and (max-width: 1150px){

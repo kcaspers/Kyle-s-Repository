@@ -101,7 +101,12 @@
                                 <li><b>powdered vitamins</b></li>
                                 <li><b>men's health supplements</b></li>
                             </ul>
-
+                            <p>
+                                If you are unable to find what you are looking for, our friendly
+                                sales staff will help you locate the product at one of our other locations. We are more than
+                                eager to stock items that we do not currently carry and are committed to providing the best
+                                possible shopping experience to our customers.
+                            </p>
                         </div>
 
                     </div>

@@ -52,7 +52,7 @@ $(window).scroll(function (event) {
         if (el.visible(true)) {
             setTimeout(function () {
                 el.addClass("come-in");
-            }, 1500);
+            }, 700);
         }
     });
 
