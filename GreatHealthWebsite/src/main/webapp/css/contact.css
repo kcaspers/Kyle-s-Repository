@@ -14,10 +14,24 @@ h1{
     float: right;
 }
 
+#locationsDiv{
+/*    text-align: center;*/
+}
+
+#locationsDiv > ul{
+    list-style-position: inside; 
+}
+
+#locationsDiv > h4{
+    
+}
+
 .controls{
     width: 60%;
     margin: auto;
 }
+
+.avoidwrap { display:inline-block; }
 
 @media only screen and (max-width: 990px){
     #mapDiv{
@@ -27,17 +41,28 @@ h1{
         text-align: center;
         margin-top: 30px;
         margin-bottom: 70px;
-        
+
     }
     #locationsDiv > ul{
         display: inline-block;
-        text-align: justify;
+        /*        list-style-position: inside;
+                text-align: center;*/
     }
 }
 
 @media only screen and (max-width: 425px){
     #mapDiv{
         height: 70vw;
+    }
+
+    
+    #locationsDiv{
+        text-align: left;
+    }
+    
+    #locationsDiv > ul{
+        display: inline-block;
+
     }
 }
 

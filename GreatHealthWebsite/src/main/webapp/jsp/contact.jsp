@@ -91,17 +91,23 @@
                         </div>
                     </div>
                     <div id="locationsDiv" class="col-md-6 col-xs-12">
-                        <p>We have three convenient Twin Cities locations, including:</p>
+                        <h4>We have three convenient <span class="avoidwrap"> Twin Cities locations, including:</span></h4>
                         <ul>
-                            <li>
-                                <a href="./westsaintpaul.jsp">West Saint Paul</a>
-                            </li>
-                            <li>
-                                <a href="./columbia.jsp">Columbia Heights</a>
-                            </li>
-                            <li>
-                                <a href="./midway.jsp">Saint Paul - Midway</a>
-                            </li>
+                            <div class="col-md-12 col-sm-4 col-xs-12">
+                                <li>
+                                    <a href="./westsaintpaul.jsp">West Saint Paul</a> <span class="avoidwrap">- (651) 453-9150</span>
+                                </li>
+                            </div>
+                            <div class="col-md-12 col-sm-4 col-xs-12">
+                                <li>
+                                    <a href="./columbia.jsp">Columbia Heights</a> <span class="avoidwrap">- (763) 571-5544</span>
+                                </li>
+                            </div>
+                            <div class="col-md-12 col-sm-4 col-xs-12">
+                                <li>
+                                    <a href="./midway.jsp">Saint Paul - Midway</a> <span class="avoidwrap">- (651) 645-2315</span>
+                                </li>
+                            </div>
                         </ul>
                     </div>
 

@@ -46,7 +46,7 @@ function initMap() {
 }
 
 $(window).scroll(function (event) {
-
+    console.log("scrolling");
     $("#learnMore").each(function (i, el) {
         var el = $(el);
         if (el.visible(true)) {
