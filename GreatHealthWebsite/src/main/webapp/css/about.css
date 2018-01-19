@@ -8,6 +8,10 @@ html,body
     font-family: 'Open Sans', sans-serif !important;
 }
 
+body{
+    margin-bottom: 40px !important;
+}
+
 h1{
     text-align: center;
     margin-bottom: 30px !important;
@@ -37,7 +41,7 @@ a{
 }
 
 .justifyContent{
-/*    text-align: justify;*/
+    /*    text-align: justify;*/
     margin: auto;
     max-width: 800px;
 }
@@ -143,7 +147,7 @@ a{
 #bigPhoto{
     margin: auto;
     width: 100%;
-    
+
 }
 
 #aboutImageDiv{
@@ -159,11 +163,11 @@ a{
 }
 
 #aboutImageBlur{
-/*    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0px 3px 20px 10px white;
-    border-radius: 20px;*/
+    /*    position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0px 3px 20px 10px white;
+        border-radius: 20px;*/
     /* top: 0;
    left: 0;*/
 }
@@ -180,7 +184,7 @@ a{
 
 #overlayText{
     color: white;
-    font-size: 6em;
+    font-size: 6vw;
 
     position: absolute;
     top: 82%;
@@ -232,20 +236,27 @@ blockquote{
 
 #greyBlock{
     background-color: whitesmoke;
-/*    height:400px;*/
+    /*    height:400px;*/
 
     height: auto;
 
     position: relative;
-/*    margin-bottom: 10%;*/
+    /*    margin-bottom: 25%;*/
+
 }
 
 .greyBlockText{
+    background-color: whitesmoke;
     text-align: center;
     width: 100%;
     position: absolute;
     top: 10%;
-    
+    padding-bottom: 15px;
+
+}
+
+.greyBlockText > p{
+    margin-bottom: 20px;
 }
 
 .resourceLink{
@@ -258,19 +269,27 @@ blockquote{
     display: block;
 }
 
-@media only screen and (max-width: 1150px){
+/*@media only screen and (max-width: 1150px){
 
     #overlayText{
         font-size: 5em;
     }
 }
 
-@media only screen and (max-width: 950px){
+*/@media only screen and (max-width: 990px){
 
-    #overlayText{
-        font-size: 4em;
+    /*    #overlayText{
+            font-size: 4em;
+        }*/
+
+    .greyBlockText{
+        padding-top: 10px;
     }
-}
+
+    .resourceLink > a{
+        text-align: center;
+    }
+}/*
 
 @media only screen and (max-width: 800px){
 
@@ -291,4 +310,4 @@ blockquote{
     #overlayText{
         font-size: 1.5em;
     }
-}
+}*/

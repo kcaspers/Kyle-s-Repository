@@ -194,27 +194,16 @@
             </div>
                 -->
                 <div class="row marginTop5">
-                    <div class="col-md-12" id="greyBlock">
+<!--                    <div class="col-md-12" id="greyBlock">-->
                         <!--want a grey block-->
-                        <div class="greyBlockText">
+                        <div class="greyBlockText col-md-12">
                             <h3>
                                 Want to learn more about natural health?
                             </h3>
                             <p>
-                                Check out these popular resources:
+                                <i>Check out these popular resources:</i>
                             </p>
                             <div class="row">
-                                <div class="col-md-3 col-xs-12 resourceLink">
-                                    <h4>
-                                        Miscellaneous
-                                    </h4>
-                                    <a href="http://www.mdheal.org/">mdheal.org</a>
-                                    <a href="http://naturallysavvy.com/">naturallysavvy.com</a>
-                                    <a href="https://www.motherearthnews.com/">motherearthnews.com</a>
-                                    <a href="http://revolutionaryact.com/">revolutionaryact.com</a>
-                                    <a href="https://www.happy-mothering.com/">happy-mothering.com</a>
-                                    <a href="https://lifespa.com/">lifespa.com</a>
-                                </div>
                                 <div class="col-md-3 col-xs-12 resourceLink">
                                     <h4>
                                         Food and Diet
@@ -223,7 +212,6 @@
                                     <a href="https://ketogains.com/">ketogains.com</a>
                                     <a href="http://gutsybynature.com/">gutsybynature.com</a>
                                     <a href="https://www.100daysofrealfood.com/">100daysofrealfood.com</a>
-                                    
                                 </div>
                                 <div class="col-md-3 col-xs-12 resourceLink">
                                     <h4>
@@ -246,14 +234,27 @@
                                     <a href="https://bayesianbodybuilding.com/">bayesianbodybuilding.com</a>
                                     <a href="https://bayesianbodybuilding.com/">bayesianbodybuilding.com</a>
                                 </div>
+                                <div class="col-md-3 col-xs-12 resourceLink">
+                                    <h4>
+                                        Miscellaneous
+                                    </h4>
+                                    <a href="http://www.mdheal.org/">mdheal.org</a>
+                                    <a href="http://naturallysavvy.com/">naturallysavvy.com</a>
+                                    <a href="https://www.motherearthnews.com/">motherearthnews.com</a>
+                                    <a href="http://revolutionaryact.com/">revolutionaryact.com</a>
+                                    <a href="https://www.happy-mothering.com/">happy-mothering.com</a>
+                                    <a href="https://lifespa.com/">lifespa.com</a>
+                                </div>
                             </div>
 
                         </div>
-                    </div>
+<!--                    </div>-->
                 </div>
             </div>
         </div>
+
         <%@include file="pageFooter.jsp"%>
+
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="../js/jquery.slides.js" type="text/javascript"></script>
