@@ -53,27 +53,39 @@
             </div>  
             <div class="row canBlur" id="locationRow">  
                 <!--<div id="locations">-->
-                <a href="${pageContext.request.contextPath}/jsp/midway.jsp">
-                    <div id="locationOne" class="col-md-4">
+                <div id="locationOne" class="col-md-4">
+                    <a href="${pageContext.request.contextPath}/jsp/midway.jsp">
                         <button class="locationTitle">
                             <span class="locationText">St Paul - Midway</span>
                         </button>
-                    </div>
-                </a>
-                <a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">
-                    <div id="locationTwo" class="col-md-4">
+                    </a>
+                        <div class="locationInfo">
+                            1360 University Ave,  St Paul<br>
+                            <b> (651) 645-2315</b>
+                        </div>
+                </div>
+                <div id="locationTwo" class="col-md-4">   
+                    <a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">
                         <button class="locationTitle">
-                            <span class="locationText">West St Paul</span>
+                            <span class="locationText">West Saint Paul</span>
                         </button>
-                    </div>
-                </a>
-                <a href="${pageContext.request.contextPath}/jsp/columbia.jsp">
-                    <div id="locationThree" class="col-md-4">
+                    </a>
+                        <div class="locationInfo">
+                            1668 S Robert St, West St Paul<br>
+                            <b> (651) 453-9150</b>
+                        </div>
+                </div>
+                <div id="locationThree" class="col-md-4">
+                    <a href="${pageContext.request.contextPath}/jsp/columbia.jsp">
                         <button class="locationTitle">
                             <span class="locationText">Columbia Heights</span>
                         </button>
-                    </div>
-                </a>
+                    </a>
+                        <div class="locationInfo">
+                            5192 Central Ave NE, Columbia Heights<br>
+                            <b> (763) 571-5544</b>
+                        </div>
+                </div>
                 <!--</div>-->
             </div>
             <!--        
