@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping({"/hello"})
-public class HelloController {
+public class GHController {
         
-    public HelloController() {
+    public GHController() {
     }
     
     @RequestMapping(value="/sayhi", method=RequestMethod.GET)
@@ -17,4 +17,6 @@ public class HelloController {
         model.put("message", "Hello from the controller" );
         return "hello";
     }
+    
+    
 }

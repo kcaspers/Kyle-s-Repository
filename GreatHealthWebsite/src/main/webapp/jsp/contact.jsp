@@ -22,7 +22,7 @@
                 <h1>Contact Us</h1>
                 <!--Have a form for leaving messages -->
                 <div>
-                    <form id="contact-form" method="post" action="contact.php" role="form">
+                    <form id="contact-form" method="POST" action="${pageContext.request.contextPath}/sendMail" role="form">
 
                         <div class="messages"></div>
 
