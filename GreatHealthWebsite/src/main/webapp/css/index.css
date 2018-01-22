@@ -118,6 +118,8 @@ button::after {
     font-family: 'Courgette', cursive;
     color: white;
     margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #mapHours{
@@ -132,6 +134,8 @@ button::after {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 #greenBottom{
@@ -141,6 +145,8 @@ button::after {
     padding-bottom: 10px;
     margin: auto;
     text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #greenBottom > h4, p{

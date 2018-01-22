@@ -100,20 +100,20 @@
                     </div>
                     <div id="mapDiv"></div>
                     <div class="row" id="greenBottom">
-                        <h4>Store hours:</h4>
+                        <h4>Store Hours</h4>
                         <div class="col-xs-4">
                             <p>
-                                Monday-Friday 10am- 8pm<br>
+                                Monday-Friday: 10am- 8pm<br>
                             </p>
                         </div>
                         <div class="col-xs-4">
                             <p>
-                                Saturday 10am-6pm<br>
+                                Saturday: 10am-6pm<br>
                             </p>
                         </div>
                         <div class="col-xs-4">
                             <p>
-                                Sunday 12pm-5pm
+                                Sunday: 12pm-5pm
                             </p>
                         </div>
 
