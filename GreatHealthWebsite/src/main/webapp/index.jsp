@@ -99,23 +99,24 @@
                         <h1 id="expertAdvice">Expert advice, low price!</h1>
                     </div>
                     <div id="mapDiv"></div>
-                    <div id="greenBottom">
+                    <div class="row" id="greenBottom">
                         <h4>Store hours:</h4>
-                        <div col="col-xs-6">
+                        <div class="col-xs-4">
                             <p>
-                                Mon	10am- 8pm<br>
-                                Tue	10am-8pm<br>
-                                Wed	10am-8pm
+                                Monday-Friday 10am- 8pm<br>
                             </p>
                         </div>
-                        <div col="col-xs-6">
+                        <div class="col-xs-4">
                             <p>
-                                Thu	10am-8pm<br>
-                                Fri	10am-8pm<br>
-                                Sat	10am-6pm<br>
-                                Sun	12pm-5pm
+                                Saturday 10am-6pm<br>
                             </p>
                         </div>
+                        <div class="col-xs-4">
+                            <p>
+                                Sunday 12pm-5pm
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
