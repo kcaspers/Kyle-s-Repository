@@ -21,7 +21,7 @@ public class FormSubmit {
 
     //look into using sendgrid for emails, read up on Java integration
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
-    public void sendMail(HttpServletRequest request) throws IOException {
+    public String sendMail(HttpServletRequest request) throws IOException {
         //we will need:
         //from, subject, to, content, mail(made up of these)
         Email from = new Email(request.getParameter("email"));
@@ -53,6 +53,8 @@ public class FormSubmit {
         } catch (IOException e) {
             throw e;
         }
+        
+        return "jsp/contact.jsp";
     }
 
 }
