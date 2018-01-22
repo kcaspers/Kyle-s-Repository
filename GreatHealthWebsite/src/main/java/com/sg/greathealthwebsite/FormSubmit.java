@@ -38,7 +38,7 @@ public class FormSubmit {
 
         Mail mail = new Mail(from, "GreatHealth.com", to, content);
 
-        SendGrid sg = new SendGrid(System.getenv("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"));
+        SendGrid sg = new SendGrid(System.getenv("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"));
         
         Request mailRequest = new Request();
         try {
