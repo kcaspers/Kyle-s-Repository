@@ -110,7 +110,7 @@
                         </div>
 
                     </div>
-                    
+
                     <div class="col-md-4">
                         <div id="locationInfoB">
                             <h4>
@@ -124,9 +124,15 @@
                                 St Paul, MN <br>
                                 55104
                             </p>
-                            <b>Phone</b>
+                            <b>Phone:</b>
                             <p>
                                 (651) 645-2315
+                            </p>
+                            <b>Store hours:</b>
+                            <p>
+                                Mon-Fri	10am- 8pm<br>
+                                Saturday 10am-6pm <br>
+                                Sunday 12pm-5pm <br>
                             </p>
                         </div>
                     </div>
