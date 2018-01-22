@@ -53,7 +53,7 @@ public class FormSubmit {
             throw e;
         }
         
-        return "jsp/contact.jsp";
+        return "contact";
     }
 
 }
