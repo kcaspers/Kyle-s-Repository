@@ -114,19 +114,19 @@
 
                         <div class="col-sm-4 productDiv">
                             <div class="tile red">
-                                <a href="https://www.nowfoods.com/" target="_blank">
+                                <a  target="_blank">
                                     <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/></a>
                             </div>
                         </div>
                         <div class="col-sm-4 productDiv">
                             <div class="tile orange">
-                                <a href="https://naturesplus.com/" target="_blank">
+                                <a  target="_blank">
                                     <img class="productPhoto" src="../images/naturesplus.jpg" alt="" /></a>
                             </div>
                         </div>
                         <div class="col-sm-4 productDiv">
                             <div class="tile purple">
-                                <a href="http://www.sourcenaturals.com/" target="_blank">
+                                <a  target="_blank">
                                     <img class="productPhoto" id="sourceNaturals" src="../images/SourceN_logo_arch_WEB.jpg" alt=""/></a>
                             </div>
                         </div>

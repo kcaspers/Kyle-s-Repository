@@ -11,6 +11,7 @@
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     </head>
     <body>
         <!--        <div class="container">
@@ -59,10 +60,11 @@
                             <span class="locationText">St Paul - Midway</span>
                         </button>
                     </a>
-                        <div class="locationInfo">
-                            1360 University Ave,  St Paul<br>
-                            <b> (651) 645-2315</b>
-                        </div>
+                    <div class="locationInfo">
+                        1360 University Ave,<br>
+                        Saint Paul<br>
+                        <b> (651) 645-2315</b>
+                    </div>
                 </div>
                 <div id="locationTwo" class="col-md-4">   
                     <a href="${pageContext.request.contextPath}/jsp/westsaintpaul.jsp">
@@ -70,10 +72,11 @@
                             <span class="locationText">West Saint Paul</span>
                         </button>
                     </a>
-                        <div class="locationInfo">
-                            1668 S Robert St, West St Paul<br>
-                            <b> (651) 453-9150</b>
-                        </div>
+                    <div class="locationInfo">
+                        1668 S Robert St, <br>
+                        West Saint Paul <br>
+                        <b> (651) 453-9150</b>
+                    </div>
                 </div>
                 <div id="locationThree" class="col-md-4">
                     <a href="${pageContext.request.contextPath}/jsp/columbia.jsp">
@@ -81,12 +84,40 @@
                             <span class="locationText">Columbia Heights</span>
                         </button>
                     </a>
-                        <div class="locationInfo">
-                            5192 Central Ave NE, Columbia Heights<br>
-                            <b> (763) 571-5544</b>
-                        </div>
+                    <div class="locationInfo">
+                        5192 Central Ave NE, 
+                        <br>Columbia Heights<br>
+                        <b> (763) 571-5544</b>
+                    </div>
                 </div>
                 <!--</div>-->
+            </div>
+            <div class="row">
+                <div class="col-md-12" id="mapHours">
+                    <div id="greenTop">
+                        <!--this is for the map, the store hours and the logo-->
+                        <h1 id="expertAdvice">Expert advice, low price!</h1>
+                    </div>
+                    <div id="mapDiv"></div>
+                    <div id="greenBottom">
+                        <h4>Store hours:</h4>
+                        <div col="col-xs-6">
+                            <p>
+                                Mon	10am- 8pm<br>
+                                Tue	10am-8pm<br>
+                                Wed	10am-8pm
+                            </p>
+                        </div>
+                        <div col="col-xs-6">
+                            <p>
+                                Thu	10am-8pm<br>
+                                Fri	10am-8pm<br>
+                                Sat	10am-6pm<br>
+                                Sun	12pm-5pm
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--        
             <div class="row canBlur" id="lowerRow">
@@ -109,6 +140,8 @@
             <%@include file="jsp/pageFooter.jsp"%>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
+        </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
         <script src="js/index.js" type="text/javascript"></script>
