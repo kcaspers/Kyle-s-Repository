@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-function initMap() {
+setTimeout(function initMap() {
     map = new google.maps.Map(document.getElementById('mapDiv'), {
         center: {lat: 44.955001, lng: -93.158172},
         zoom: 9
@@ -32,4 +32,6 @@ function initMap() {
     google.maps.event.addListener(columbia, 'click', function () {
         window.location.href = "https://obscure-thicket-57749.herokuapp.com/jsp/columbia.jsp";
     });
-}
+}, 100);
+
+

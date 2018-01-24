@@ -33,6 +33,29 @@
 
 })(jQuery);
 
+
+$(window).scroll(function (event) {
+    $("#learnMore").each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            setTimeout(function () {
+                el.addClass("come-in");
+            }, 700);
+        }
+    });
+});
+
+$(window).ready(function (event) {
+    $("#learnMore").each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            setTimeout(function () {
+                el.addClass("come-in");
+            }, 700);
+        }
+    });
+});
+
 setTimeout(function initMap() {
     map = new google.maps.Map(document.getElementById('mapDiv'), {
         center: {lat: 44.95, lng: -93.15},
@@ -45,22 +68,7 @@ setTimeout(function initMap() {
 
 }, 100);
 
-
-
-$(window).scroll(function (event) {
-    $("#learnMore").each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            setTimeout(function () {
-                el.addClass("come-in");
-            }, 700);
-        }
-    });
-
-});
-
 $(window).ready(function checkWidth(){
-    console.log('checkWidth called');
     var windowSize = $(window).width();
     if(windowSize < 990){
         $('#mapCol').detach().insertAfter('#mapRepos');
@@ -71,7 +79,6 @@ $(window).ready(function checkWidth(){
 });
 
 $(window).resize(function checkWidth(){
-    console.log('checkWidth called');
     var windowSize = $(window).width();
     if(windowSize < 990){
         $('#mapCol').detach().insertAfter('#mapRepos');
@@ -80,5 +87,3 @@ $(window).resize(function checkWidth(){
         $('#mapCol').detach().insertAfter('#picDiv');
     }
 });
-
-

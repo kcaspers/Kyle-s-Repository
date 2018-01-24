@@ -61,19 +61,22 @@ h1{
     }
 }
 
-@media only screen and (max-width: 425px){
-    #mapDiv{
-        height: 70vw;
-    }
-
-
-    #locationsDiv{
-        text-align: left;
-    }
-
-    #locationsDiv > ul{
-        display: inline-block;
-
+@media only screen and (max-width: 768px){
+    h2{
+        font-size: 20px !important; 
     }
 }
 
+@media only screen and (max-width: 425px){
+    #midwayCarousel{
+        width: 90%;
+    }
+    
+    #locationInfoA{
+        width: 90% !important;
+    }
+    
+    #locationInfoB{
+          width: 90% !important;
+    }
+}

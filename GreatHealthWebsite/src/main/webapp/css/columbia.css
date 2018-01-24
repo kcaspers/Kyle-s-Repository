@@ -1,14 +1,7 @@
-/*#backgroundImg{
-    width: 100%;
-    height: 100%;
-};*/
 body{
     font-family: 'Open Sans', sans-serif !important;
 }
 
-a{
-    text-align: center;
-}
 ul{
     text-align: left;
 }
@@ -18,8 +11,6 @@ h2{
     font-weight: bold !important;
     width: 80%;
     margin: auto;
-
-
 }
 
 h3{
@@ -35,11 +26,8 @@ h4{
 #aboutRule{
     margin-bottom: 5px;
     margin-top: 5px;
-    margin-left: 0px;
-/*    border: none;*/
     height: 2px;
     background-color: #333;
-/*    width: inherit;*/
 }
 
 #addressRule{
@@ -49,49 +37,14 @@ h4{
     background-color: #333;
 }
 
-h3 > hr{
-    border: none;
-    height: 2px;
-    background-color: #333;
-    width: 120px;
-}
-
-.productPhoto{
+#columbiaCarousel{
     margin: auto;
-    width: 60%;
-    height: 60%;
+    width: 70%;
 }
 
 .pixelMargin{
     margin-top: 30px;
     margin-bottom: 10px;
-}
-
-#locationBanner{
-    text-align: center;
-    height: 75px;
-    width: 50%;
-    margin: auto;
-    background-color: #8cbc65;
-    color: white;
-    border-radius: 10px;
-    /*background: linear-gradient(to right, rgba(255,0,0,0), #8cbc65);*/
-}
-
-#photoWithText{
-    text-align: center;
-    padding: 50px;
-    background-image: url("../images/UK-medicines-regulator-slams-door-on-herbal-food-supplements.jpg");
-}
-
-#midwayImage{
-    margin: auto;
-    height: 60%;
-}
-
-#midwayCarousel{
-    margin: auto;
-    width: 70%;
 }
 
 #locationInfoA{
@@ -113,7 +66,6 @@ h3 > hr{
 }
 
 #learnMore{
-    text-align: center;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -126,6 +78,10 @@ h3 > hr{
     height: 200px;
     margin: auto;
 }
+/*.carouselInner{
+    
+    max-height: 970px;
+}*/
 
 /*the following controls the "learn more" slide in*/
 .come-in {
@@ -138,23 +94,23 @@ h3 > hr{
     to { transform: translateY(0); }
 }
 
-
 @media only screen and (max-width: 768px){
+
+    #columbiaCarousel{
+        width: 90%;
+    }
+
     h2{
         font-size: 20px !important; 
+    }
+    
+    #locationInfoB{
+         
     }
 }
 
 @media only screen and (max-width: 425px){
-    #midwayCarousel{
-        width: 90%;
-    }
-    
     #locationInfoA{
-        width: 90% !important;
-    }
-    
-    #locationInfoB{
-          width: 90% !important;
+        width: 100% !important;
     }
 }
