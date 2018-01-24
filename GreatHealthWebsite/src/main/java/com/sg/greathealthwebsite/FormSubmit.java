@@ -40,7 +40,7 @@ public class FormSubmit {
         Mail mail = new Mail(from, "greathealthnutrition.com", to, content);
 
 
-        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
+        SendGrid sg = new SendGrid(System.getenv(""));
         
         Request mailRequest = new Request();
         try {

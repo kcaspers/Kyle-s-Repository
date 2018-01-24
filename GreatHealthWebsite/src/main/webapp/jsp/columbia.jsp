@@ -14,6 +14,13 @@
         <title>Locations - Columbia Heights</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="container-fluid">
+            <%@include file="pageheader.jsp"%>
+            
+            
+            
+            
+            
+        </div>
     </body>
 </html>
