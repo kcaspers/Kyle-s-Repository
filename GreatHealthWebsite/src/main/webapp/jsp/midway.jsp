@@ -8,9 +8,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Locations - Midway</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Great Health Nutrition Saint Paul Midway location.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/midway.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,13 +48,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="../images/storeCropped2.jpg" alt=""/>
+                                        <img src="../images/storeCropped2.jpg" alt="Great Health Saint Paul"/>
                                     </div>
                                     <div class="item">
-                                        <img src="../images/storeCropped1.jpg" alt=""/>
+                                        <img src="../images/storeCropped1.jpg" alt="Great Health Saint Paul"/>
                                     </div>
                                     <div class="item">
-                                        <img src="../images/storeCropped3.jpg" alt=""/>
+                                        <img src="../images/storeCropped3.jpg" alt="Great Health Saint Paul"/>
                                     </div>
                                 </div>
                             </div>

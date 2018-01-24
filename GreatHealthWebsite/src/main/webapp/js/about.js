@@ -8,10 +8,10 @@ $(function () {
     console.log('hidepicture called');
 
     var windowSize = $(window).width();
-    if (windowSize < 768) {
+    if (windowSize < 767) {
         $('#imageCol').css('display', 'none');
     }
-    if (windowSize > 768) {
+    if (windowSize > 767) {
         $('#imageCol').css('display', 'block');
     }
 });
@@ -20,10 +20,10 @@ $(window).resize(function hidePicture() {
     console.log('hidepicture called');
 
     var windowSize = $(window).width();
-    if (windowSize < 768) {
+    if (windowSize < 767) {
         $('#imageCol').css('display', 'none');
     }
-    if (windowSize > 768) {
+    if (windowSize > 767) {
         $('#imageCol').css('display', 'block');
     }
 });

@@ -6,10 +6,11 @@
 <html>
     <head>
         <title>Great Health Nutrition</title>
-        <!-- Bootstrap core CSS -->
+        <meta name="description" content="Great Health Nutrition is the Twin Cities premium natural supplement retailer. Since opening
+            our first Great Health location we have expanded to three locations, including Saint Paul, West Saint Paul, and Columbia Heights">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
-        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     </head>
@@ -48,7 +49,7 @@
                     <div >
                         <!--<img id="storeLogo" class="img-responsive" src="images/ghlogo.png" alt=""/>-->
                         <img id="storeLogo" class="img-responsive"
-                             src="images/PURABE8BTXE28KTR4W3QTSHU5VD36VKF.jpg" alt=""/>
+                             src="images/PURABE8BTXE28KTR4W3QTSHU5VD36VKF.jpg" alt="Great Health Nutrition Logo"/>
                     </div>
                 </div>
             </div>  
