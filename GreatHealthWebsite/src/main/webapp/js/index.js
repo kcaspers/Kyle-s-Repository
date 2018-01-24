@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('#headerRow').css('background', 'white');
 });
 
-function initMap() {
+setTimeout(function initMap() {
 
     //make this respond to viewport size
     var windowSize = $(window).width();
@@ -42,7 +42,5 @@ function initMap() {
     google.maps.event.addListener(columbia, 'click', function () {
         window.location.href = "https://obscure-thicket-57749.herokuapp.com/jsp/columbia.jsp";
     });
+}, 100);
 
-
-
-}

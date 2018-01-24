@@ -75,9 +75,7 @@
                                 Find us
                                 <!--<hr>-->
                             </h2>
-
-                            <div id="mapDiv">
-                            </div>
+                            <div id="mapDiv"></div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +138,7 @@
                 </div>
                 <span id="mapRepos"></span>
                 <div class="row">
-                    <div class="col-sm-12 ol-xs-12">
+                    <div class="col-sm-12 col-xs-12">
                         <div id="learnMore">
                             <a href="./about.jsp">
                                 <h3>
@@ -154,7 +152,7 @@
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>
-    </div>
+    
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
