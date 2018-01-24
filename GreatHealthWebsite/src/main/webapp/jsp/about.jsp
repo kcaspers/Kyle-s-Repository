@@ -10,6 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="About Great Health Nutrition. Learn more about the Twin Cities premiere natural supplement
+              retailer.">
         <link href="../css/about.css" rel="stylesheet" type="text/css"/>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -22,7 +24,7 @@
                 <div class="row">
                     <div id="photoWithText">
                         <!--<img id="bigPhoto" class="img-responsive" src="../images/5-Questions-to-Ask-Yourself-When-Building-a-Health-Plan.jpg" alt=""/>-->
-                        <img id="bigPhoto"  src="../images/aboutPhotoCropped2000.jpg" alt=""/>
+                        <img id="bigPhoto"  src="../images/aboutPhotoCropped2000.jpg" alt="About Great Health Nutrition background"/>
                         <div id="overlayText"><b>Experience your best self</b></div>
                     </div>
                 </div>
@@ -35,7 +37,7 @@
                     <div id="imageCol" class="col-md-6 col-sm-6">
                         <!-- put a keyed image here-->
                         <div id="aboutImageDiv">
-                            <img class="img-responsive" id="aboutImage" src="../images/2013_04_25_14_35_34.jpg" alt=""/>
+                            <img class="img-responsive" id="aboutImage" src="../images/2013_04_25_14_35_34.jpg" alt="Great Health Tea"/>
                             <!--                            <div id="aboutImageBlur"></div>-->
                         </div>
                     </div>
@@ -115,19 +117,20 @@
                         <div class="col-sm-4 productDiv">
                             <div class="tile red">
                                 <a  target="_blank">
-                                    <img class="productPhoto" src="../images/now-foods-logo.png" alt=""/></a>
+                                    <img class="productPhoto" src="../images/now-foods-logo.png" alt="Now Foods logo"/></a>
                             </div>
                         </div>
                         <div class="col-sm-4 productDiv">
                             <div class="tile orange">
                                 <a  target="_blank">
-                                    <img class="productPhoto" src="../images/naturesplus.jpg" alt="" /></a>
+                                    <img class="productPhoto" src="../images/naturesplus.jpg" alt="Natures Plus logo" /></a>
                             </div>
                         </div>
                         <div class="col-sm-4 productDiv">
                             <div class="tile purple">
                                 <a  target="_blank">
-                                    <img class="productPhoto" id="sourceNaturals" src="../images/SourceN_logo_arch_WEB.jpg" alt=""/></a>
+                                    <img class="productPhoto" id="sourceNaturals" src="../images/SourceN_logo_arch_WEB.jpg" 
+                                         alt="Source Naturals logo"/></a>
                             </div>
                         </div>
                     </div>

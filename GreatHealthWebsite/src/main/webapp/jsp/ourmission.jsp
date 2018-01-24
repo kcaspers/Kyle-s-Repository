@@ -10,11 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Great Health Nutrition mission statement. We are committed to serving the Twin Cities metro area
+              with the finest quality products and expert guidance.">
         <link href="../css/ourmission.css" rel="stylesheet" type="text/css"/>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <title>Our Mission</title>
+        <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+        <title>Great Health Mission Statement</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -24,7 +27,8 @@
                     <div id="photoWithText">
                         <!--                        <img id="bigPhoto" class="img-responsive"
                                                      <img src="../images/multivitamin_cropped copy.jpg" alt=""/>-->
-                        <img id="bigPhoto" class="img-responsive" src="../images/multivitamin_cropped 2000.jpg" alt=""/>
+                        <img id="bigPhoto" class="img-responsive" src="../images/multivitamin_cropped 2000.jpg" 
+                             alt="Great Health Nutrition mission statement background"/>
                         <div id="overlayText"><b>Local, Natural, Trusted</b></div>
                     </div>
                 </div>
@@ -33,6 +37,7 @@
                         <!--<img id="missionBackground" class="img-circle img-responsive" src="../images/Abstract-Green-Nature-Background.jpg" alt=""/>-->
                         <div id="missionText">
                             <h1><b>Our Mission</b></h1>
+                            <hr id="fancyRule" class="brace">
                             <p class="centeredContent">
                                 <!--                                We are great we are cool we sell the pills that make so so smart
                                                                 and so beautiful. <br>
@@ -50,108 +55,74 @@
                     </div>
                 </div>
 
-                <div class="row" style="margin-bottom: 30px">
-                    <div class="col-md-12" id="testimonials">
-                        <h3>Customer Testimonials</h3>
-                        <!-- this could be a carousel -->
-                        <div id="testimonialCarousel" class="carousel slide"  data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-
-                                    <div class="col-md-12 col-sm-12" id="quoteContainer">
-                                        <blockquote class="quote-box">
-                                            <p class="quotation-mark">
-                                                “
-                                            </p>
-                                            <p class="quote-text">
-                                                Don't believe anything that you read on the internet, it may be fake. 
-                                            </p>
-                                            <hr>
-                                            <div class="blog-post-actions">
-                                                <p class="blog-post-bottom pull-left">
-                                                    Abraham Lincoln
-                                                </p>
-
-                                            </div>
-                                        </blockquote> 
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-12 col-sm-12" id="quoteContainer">
-                                        <blockquote class="quote-box">
-                                            <p class="quotation-mark">
-                                                “
-                                            </p>
-                                            <p class="quote-text">
-                                                Don't believe anything that you read on the internet, it may be true. 
-                                            </p>
-                                            <hr>
-                                            <div class="blog-post-actions">
-                                                <p class="blog-post-bottom pull-left">
-                                                    Abraham Lincoln
-                                                </p>
-
-                                            </div>
-                                        </blockquote> 
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-12 col-sm-12" id="quoteContainer">
-                                        <blockquote class="quote-box">
-                                            <p class="quotation-mark">
-                                                “
-                                            </p>
-                                            <p class="quote-text">
-                                                Don't believe anything that you read on the internet, it may be true. 
-                                            </p>
-                                            <hr>
-                                            <div class="blog-post-actions">
-                                                <p class="blog-post-bottom pull-left">
-                                                    Abraham Lincoln
-                                                </p>
-
-                                            </div>
-                                        </blockquote> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                        <div class="col-md-4 col-sm-12">
-                                                    <blockquote class="quote-box">
-                                                        <p class="quotation-mark">
-                                                            “
-                                                        </p>
-                                                        <p class="quote-text">
-                                                            Don't believe anything that you read on the internet, it may be fake. 
-                                                        </p>
-                                                        <hr>
-                                                        <div class="blog-post-actions">
-                                                            <p class="blog-post-bottom pull-left">
-                                                                Abraham Lincoln
+                <!--                <div class="row" style="margin-bottom: 30px">
+                                    <div class="col-md-12" id="testimonials">
+                                        <h3>Customer Testimonials</h3>
+                                         this could be a carousel 
+                                        <div id="testimonialCarousel" class="carousel slide"  data-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                
+                                                    <div class="col-md-12 col-sm-12" id="quoteContainer">
+                                                        <blockquote class="quote-box">
+                                                            <p class="quotation-mark">
+                                                                “
                                                             </p>
-                        
-                                                        </div>
-                                                    </blockquote> 
+                                                            <p class="quote-text">
+                                                                Don't believe anything that you read on the internet, it may be fake. 
+                                                            </p>
+                                                            <hr>
+                                                            <div class="blog-post-actions">
+                                                                <p class="blog-post-bottom pull-left">
+                                                                    Abraham Lincoln
+                                                                </p>
+                
+                                                            </div>
+                                                        </blockquote> 
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-4 col-sm-12">
-                                                    <blockquote class="quote-box">
-                                                        <p class="quotation-mark">
-                                                            “
-                                                        </p>
-                                                        <p class="quote-text">
-                                                            Don't believe anything that you read on the internet, it may be fake. 
-                                                        </p>
-                                                        <hr>
-                                                        <div class="blog-post-actions">
-                                                            <p class="blog-post-bottom pull-left">
-                                                                Abraham Lincoln
+                                                <div class="item">
+                                                    <div class="col-md-12 col-sm-12" id="quoteContainer">
+                                                        <blockquote class="quote-box">
+                                                            <p class="quotation-mark">
+                                                                “
                                                             </p>
-                        
-                                                        </div>
-                                                    </blockquote> 
-                                                </div>-->
-                    </div>
-                </div>
+                                                            <p class="quote-text">
+                                                                Don't believe anything that you read on the internet, it may be true. 
+                                                            </p>
+                                                            <hr>
+                                                            <div class="blog-post-actions">
+                                                                <p class="blog-post-bottom pull-left">
+                                                                    Abraham Lincoln
+                                                                </p>
+                
+                                                            </div>
+                                                        </blockquote> 
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="col-md-12 col-sm-12" id="quoteContainer">
+                                                        <blockquote class="quote-box">
+                                                            <p class="quotation-mark">
+                                                                “
+                                                            </p>
+                                                            <p class="quote-text">
+                                                                Don't believe anything that you read on the internet, it may be true. 
+                                                            </p>
+                                                            <hr>
+                                                            <div class="blog-post-actions">
+                                                                <p class="blog-post-bottom pull-left">
+                                                                    Abraham Lincoln
+                                                                </p>
+                
+                                                            </div>
+                                                        </blockquote> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
                 <div class="row">
                     <div class="col-sm-12 ol-xs-12">
                         <div id="learnMore">
@@ -166,13 +137,13 @@
                 </div>
 
             </div>
-<!--        </div>-->
+            <!--        </div>-->
 
 
-        <%@include file="pageFooter.jsp" %>
-    </div>
-    <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-    <script src="../js/ourmission.js" type="text/javascript"></script>
-</body>
+            <%@include file="pageFooter.jsp" %>
+        </div>
+        <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="../js/ourmission.js" type="text/javascript"></script>
+    </body>
 </html>

@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import com.sendgrid.*;
 import java.io.IOException;
+import org.springframework.ui.Model;
 
 /**
  *
@@ -21,7 +22,7 @@ public class FormSubmit {
 
     //look into using sendgrid for emails, read up on Java integration
     @RequestMapping(value = "/sendMail", method = RequestMethod.POST)
-    public void sendMail(HttpServletRequest request) throws IOException {
+    public String sendMail(HttpServletRequest request, Model model) throws IOException {
         //we will need:
         //from, subject, to, content, mail(made up of these)
         Email from = new Email(request.getParameter("email"));
@@ -36,10 +37,10 @@ public class FormSubmit {
                 + request.getParameter("message");
         Content content = new Content("text/plain", contentValue);
 
-        Mail mail = new Mail(from, "GreatHealth.com", to, content);
+        Mail mail = new Mail(from, "greathealthnutrition.com", to, content);
 
-        //My api key is not visible in this branch
-        SendGrid sg = new SendGrid(System.getenv("hidden"));
+
+        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         
         Request mailRequest = new Request();
         try {
@@ -53,6 +54,8 @@ public class FormSubmit {
         } catch (IOException e) {
             throw e;
         }
+        model.addAttribute("messageSuccess", true);
+        return "contact";
     }
 
 }

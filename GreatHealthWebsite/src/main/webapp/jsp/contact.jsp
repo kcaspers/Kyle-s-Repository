@@ -3,13 +3,14 @@
     Created on : Jan 3, 2018, 7:07:43 PM
     Author     : kylecaaspers
 --%>
-
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contact Great Health. Find a Great Health location near you or send us a message.">
         <title>Contact Great Health</title>
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="../css/contact.css" rel="stylesheet" type="text/css"/>
@@ -21,6 +22,11 @@
             <div>
                 <h1>Contact Us</h1>
                 <!--Have a form for leaving messages -->
+                <c:if test = "${messageSuccess}">
+                    <div id="messageSuccess">
+                        Message sent.
+                    </div>
+                </c:if>
                 <div>
                     <form id="contact-form" method="POST" action="${pageContext.request.contextPath}/sendMail" role="form">
 

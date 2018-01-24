@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('#pageTitle').append('<h3>' + parent.document.title + '</h3>')
     //var notMenu = $('div').not('.sideMenu');
     //var notMenu = $('body').not('#dontBlur');
-    let count = 1;
+    var count = 1;
     $('#menulink').click(function () {
         if (count % 2 != 0)
         {
