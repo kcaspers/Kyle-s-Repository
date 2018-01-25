@@ -56,6 +56,11 @@
             map: map
         });
         
+        //click should bring driving direction
+        marker.addListener('click', function(){
+            window.open('https://www.google.com/maps');
+        });
+        
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
