@@ -44,7 +44,7 @@
 //    });
 //});   
 
-    var map, infoWindow, location;
+    var map, infoWindow, location, directions, directionsService, directionsDisplay;
     setTimeout(function initMap() {
         map = new google.maps.Map(document.getElementById('mapDiv'), {
           center: {lat: 44.95, lng: -93.15},
@@ -64,29 +64,36 @@
               lng: position.coords.longitude
             };
             
-            var loctaion = new google.maps.Marker({
+            //location is where the blue user marker goes
+            var location = new google.maps.Marker({
             position: new google.maps.LatLng(pos.lat, pos.lng),
             map: map,
             icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
             });
             
-            marker.addListener('click', function(){
-            //window.open('https://www.google.com/maps');
-            window.open('https://www.google.com/maps/dir/' + pos.lat +',' + pos.lng + 
-                    '/Great+Health+Nutrition,+1360+University+Ave+W,+St+Paul,+MN+55104/@44.9525267,-93.1432743,14z');
+            //directions
+            var directionsService = new google.maps.DirectionsService();
+            
+            directionsDisplay = new google.maps.DirectionsRenderer();
+            directionsDisplay.setMap(map);
+            
+            directions = {
+                origin: pos,
+                destination: new google.maps.LatLng(44.955001, -93.158172),
+                travelMode: 'DRIVING'
+            };
+            
+            directionsService.route(directions, function(response, status){
+                if(status == 'OK'){
+                    directionsDisplay.setDirections(response);
+                }
             });
-
-//            infoWindow = new google.maps.InfoWindow;
-//            infoWindow.setPosition(pos);
-//            infoWindow.setContent('Location found.');
-//            infoWindow.open(map);
-//            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
+                        
+//            marker.addListener('click', function(){
+//            window.open('https://www.google.com/maps/dir/' + pos.lat +',' + pos.lng + 
+//                    '/Great+Health+Nutrition,+1360+University+Ave+W,+St+Paul,+MN+55104/@44.9525267,-93.1432743,14z');
+//            });
           });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
         }
       }, 100);
       
