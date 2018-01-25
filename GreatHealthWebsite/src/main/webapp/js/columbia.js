@@ -58,11 +58,11 @@ $(window).ready(function (event) {
 
 setTimeout(function initMap() {
     map = new google.maps.Map(document.getElementById('mapDiv'), {
-        center: {lat: 44.95, lng: -93.15},
+        center: {lat: 45.062247, lng: -93.247669},
         zoom: 11
     });
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(44.955001, -93.158172),
+        position: new google.maps.LatLng(45.062247, -93.247669),
         map: map
     });
 
