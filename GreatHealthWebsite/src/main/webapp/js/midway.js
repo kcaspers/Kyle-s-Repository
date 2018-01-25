@@ -44,7 +44,7 @@
 //    });
 //});   
 
-    var map, infoWindow, location;
+    var map, infoWindow, location, directions, directionsService, directionsDisplay;
     setTimeout(function initMap() {
         map = new google.maps.Map(document.getElementById('mapDiv'), {
           center: {lat: 44.95, lng: -93.15},
@@ -69,23 +69,32 @@
               lng: position.coords.longitude
             };
             
-            var loctaion = new google.maps.Marker({
+            //location is where the blue user marker goes
+            var location = new google.maps.Marker({
             position: new google.maps.LatLng(pos.lat, pos.lng),
             map: map,
             icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
             });
-
-//            infoWindow = new google.maps.InfoWindow;
-//            infoWindow.setPosition(pos);
-//            infoWindow.setContent('Location found.');
-//            infoWindow.open(map);
-//            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
+            
+            //directions
+            var directionsService = new google.maps.DirectionsService();
+            
+            directionsDisplay = new google.maps.DirectionsRenderer();
+            directionsDisplay.setMap(map);
+            
+            directions = {
+                origin: pos,
+                destination: new google.maps.LatLng(marker.position.lat(), marker.position.lng()),
+                travelMode: 'DRIVING'
+            };
+            
+            directionsService.route(directions, function(response, status){
+                if(status == 'OK'){
+                    directionsDisplay.setDirections(response);
+                    marker.setVisible(false);
+                }
+            });
           });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
         }
       }, 100);
       
