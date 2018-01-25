@@ -27,7 +27,7 @@
                             <h2 class="pixelMargin">
                                 <b>Visit our Columbia Heights store</b>
                             </h2>
-                            <div id="columbiaCarousel" class="carousel slide" data-rise="carousel">
+                            <div id="columbiaCarousel" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#columbiaCarousel" data-slide-to="0"></li>
                                     <li data-target="#columbiaCarousel" data-slide-to="1"></li>
@@ -49,7 +49,7 @@
                     </div>
                     <div id="mapCol" class="col-md-4">
                         <div class="row">
-                            <h2>
+                            <h2 class="pixelMargin">
                                 Find us
                             </h2>
                             <div id="mapDiv"></div>
@@ -64,9 +64,19 @@
                                 <hr id="aboutRule">
                             </h4>
                             <p>
-                                talk about columbia heights location
+                                Our Columbia Heights store is located on Central Avenue just south of Interstate 694
+                                next to Alqurashi Travel Agency. Slightly larger than the Saint Paul store, you will find 
+                                a similar product line with an added emphasis on targeted nutrition supplements.
+<!--                                As with all of our stores, our Columbia Heights location is open from 10-8 on weekdays,
+                                from 10-6 Saturday, and 12-5 on Sunday.-->
                             </p>
-
+                            <p>
+                                We pride ourself on serving our customers and the Columbia Heights community as a whole. 
+                                Our owner, Joe Reiners, is frequently in the store and is more than eager to assist you with
+                                all your supplement needs and has more than 30 years experience.
+<!--                                we accept all major credit cards-->
+                                
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -114,7 +124,7 @@
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
         </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
-        <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../js/columbia.js" type="text/javascript"></script>
     </body>
 </html>
