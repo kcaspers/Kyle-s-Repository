@@ -44,14 +44,14 @@
 //    });
 //});   
 
-    var map, infoWindow, location, directions, directionsService, directionsDisplay;
+    var map, marker, location, directions, directionsService, directionsDisplay;
     setTimeout(function initMap() {
         map = new google.maps.Map(document.getElementById('mapDiv'), {
           center: {lat: 44.95, lng: -93.15},
           zoom: 11
         });
         
-        var marker = new google.maps.Marker({
+        marker = new google.maps.Marker({
             position: new google.maps.LatLng(44.955001, -93.158172),
             map: map
         });
@@ -69,16 +69,15 @@
               lng: position.coords.longitude
             };
             
-            //location is where the blue user marker goes
-            var location = new google.maps.Marker({
-            position: new google.maps.LatLng(pos.lat, pos.lng),
-            map: map,
-            icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
-            });
+            //blue marker
+//            var location = new google.maps.Marker({
+//            position: new google.maps.LatLng(pos.lat, pos.lng),
+//            map: map,
+//            icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png'
+//            });
             
             //directions
-            var directionsService = new google.maps.DirectionsService();
-            
+            directionsService = new google.maps.DirectionsService();
             directionsDisplay = new google.maps.DirectionsRenderer();
             directionsDisplay.setMap(map);
             
