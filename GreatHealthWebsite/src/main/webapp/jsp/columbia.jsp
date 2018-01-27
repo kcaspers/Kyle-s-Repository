@@ -35,13 +35,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="../images/columbiaheights1cropped.jpg" alt=""/>
+                                        <img src="../images/columbiaheights1cropped.jpg" alt="Great Health Nutrition Columbia Heights 1"/>
                                     </div>
                                     <div class="item">
-                                        <img src="../images/columbiaheights2cropped.jpg" alt=""/>
+                                        <img src="../images/columbiaheights2cropped.jpg" alt="Great Health Nutrition Columbia Heights 2"/>
                                     </div>
                                     <div class="item">
-                                        <img src="../images/columbiaheights3cropped.jpg" alt=""/>
+                                        <img src="../images/columbiaheights3cropped.jpg" alt="Great Health Nutrition Columbia Heights 3"/>
                                     </div>
                                 </div>
                             </div>
@@ -64,9 +64,10 @@
                                 <hr id="aboutRule">
                             </h4>
                             <p>
-                                Our Columbia Heights store is located on Central Avenue just south of Interstate 694
+                                Our Columbia Heights store is located on Central Avenue just south of Interstate 694 and
                                 next to Alqurashi Travel Agency. Slightly larger than the Saint Paul store, you will find 
-                                a similar product line with an added emphasis on targeted nutrition supplements.
+                                a similar product line with an added emphasis on targeted nutrition supplements as well as
+                                an extensive detox line to help you meet your weight loss and health goals.
 <!--                                As with all of our stores, our Columbia Heights location is open from 10-8 on weekdays,
                                 from 10-6 Saturday, and 12-5 on Sunday.-->
                             </p>
