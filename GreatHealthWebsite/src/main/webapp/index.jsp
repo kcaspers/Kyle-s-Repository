@@ -142,6 +142,7 @@
             <%@include file="jsp/pageFooter.jsp"%>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/detectmobilebrowser.js" type="text/javascript"></script>
         <script src="js/index.js" type="text/javascript"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
         </script>

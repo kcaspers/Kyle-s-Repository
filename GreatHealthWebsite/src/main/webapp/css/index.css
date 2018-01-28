@@ -85,7 +85,18 @@ button::after {
     width: 0;
 }
 
+.locationTitle:hover:after {
+    width: 100%;
+}
 
+.locationTitle:hover {
+    color: white;
+}
+
+.mobileButton{
+    this class should disable to hover stuff 
+    pointer-events: none;
+}
 
 #storeLogo{
     margin: auto;
@@ -171,11 +182,6 @@ button::after {
 }
 
 @media (hover: hover){
-    .locationTitle:hover:after {
-        width: 100%;
-    }
 
-    .locationTitle:hover {
-        color: white;
-    }
+
 }

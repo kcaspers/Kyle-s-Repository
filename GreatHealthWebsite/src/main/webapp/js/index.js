@@ -1,8 +1,9 @@
 $(document).ready(function () {
     $('#headerRow').css('background-color', 'white');
     $('#headerRow').css('background', 'white');
-    
-    setTimeout(function initMap() {
+});
+
+setTimeout(function initMap() {
 
     //make this respond to viewport size
     var windowSize = $(window).width();
@@ -42,7 +43,9 @@ $(document).ready(function () {
         window.location.href = "https://obscure-thicket-57749.herokuapp.com/jsp/columbia.jsp";
     });
 }, 100);
-});
 
-
-
+if(jQuery.browser.mobile){
+    console.log("mobile browser");
+    //add a class to button that disables hover or something
+    $('.locationTitle').addClass('mobileButton');
+}
