@@ -7,7 +7,7 @@
     <head>
         <title>Great Health Nutrition</title>
         <meta name="description" content="Great Health Nutrition is the Twin Cities premium natural supplement retailer. Since opening
-            our first Great Health location we have expanded to three locations, including Saint Paul, West Saint Paul, and Columbia Heights">
+              our first Great Health location we have expanded to three locations, including Saint Paul, West Saint Paul, and Columbia Heights">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="css/index.css" rel="stylesheet" type="text/css">
@@ -143,6 +143,48 @@
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="js/index.js" type="text/javascript"></script>
+        <script>
+            function initMap() {
+
+                //make this respond to viewport size
+                var windowSize = $(window).width();
+                if (windowSize > 425) {
+                    map = new google.maps.Map(document.getElementById('mapDiv'), {
+                        center: {lat: 44.9880338, lng: -93.16883050},
+                        zoom: 11
+                    });
+                } else {
+                    map = new google.maps.Map(document.getElementById('mapDiv'), {
+                        center: {lat: 44.9880338, lng: -93.16883050},
+                        zoom: 10
+                    });
+                }
+
+                var midway = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.955001, -93.158172),
+                    map: map
+                });
+                google.maps.event.addListener(midway, 'click', function () {
+                    window.location.href = "https://obscure-thicket-57749.herokuapp.com/jsp/midway.jsp";
+                });
+
+                var westsaintpaul = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.895164, -93.07865),
+                    map: map
+                });
+                google.maps.event.addListener(westsaintpaul, 'click', function () {
+                    window.location.href = "https://obscure-thicket-57749.herokuapp.com/jsp/westsaintpaul.jsp";
+                });
+
+                var columbia = new google.maps.Marker({
+                    position: new google.maps.LatLng(45.062247, -93.247669),
+                    map: map
+                });
+                google.maps.event.addListener(columbia, 'click', function () {
+                    window.location.href = "https://obscure-thicket-57749.herokuapp.com/jsp/columbia.jsp";
+                });
+            }
+        </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
         </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
