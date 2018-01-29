@@ -79,4 +79,8 @@ h1{
     #locationInfoB{
           width: 90% !important;
     }
+    
+    #mapDiv{
+       height: 70vw;
+    }
 }

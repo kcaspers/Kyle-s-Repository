@@ -44,7 +44,8 @@ setTimeout(function initMap() {
     });
 }, 100);
 
-if(jQuery.browser.mobile){
+if(jQuery.browser.mobile ||
+        $(window).width() < 768){
     console.log("mobile browser");
     //add a class to button that disables hover or something
     $('.locationTitle').addClass('mobileButton');
