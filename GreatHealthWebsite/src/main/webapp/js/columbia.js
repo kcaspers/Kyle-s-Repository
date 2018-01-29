@@ -80,7 +80,8 @@ setTimeout(function initMap() {
             directionsDisplay.setMap(map);
             directions = {
                 origin: pos,
-                destination: new google.maps.LatLng(marker.position.lat(), marker.position.lng()),
+                //destination: new google.maps.LatLng(marker.position.lat(), marker.position.lng()),
+                destination: '5192 Central Ave NE, Columbia Heights, MN 55421',
                 travelMode: 'DRIVING'
             };
             

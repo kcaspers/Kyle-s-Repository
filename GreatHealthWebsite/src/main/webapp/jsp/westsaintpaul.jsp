@@ -120,10 +120,10 @@
             </div>
             <%@include file="pageFooter.jsp"%>
         </div>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
-        </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="../js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../js/westsaintpaul.js" type="text/javascript"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
+        </script>
     </body>
 </html>

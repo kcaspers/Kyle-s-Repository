@@ -7,7 +7,7 @@
     <head>
         <title>Great Health Nutrition</title>
         <meta name="description" content="Great Health Nutrition is the Twin Cities premium natural supplement retailer. Since opening
-            our first Great Health location we have expanded to three locations, including Saint Paul, West Saint Paul, and Columbia Heights">
+              our first Great Health location we have expanded to three locations, including Saint Paul, West Saint Paul, and Columbia Heights">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet"> 
         <link href="css/index.css" rel="stylesheet" type="text/css">
@@ -142,11 +142,13 @@
             <%@include file="jsp/pageFooter.jsp"%>
         </div>
         <!-- Placed at the end of the document so the pages load faster -->
+        <script src="js/detectmobilebrowser.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknG2-6iBZT-rSHPaGIm4-A1-U-AeXZB0&callback=initMap">
         </script>
         <script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
-        <script src="js/index.js" type="text/javascript"></script>
+
     </body>
 </html>
 
